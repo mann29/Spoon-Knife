@@ -1,0 +1,9 @@
+This Assignment was sent by the Insurance Carrier as a Supplement Assignment, 
+but no Original Estimate with this Claim Number was found in the Claims database.  
+This Assignment has therefore been processed and delivered to you as an Original Assignment.  
+If you have any questions, please contact the Insurance Carrier.
+
+This message is intended for use by the intended recipient(s) only and may contain information that is confidential, 
+proprietary, copyrighted, and/or legally privileged. Any unauthorized disclosure, distribution, or use of this information is prohibited.
+
+Copyright © 2010 Mitchell International

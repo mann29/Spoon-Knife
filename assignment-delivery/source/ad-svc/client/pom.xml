@@ -1,0 +1,110 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.mitchell.maven.apd</groupId>
+    <artifactId>super-pom</artifactId>
+    <version>1.0.0.0</version>
+	<relativePath>../../../../</relativePath>
+  </parent>
+
+  <groupId>assignment-delivery</groupId>
+  <artifactId>assignment-delivery-client</artifactId>
+  <name>assignment-delivery-client</name>
+  <description>Assignment Delivery Client</description>
+  <version>1.0.0.4</version>
+  <packaging>jar</packaging>
+  
+    <!-- ******************** Site Information ********************* -->
+
+<!--	
+  <distributionManagement>
+    <site>
+      <id>assignment-delivery-service</id>
+      <url>file:http://dapp15ntv:8180/sites/assignment-delivery-service</url>
+    </site>
+  </distributionManagement>
+
+  <developers>
+    <developer>
+      <id>ClaimSolutions</id>
+      <organization>APD</organization>
+    </developer>         
+  </developers>
+-->  
+    <!-- ******************** Site Information ********************* -->	
+
+  <build>
+    <plugins>
+
+      <!-- Extract needed classes from various jars into the "classes" directory -->
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>unpack</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>unpack</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+
+                <!-- From the DAO Jar -->
+
+				<artifactItem>
+                  <groupId>${project.groupId}</groupId>
+                  <artifactId>assignment-delivery-java</artifactId>
+                  <version>1.0.0.0</version>
+                  <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                  <includes>
+                    com/mitchell/services/business/partialloss/assignmentdelivery/AssignmentDeliveryException.class,
+                    com/mitchell/services/business/partialloss/assignmentdelivery/AssignmentDeliveryErrorCodes.class,
+                    com/mitchell/services/business/partialloss/assignmentdelivery/AssignmentDeliveryConfig.class,
+                    com/mitchell/services/business/partialloss/assignmentdelivery/AssignmentDeliveryLogger.class,
+                    com/mitchell/services/business/partialloss/assignmentdelivery/AbstractAssignmentDeliveryLogger.class,
+					com/mitchell/services/business/partialloss/assignmentdelivery/AssignmentServiceContext.class,
+					
+com/mitchell/services/business/partialloss/assignmentdelivery/AssignmentDeliveryConstants.class,
+					com/mitchell/services/business/partialloss/assignmentdelivery/AssignmentDeliveryLoggerInterface.class
+                  </includes>
+                </artifactItem>
+
+                <!-- From the EJB Jar -->
+
+                <artifactItem>
+                  <groupId>${project.groupId}</groupId>
+                  <artifactId>assignment-delivery-ejb</artifactId>
+                  <version>1.0.0.0</version>
+                  <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                  <includes>
+  com/mitchell/services/business/partialloss/assignmentdelivery/client/AssignmentDeliveryClient.class,
+com/mitchell/services/business/partialloss/assignmentdelivery/client/BaseAssignmentDeliveryClient.class,    
+com/mitchell/services/business/partialloss/assignmentdelivery/client/AssignmentDeliveryAccessor.class, com/mitchell/services/business/partialloss/assignmentdelivery/AssignmentDeliveryRemote.class,
+com/mitchell/services/business/partialloss/assignmentdelivery/AssignmentDeliveryFacade.class
+                  </includes>
+                </artifactItem>
+
+              </artifactItems>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+	  
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>${maven-site-plugin.version}</version>
+        <configuration>
+		  <skip>true</skip>
+		  <skipDeploy>true</skipDeploy>
+        </configuration>
+      </plugin>
+
+    </plugins>
+	
+  </build>
+
+</project>

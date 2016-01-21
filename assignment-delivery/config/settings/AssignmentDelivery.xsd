@@ -1,0 +1,280 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="AssignmentDelivery" nillable="false">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="FileArchive"/>
+        <xs:element ref="BmsToMie"/>
+        <xs:element ref="Handlers"/>
+	<xs:element ref="AlertMessages"/>
+        <xs:element ref="Arc5"/>
+        <xs:element name="Hostname" nillable="true" minOccurs="0"/>
+        <xs:element ref="ConvSuppToOrigNoticeFilePath"/>
+	<xs:element ref="Notification"/>
+	<xs:element ref="Options"/>
+        <xs:element ref="Cleanup"/>
+		<xs:element ref="AssignmentEmail" minOccurs="0"/>
+		<xs:element name="IsCrossSupplementationAllowed" type="xs:string" minOccurs="0"/>
+		<xs:element name="OverrideEmailIdForRCConnectCoCd" type="xs:string" minOccurs="0"/>
+		<xs:element name="OverrideFaxForRCConnectCoCd" type="xs:string" minOccurs="0"/>
+		<xs:element name="ShopBasicAppCode" type="xs:string" minOccurs="0"/>
+		<xs:element name="ShopPremiumAppCode" type="xs:string" minOccurs="0"/>
+        <xs:element ref="Database"/>
+		<xs:element name="DoBMSCleaningForMIE" type="xs:boolean" minOccurs="0"/>
+		<xs:element name="StaticImageBaseUrl" type="xs:string" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StagingSubDir" nillable="false">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="description" type="xs:string" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FileArchive" nillable="false">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="StagingSubDir"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TempDir" nillable="false">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="description" type="xs:string" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BmsToMie" nillable="false">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="TempDir"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ECLAIM_MCFXML" nillable="false">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="description" type="xs:string" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ARC5" nillable="false">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="description" type="xs:string" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ARC7" nillable="false">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="description" type="xs:string" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RCCONNECT" nillable="false">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="description" type="xs:string" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Handlers" nillable="false">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ECLAIM_MCFXML"/>
+	    <xs:element ref="ARC7"/>
+        <xs:element ref="ARC5"/>
+        <xs:element ref="RCCONNECT"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Arc5" nillable="false">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CopyDir"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Hostname" nillable="true">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="description" type="xs:string" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Cleanup" nillable="true">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="description" type="xs:string" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlertMessages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CancellationAlertMsg" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConvSuppToOrigNoticeFilePath" nillable="true">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="description" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element> 
+  <xs:element name="SimpleNotificationFlag" nillable="false">
+	<xs:complexType>
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="description" type="xs:string" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+  </xs:element>
+  <xs:element name="FromDisplayName" nillable="false">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="description" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+  </xs:element>
+  <xs:element name="FromName" nillable="false">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="description" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+ </xs:element>
+ <xs:element name="FromAddr" nillable="false">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="description" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+ </xs:element>
+ <xs:element name="FromNumber" nillable="false">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="description" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+ </xs:element>
+ <xs:element name="Email" nillable="false">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="FromDisplayName"/>
+				<xs:element ref="FromAddr"/>
+			</xs:sequence>
+		</xs:complexType>
+ </xs:element>
+ <xs:element name="Fax" nillable="false">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="FromName"/>
+				<xs:element ref="FromAddr"/>
+				<xs:element ref="FromNumber"/>
+			</xs:sequence>
+		</xs:complexType>
+ </xs:element>
+ <xs:element name="Error" nillable="false">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Email"/>
+				<xs:element ref="Fax"/>
+			</xs:sequence>
+		</xs:complexType>
+ </xs:element>
+ <xs:element name="Primary" nillable="false">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Email"/>
+				<xs:element ref="Fax"/>
+			</xs:sequence>
+		</xs:complexType>
+ </xs:element>
+ <xs:element name="Notification" nillable="false">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Error"/>
+				<xs:element ref="Primary"/>
+			</xs:sequence>
+		</xs:complexType>
+ </xs:element>
+ <xs:element name="Options" nillable="false">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="SimpleNotificationFlag"/>
+			</xs:sequence>
+		</xs:complexType>
+ </xs:element>
+ <xs:element name="AssignmentEmail">
+     <xs:complexType>
+         <xs:sequence>
+		     <xs:element name="URLLink" type="xs:string" minOccurs="1"/>
+			 <xs:element name="XSLTPath" type="xs:string" minOccurs="1"/>
+             <xs:element name="CreationSubject" type="xs:string" minOccurs="0"/>
+			 <xs:element name="CancelSubject" type="xs:string" minOccurs="0"/>
+			 <xs:element name="FromAddress" type="xs:string" minOccurs="0"/>
+			 <xs:element name="FromDisplayName" type="xs:string" minOccurs="0"/>
+			 <xs:element name="URLLink4DRP" type="xs:string" minOccurs="0"/>
+			 <xs:element name="LangSupported" type="xs:string" minOccurs="0"/>
+         </xs:sequence>
+     </xs:complexType>
+ </xs:element>
+  <xs:element name="Database" nillable="false">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ClaimDataSource"/>
+        <xs:element ref="EPDDataSource"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ClaimDataSource" nillable="false">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="description" type="xs:string" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EPDDataSource" nillable="false">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="description" type="xs:string" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

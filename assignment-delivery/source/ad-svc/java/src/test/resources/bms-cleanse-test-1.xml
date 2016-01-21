@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<bms:CIECA xmlns:bms="http://www.cieca.com/BMS" xmlns="http://www.cieca.com/BMS" xmlns:sch="http://www.mitchell.com/schemas">
+          <bms:AssignmentAddRq>
+            <bms:RqUID>863a48f2-64fd-4281-b2af-bb0276e186b5</bms:RqUID>
+            <bms:PartnerKey>43-4S65-19802001</bms:PartnerKey>
+            <bms:DocumentInfo>
+              <bms:BMSVer>2.10.0</bms:BMSVer>
+              <bms:DocumentType>A</bms:DocumentType>
+              <bms:DocumentVer>
+                <bms:DocumentVerCode>EM</bms:DocumentVerCode>
+                <bms:DocumentVerNum>0</bms:DocumentVerNum>
+              </bms:DocumentVer>
+              <DocumentVer/>
+              <bms:CreateDateTime>2014-07-29T09:06:29.403-06:00</bms:CreateDateTime>
+              <bms:ReferenceInfo>
+                <bms:PassThroughInfo>HL559B000007201721346434S6519802001</bms:PassThroughInfo>
+                <bms:CompanyID>SF</bms:CompanyID>
+                <bms:OtherReferenceInfo>
+                  <bms:OtherReferenceName>Priority</bms:OtherReferenceName>
+                  <bms:OtherRefNum>0</bms:OtherRefNum>
+                </bms:OtherReferenceInfo>
+              </bms:ReferenceInfo>
+            </bms:DocumentInfo>
+            <bms:EventInfo>
+              <bms:AssignmentEvent>
+                <bms:CreateDateTime>2014-07-29T09:06:29.403-06:00</bms:CreateDateTime>
+              </bms:AssignmentEvent>
+            </bms:EventInfo>
+            <bms:AdminInfo>
+              <bms:InsuranceCompany>
+                <bms:Party>
+                  <bms:OrgInfo>
+                    <bms:CompanyName>STATE FARM INSURANCE COMPANIES</bms:CompanyName>
+                    <bms:IDInfo>
+                      <bms:IDQualifierCode>CompanyID</bms:IDQualifierCode>
+                      <bms:IDNum>SF</bms:IDNum>
+                    </bms:IDInfo>
+                  </bms:OrgInfo>
+                </bms:Party>
+              </bms:InsuranceCompany>
+              <bms:PolicyHolder>
+                <Party>
+                  <PersonInfo>
+                    <PersonName>
+                      <FirstName>State Farm</FirstName>
+                      <LastName>Insured</LastName>
+                    </PersonName>
+                  </PersonInfo>
+                </Party>
+              </bms:PolicyHolder>
+              <bms:Owner>
+                <Party>
+                  <PersonInfo>
+                    <PersonName>
+                      <FirstName>CONNIE</FirstName>
+                      <LastName>DONNACHIE</LastName>
+                    </PersonName>
+                    <Communications>
+                      <CommQualifier>AL</CommQualifier>
+                      <Address>
+                        <Address1>4908 BOQUILLAS CT E</Address1>
+                        <City>GRANBURY</City>
+                        <StateProvince>TX</StateProvince>
+                        <PostalCode>760495139</PostalCode>
+                      </Address>
+                    </Communications>
+                  </PersonInfo>
+                  <ContactInfo>
+                    <Communications>
+                      <CommQualifier>HP</CommQualifier>
+                      <CommPhone>817-3261137</CommPhone>
+                    </Communications>
+                    <Communications>
+                      <CommQualifier>CP</CommQualifier>
+                      <CommPhone>972-7400621</CommPhone>
+                    </Communications>
+                  </ContactInfo>
+                </Party>
+              </bms:Owner>
+              <bms:Claimant>
+                <Party>
+                  <PersonInfo>
+                    <PersonName>
+                      <FirstName>CONNIE</FirstName>
+                      <LastName>DONNACHIE</LastName>
+                    </PersonName>
+                    <Communications>
+                      <CommQualifier>AL</CommQualifier>
+                      <Address>
+                        <Address1>4908 BOQUILLAS CT E</Address1>
+                        <City>GRANBURY</City>
+                        <StateProvince>TX</StateProvince>
+                        <PostalCode>760495139</PostalCode>
+                      </Address>
+                    </Communications>
+                  </PersonInfo>
+                  <ContactInfo>
+                    <Communications>
+                      <CommQualifier>HP</CommQualifier>
+                      <CommPhone>817-3261137</CommPhone>
+                    </Communications>
+                    <Communications>
+                      <CommQualifier>CP</CommQualifier>
+                      <CommPhone>972-7400621</CommPhone>
+                    </Communications>
+                  </ContactInfo>
+                </Party>
+              </bms:Claimant>
+              <InspectionSite>
+                <Party>
+                  <OrgInfo>
+                    <CompanyName>Wrangler”s Auto Body</CompanyName>
+                    <Communications>
+                      <CommQualifier>AL</CommQualifier>
+                      <Address>
+                        <Address1>4041 Acton Hwy</Address1>
+                        <StateProvince>TX</StateProvince>
+                        <PostalCode>76049</PostalCode>
+                        <CountryCode>US</CountryCode>
+                      </Address>
+                    </Communications>
+                  </OrgInfo>
+                  <ContactInfo>
+                    <Communications>
+                      <CommQualifier>CP</CommQualifier>
+                      <CommPhone>513-6019246</CommPhone>
+                    </Communications>
+                  </ContactInfo>
+                </Party>
+              </InspectionSite>
+              <bms:Adjuster>
+                <Party>
+                  <PersonInfo>
+                    <PersonName>
+                      <LastName>Express Team D</LastName>
+                    </PersonName>
+                  </PersonInfo>
+                  <ContactInfo>
+                    <Communications>
+                      <CommQualifier>WP</CommQualifier>
+                      <CommPhone>855-3418184</CommPhone>
+                    </Communications>
+                  </ContactInfo>
+                </Party>
+              </bms:Adjuster>
+              <Sender>
+                <Party>
+                  <PersonInfo>
+                    <PersonName/>
+                    <IDInfo>
+                      <IDQualifierCode>UserID</IDQualifierCode>
+                      <IDNum>H20L</IDNum>
+                    </IDInfo>
+                  </PersonInfo>
+                </Party>
+              </Sender>
+            </bms:AdminInfo>
+            <bms:ClaimInfo>
+              <bms:ClaimNum>43-4S65-19802</bms:ClaimNum>
+              <bms:PolicyInfo>
+                <bms:CoverageInfo>
+                  <bms:Coverage>
+                    <bms:CoverageCategory>L</bms:CoverageCategory>
+                    <bms:DeductibleInfo>
+                      <bms:DeductibleStatus>D2</bms:DeductibleStatus>
+                      <bms:DeductibleAmt>0</bms:DeductibleAmt>
+                    </bms:DeductibleInfo>
+                  </bms:Coverage>
+                </bms:CoverageInfo>
+              </bms:PolicyInfo>
+              <bms:LossInfo>
+                <bms:Facts>
+                  <bms:LossDateTime>2014-07-28T00:00:00</bms:LossDateTime>
+                  <bms:ReportedDateTime>2014-07-28T00:00:00</bms:ReportedDateTime>
+                  <bms:DamageMemo>Bumper, Rear</bms:DamageMemo>
+                  <bms:LossMemo>V1 was in right lane, trying to get into middle lane. V1 and another vehicle both merged into the same lane, V1 remained in the same lane and struck V2 in front.</bms:LossMemo>
+                  <bms:LossLocationAddress>
+                    <bms:City>Ft Worth</bms:City>
+                    <bms:StateProvince>TX</bms:StateProvince>
+                  </bms:LossLocationAddress>
+                </bms:Facts>
+                <bms:Inspection>
+                  <bms:InspectionSiteCode>F</bms:InspectionSiteCode>
+                </bms:Inspection>
+                <bms:TotalLossInd>N</bms:TotalLossInd>
+              </bms:LossInfo>
+            </bms:ClaimInfo>
+            <bms:VehicleDamageAssignment>
+              <bms:EstimatorIDs>
+                <bms:RoutingIDInfo>
+                  <IDQualifierCode>WAGroupID</IDQualifierCode>
+                  <IDNum>SFTX</IDNum>
+                </bms:RoutingIDInfo>
+              </bms:EstimatorIDs>
+              <bms:VehicleInfo>
+                <VINInfo>
+                  <VINAvailabilityCode>Unavailable</VINAvailabilityCode>
+                </VINInfo>
+                <bms:VehicleDesc>
+                  <ModelYear>2008</ModelYear>
+                  <bms:MakeDesc>Lexus</bms:MakeDesc>
+                  <bms:ModelName>LX 460</bms:ModelName>
+                  <bms:SubModelDesc>Four-door (4</bms:SubModelDesc>
+                </bms:VehicleDesc>
+                <bms:Paint>
+                  <bms:Exterior>
+                    <bms:Color>
+                      <bms:ColorName>Green</bms:ColorName>
+                    </bms:Color>
+                  </bms:Exterior>
+                </bms:Paint>
+                <bms:Condition>
+                  <bms:DrivableInd>Y</bms:DrivableInd>
+                </bms:Condition>
+              </bms:VehicleInfo>
+              <bms:AssignmentMemo>2008 Lexus LX 460 Four-door (4
+
+PRINCIPAL DAMAGE:
+Bumper, Rear
+
+VEHICLE LOCATION:
+Wranglers Auto Body
+4041 Acton Hwy
+Granbury, TX 76049
+513-601-9246
+
+
+
+ACCIDENT LOCATION:
+Ft Worth TX 
+
+FACTS OF LOSS:
+V1 was in right lane, trying to get into middle lane. V1 and another vehicle both merged into the same lane, V1 remained in the same lane and struck V2 in front.
+
+SPECIAL INSTRUCTIONS:
+Customer is going to take veh to Wranglers in Granbury on 8/4/14.</bms:AssignmentMemo>
+            </bms:VehicleDamageAssignment>
+          </bms:AssignmentAddRq>
+</bms:CIECA>

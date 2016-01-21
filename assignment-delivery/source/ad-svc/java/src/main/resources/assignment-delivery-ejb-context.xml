@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<!-- Author prashant.khanwale@mitchell.com, Jul 21, 2010 -->
+<beans>
+	<!--  bean id="testSpringUnderWebLogic" class="java.lang.String" -->
+		<!-- constructor-arg type="java.lang.String" value="Hello World!" / -->
+	<!-- /bean -->
+    <bean id="ADS.mitchell.assignmentDeliveryService"
+        class="com.mitchell.services.business.partialloss.assignmentdelivery.impl.AssignmentDeliveryImpl" singleton="false">
+        <property name="assignmentDeliveryHandlerFactory" ref="ADS.assignmentdeliveryHandlerFactory" />
+    </bean>
+    <bean id="ADS.ARC7.handler"
+        class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.impl.arc7.ARC7DeliveryHandler"
+        parent="ADS.abstract.mcf.handler" >
+        <property name="drBuilder" ref="ADS.ARC7.dispatchReportBuilder" />
+        <property name="logger" ref="ADS.ARC7.handler.logger" />
+    </bean>
+    <bean id="ADS.ECLAIM.handler"
+        class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.impl.eclaim.EClaimDeliveryHandler"
+        parent="ADS.abstract.mcf.handler" singleton="false" >
+        <property name="drBuilder" ref="ADS.ECLAIM.dispatchReportBuilder" />
+        <property name="logger" ref="ADS.eclaims.handler.logger"/>
+    </bean>
+    <bean id="ADS.mitchell.apd.integration.abstract.assignmentDeliveryService" class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.apd.impl.AbstractMsgBusDelHndlr"
+    parent="ADS.abstract.handler" abstract="true">
+	   <property name="drBuilder" ref="ADS.ECLAIM.dispatchReportBuilder"></property>
+	   <property name="logger" ref="ADS.apd.integration.handler.logger"></property>
+	   <property name="messagePostingAgent" ref="ADS.messageposting.agent"></property>
+	   <property name="documentStoreClientProxy" ref="ADS.documentStoreClientProxy"/>
+	   <property name="userInfoClient" ref="ADS.userInfoClient"/>
+	   <property name="workServiceClient" ref="ADS.workServiceClient"/>
+	   <property name="bmsConverterFactory" ref="ADS.BmsConverterFactory"/>
+    </bean>
+	<bean id="ADS.mitchell.apd.integration.assignmentDeliveryService"
+	   class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.apd.impl.ApdIntAssDelHandlerImpl"
+	   singleton="false" parent = "ADS.mitchell.apd.integration.abstract.assignmentDeliveryService">
+	   <property name="drBuilder" ref="ADS.RC.dispatchReportBuilder"></property> 	   
+	</bean>
+	<bean id="ADS.mitchell.apd.integration.assignmentDeliveryService.wcap"
+	   class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.apd.impl.WcapMsgBusDelHndlr"
+	   singleton="false" parent = "ADS.mitchell.apd.integration.abstract.assignmentDeliveryService">
+ 	   <property name="drBuilder" ref="ADS.WCAP.dispatchReportBuilder"></property>
+	</bean>
+	<bean id="ADS.mitchell.apd.integration.router" 
+		class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.apd.impl.PlatformDelRouterImpl"
+		singleton="true">
+		<property name="logger" ref="ADS.apd.integration.handler.logger"/>
+		<property name="userInfoClient" ref="ADS.userInfoClient"/>
+		<property name="repairCenterDeliveryHandler" ref ="ADS.mitchell.apd.integration.assignmentDeliveryService"/>
+		<property name="wcapDeliveryHandler" ref="ADS.mitchell.apd.integration.assignmentDeliveryService.wcap"/>
+	</bean>
+	<bean id="ADS.messageposting.agent" 
+	class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.apd.impl.MessagePostingAgentImpl"/>
+    <bean id="ADS.documentStoreClientProxy" class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.apd.impl.DocStoreClientProxyImpl"/>
+    <bean id="ADS.userInfoClient" 
+        class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.apd.impl.UserInfoClientProxyImpl"/>
+    <bean id="ADS.workServiceClient" 
+        class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.apd.WorkPrcsSvcClientAPIImpl"
+        singleton="false"/>
+    <bean id="ADS.BmsConverterFactory" 
+        class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.apd.impl.BmsConverterFactoryImpl"
+        singleton="false"/>
+    <bean id="ADS.WorkAssignmentProxy"
+          class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.apd.impl.WorkAssignmentProxyImpl"
+          singleton="false" />
+	<bean id="ADS.abstract.mcf.handler"
+		class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.AbstractMCFAsgnDelHandler"
+		parent="ADS.abstract.handler"
+		abstract="true" singleton="false">
+		<property name="eclaimsInBoxServiceClient" ref="ADS.eclaims" />
+		<property name="mcfServiceEJBRemote" ref="ADS.mcfEjbRemote" />
+	</bean>
+	<bean id="ADS.abstract.handler" 
+	   class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.AbstractAssignmentDeliveryHandler" 
+	   abstract="true" singleton="false">
+        <property name="assignmentDeliveryUtils" ref="ADS.utils" />
+        <property name="appLoggerBridge" ref="ADS.appLogger" />
+		<property name="converter" ref="ADS.converter" />
+        <property name="handlerUtils" ref="ADS.handlerUtils" />
+        <property name="errorLoggingService" ref="ADS.errorLoggingService" />
+        <property name="assignmentDeliveryConfigBridge" ref="ADS.assignmentdeliveryconfig" />
+	</bean>
+    <bean id="ADS.assignmentdeliveryHandlerFactory"
+        class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.AssignmentDeliveryHandlerFactory" singleton="false">
+        <property name="handlerMap">
+            <map>
+                    <!-- Please note that a key identical to class name is not a mistake, it is 
+                        in fact intentional. Current logic relies on using the class name to instantiate 
+                        handlers. This way the API of this bean does not need to change, with the 
+                        implementation. This allows us to bridge thru to Spring for DI while preserving 
+                        the veneer of the existing contract for this class. 
+                        ~prashant.khanwale@mitchell.com,Jul 27, 2010 -->
+                <entry
+                    key="com.mitchell.services.business.partialloss.assignmentdelivery.handler.impl.arc7.ARC7DeliveryHandler"
+                    value-ref="ADS.ARC7.handler"/>
+                <entry key="com.mitchell.services.business.partialloss.assignmentdelivery.handler.impl.eclaim.EClaimDeliveryHandler" 
+                    value-ref="ADS.ECLAIM.handler"/>
+            </map>
+        </property>
+    </bean>
+	<bean id="ADS.ARC7.handler.logger"
+		class="com.mitchell.services.business.partialloss.assignmentdelivery.AssignmentDeliveryLogger" singleton="false">
+		<constructor-arg type="java.lang.String"
+			value="com.mitchell.services.business.partialloss.assignmentdelivery.handler.impl.arc7.ARC7DeliveryHandler" />
+	</bean>
+    <bean id="ADS.eclaims.handler.logger"
+        class="com.mitchell.services.business.partialloss.assignmentdelivery.AssignmentDeliveryLogger" singleton="false">
+        <constructor-arg type="java.lang.String"
+            value="com.mitchell.services.business.partialloss.assignmentdelivery.handler.impl.eclaim.EClaimDeliveryHandler" />
+    </bean>
+    <bean id="ADS.apd.integration.handler.logger"
+        class="com.mitchell.services.business.partialloss.assignmentdelivery.AssignmentDeliveryLogger" singleton="false">
+        <constructor-arg type="java.lang.String"
+            value="com.mitchell.services.business.partialloss.assignmentdelivery.handler.apd.impl.ApdIntegrationAssignmentDeliveryHandlerImpl" />
+    </bean>
+    
+      <bean id="ADS.apd.abstractassignmentemailhandler.logger"
+        class="com.mitchell.services.business.partialloss.assignmentdelivery.AssignmentDeliveryLogger" singleton="false">
+        <constructor-arg type="java.lang.String"
+            value="com.mitchell.services.business.partialloss.assignmentdelivery.handler.ndu.impl.AbstractAssignmentEmailHandler" />
+    </bean>
+    
+	<bean id="ADS.utils"
+		class="com.mitchell.services.business.partialloss.assignmentdelivery.AssignmentDeliveryUtils" singleton="false"/>
+	<bean id="ADS.appLogger"
+		class="com.mitchell.services.business.partialloss.assignmentdelivery.AppLoggerBridgeImpl" singleton="false"/>
+	<bean id="ADS.eclaims"
+		class="com.mitchell.services.business.partialloss.assignmentdelivery.EclaimsInBoxServiceClientWrapperImpl" singleton="false"/>
+	
+	
+	<bean id="ADS.handlerUtils"
+		class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.HandlerUtils" singleton="false">
+		  <property name="customSettingHelper" ref="CustomSettingHelper"/>
+	</bean>
+	
+	
+	<bean id="ADS.errorLoggingService"
+		class="com.mitchell.services.business.partialloss.assignmentdelivery.ErrorLoggingServiceWrapperImpl" singleton="false"/>
+	<bean id="ADS.mcfEjbRemote"
+		class="com.mitchell.services.business.partialloss.assignmentdelivery.MCFServiceEJBRemoteProxy" init-method="init" singleton="false"/>
+	<bean id="ADS.assignmentdeliveryconfig"
+		class="com.mitchell.services.business.partialloss.assignmentdelivery.AssignmentDeliveryConfigBridgeImpl" singleton="false"/>
+	<bean id="ADS.ARC7.dispatchReportBuilder"
+		class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.impl.arc7.DispatchReportBuilder" singleton="false"></bean>
+	<bean id="ADS.converter"
+		class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.impl.eclaim.BmsToMieConverter" singleton="false"/>
+    <bean id="ADS.ECLAIM.dispatchReportBuilder"
+        class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.impl.eclaim.DispatchReportBuilder" singleton="false">
+        <property name="customSettingForXsltPath" value="PARTIALLOSS_SIP_ASSIGNMENT_DELIVERY_ECLAIM_DISPATCH_RPT"></property>
+   </bean>
+    <bean id="ADS.RC.dispatchReportBuilder"
+        class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.impl.eclaim.DispatchReportBuilder" singleton="false">
+        <property name="customSettingForXsltPath" value="PARTIALLOSS_SIP_ASSIGNMENT_DELIVERY_RC_DISPATCH_RPT"></property>
+   </bean>
+    <bean id="ADS.WCAP.dispatchReportBuilder"
+        class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.impl.eclaim.DispatchReportBuilder" singleton="false">
+        <property name="customSettingForXsltPath" value="PARTIALLOSS_SIP_ASSIGNMENT_DELIVERY_WCAP_DISPATCH_RPT"></property>
+   </bean>
+    <bean id="ADS.platform.router" 
+    	class ="com.mitchell.services.business.partialloss.assignmentdelivery.handler.apd.impl.PlatformDelRouterImpl">
+    </bean>
+    <!-- Added for Assignment Email Delivery -->
+    <bean id="ErrorLogProxy"
+    class ="com.mitchell.services.business.partialloss.assignmentdelivery.handler.ndu.proxy.ErrorLogProxyImpl"/>
+    <bean id="AppLogProxy"
+    class ="com.mitchell.services.business.partialloss.assignmentdelivery.handler.ndu.proxy.AppLogProxyImpl"/>
+    <bean id="SystemConfigProxy"
+    class ="com.mitchell.services.business.partialloss.assignmentdelivery.handler.ndu.proxy.SystemConfigProxyImpl"/>
+    <bean id="NotificationProxy"
+    class ="com.mitchell.services.business.partialloss.assignmentdelivery.handler.ndu.proxy.NotificationProxyImpl"/>
+    <bean id="XsltTransformer" class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.ndu.proxy.XsltTransformerImpl"/>
+    <bean id="AppraisalAssignmentProxy" class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.ndu.proxy.AppraisalAssignmentProxyImpl"/>
+    <bean id="UserInfoProxy" class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.ndu.proxy.UserInfoProxyImpl"/>
+	<bean id="CustomSettingHelper" class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.ndu.util.CustomSettingHelperImpl" init-method="initialize" singleton="false"/>
+
+    <bean id="AbstractAssignmentEmailDeliveryHandler"
+    class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.ndu.impl.AbstractAssignmentEmailHandler" autowire="byType" abstract="true" singleton="false">
+    <property name="errorLogProxy" ref="ErrorLogProxy"/>
+    <property name="appLogProxy" ref="AppLogProxy"/>
+    <property name="systemConfigProxy" ref="SystemConfigProxy"/>
+    <property name="notificationProxy" ref="NotificationProxy"/>
+    <property name="xsltTransformer" ref="XsltTransformer"></property>
+    <property name="appraisalAssignmentProxy" ref="AppraisalAssignmentProxy"/>
+	<property name="customSettingHelper" ref="CustomSettingHelper"/>
+	<property name="mLogger" ref="ADS.apd.abstractassignmentemailhandler.logger"/>
+    </bean>           
+
+    <bean id="AssignmentEmailDeliveryHandler"
+    class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.ndu.impl.AssignmentEmailDeliveryHandlerImpl" autowire="byType" parent="AbstractAssignmentEmailDeliveryHandler">
+    </bean>
+    <bean id="AssignmentEmailDeliveryHandlerDRP"
+    class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.ndu.impl.AssignmentEmailDeliveryHandlerDRPImpl" autowire="byType" parent="AbstractAssignmentEmailDeliveryHandler">
+    </bean>           
+    <bean id="AssignmentEmailDeliveryService"
+    	class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.ndu.service.AssignmentEmailDeliveryServiceImpl">
+    	<property name="assignmentEmailDeliveryHandler" ref="AssignmentEmailDeliveryHandler"/>
+    	<property name="assignmentEmailDeliveryHandlerDRP" ref="AssignmentEmailDeliveryHandlerDRP"/>
+    	<property name="cultureDAO" ref="CultureDAO"/>
+    </bean>   
+    
+    <bean id="CultureDAO" class="com.mitchell.services.business.partialloss.assignmentdelivery.dao.CultureDAOImpl">    
+    	<property name="systemConfigProxy" ref="SystemConfigProxy"/>
+    </bean>
+    <bean id="AbstractMessageBusDeliveryHandler"
+          class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.apd.impl.AbstractMessageBusDeliveryHandler"
+          abstract="true"
+          singleton="false"
+          parent="ADS.abstract.handler">
+        <property name="drBuilder" ref="ADS.RC.dispatchReportBuilder"/>
+        <property name="logger" ref="ADS.apd.integration.handler.logger"/>
+        <property name="messagePostingAgent" ref="ADS.messageposting.agent"/>
+        <property name="documentStoreClientProxy" ref="ADS.documentStoreClientProxy"/>
+        <property name="userInfoClient" ref="ADS.userInfoClient"/>
+        <property name="bmsConverterFactory" ref="ADS.BmsConverterFactory"/>
+        <property name="workAssignmentProxy" ref="ADS.WorkAssignmentProxy" />
+    </bean>
+
+    <bean id="WebAssignmentMessageBusDeliveryHandler"
+          class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.apd.impl.WebAssMsgBusDelHndlr"
+          parent="AbstractMessageBusDeliveryHandler">
+     <!--   <property name="drBuilder" ref="ADS.RC.dispatchReportBuilder"/> -->
+    </bean>
+    <bean id="ClaimServiceProxy"
+          class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.apd.impl.ClaimServiceProxyImpl">
+          </bean>
+
+    <bean id="DaytonaRAHandler"
+          class="com.mitchell.services.business.partialloss.assignmentdelivery.handler.daytona.DaytonaRAHandlerImpl"
+          autowire="byType"></bean>
+</beans>

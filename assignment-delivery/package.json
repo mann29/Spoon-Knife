@@ -1,0 +1,47 @@
+
+{ 
+  "name": "assignment-delivery", 
+  "description": "APD-ClaimsSolutions assignment-delivery", 
+  "author": "ninjaneers@mitchell.com", 
+  "release": "1.0", 
+  "build": "@@BUILD_NUMBER@@", 
+  "arch": "windows", 
+  "category": "/APD/platform",
+
+  "source-base": "",
+  "dest-base": "//",
+  "contents": [
+    {
+      "source": "source\\ad-svc\\ear\\target\\*.ear",
+      "dest": "appl\\services\\assignment-delivery\\deploy"
+    },
+    {
+      "source": "config\\settings\\*.xsd",
+      "dest": "appl\\services\\assignment-delivery\\settings"
+    },
+    {
+      "source": "config\\settings\\*.SET",
+      "dest": "appl\\services\\assignment-delivery\\settings"
+    },
+    {
+      "source": "config\\xslt\\emails\\*",
+      "dest": "\\mdev\\data\\remote\\dev\\organizations\\default\\templates\\emails"
+    }
+  ], 
+
+  "dependencies": {}, 
+
+  "pre-install": {}, 
+
+  "post-install": [
+      "/bin/bash /appl/scripts/jboss_move_files.sh assignment-delivery"
+    ],
+
+  "pre-uninstall": [
+      "/bin/bash /appl/scripts/jboss_clean_files.sh assignment-delivery"
+    ],
+
+  "post-uninstall": {} 
+
+
+} 

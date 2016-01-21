@@ -1,0 +1,158 @@
+<apd:APDDeliveryContext Version="1.0" xmlns:apd="http://www.mitchell.com/schemas/apddelivery">
+  <apd:MessageType>ALERT</apd:MessageType>
+  <apd:APDAlertInfo>
+    <apd:APDCommonInfo>
+      <apd:InsCoCode>I9</apd:InsCoCode>
+      <apd:SourceUserInfo>
+        <apd:UserInfo xmlns:typ="http://www.mitchell.com/common/types">
+          <typ:OrgID>393186</typ:OrgID>
+          <typ:OrgCode>BS</typ:OrgCode>
+          <typ:UserID>95054638</typ:UserID>
+          <typ:Guid>1234567890</typ:Guid>
+          <typ:FirstName>Z9</typ:FirstName>
+          <typ:LastName>SCRUMptious Premium Shop</typ:LastName>
+          <typ:Email>SCRUMptious@mitchell.com</typ:Email>
+          <typ:UserHier>
+            <typ:HierNode Level="COMPANY" Name="" Code="BS" ID="307">
+              <typ:HierNode Level="OFFICE" Name="Z9 SCRUMptious Premium Shop" Code="60503" ID="393185">
+                <typ:HierNode Level="USER" Name="Z9 SCRUMptious Premium Shop" Code="95054638" ID="393186"/>
+              </typ:HierNode>
+            </typ:HierNode>
+          </typ:UserHier>
+          <typ:AppCode>CMATF</typ:AppCode>
+          <typ:AppCode>CMCRD</typ:AppCode>
+          <typ:AppCode>CMVWC</typ:AppCode>
+          <typ:AppCode>CMVWD</typ:AppCode>
+          <typ:AppCode>CMVWE</typ:AppCode>
+          <typ:AppCode>NETACT</typ:AppCode>
+          <typ:AppCode>TOWCT</typ:AppCode>
+          <typ:AppCode>TOWET</typ:AppCode>
+          <typ:AppCode>TOWST</typ:AppCode>
+          <typ:AppCode>TOWVQ</typ:AppCode>
+          <typ:AppCode>TOWVT</typ:AppCode>
+          <typ:AppCode>WCPRCP</typ:AppCode>
+          <typ:AppCode>WCVACS</typ:AppCode>
+          <typ:AppCode>WCVDA</typ:AppCode>
+          <typ:AppCode>WCVEST</typ:AppCode>
+          <typ:AppCode>WCVIWV</typ:AppCode>
+          <typ:AppCode>WCVMSP</typ:AppCode>
+          <typ:AppCode>WCVSP</typ:AppCode>
+          <typ:AppCode>WCVURS</typ:AppCode>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>Z9</typ:CompanyID>
+            <typ:CompanyName>Z9 QA TEST</typ:CompanyName>
+            <typ:UserID>Z9060502</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>I9</typ:CompanyID>
+            <typ:CompanyName>DESJARDINS GROUP GENERAL INS</typ:CompanyName>
+            <typ:UserID>I9TESTPS</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>HT</typ:CompanyID>
+            <typ:CompanyName>THE HARTFORD INSURANCE CO</typ:CompanyName>
+            <typ:UserID>00044</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:StaffType>ESTIMATOR</typ:StaffType>
+        </apd:UserInfo>
+      </apd:SourceUserInfo>
+      <apd:TargetUserInfo>
+        <apd:UserInfo xmlns:typ="http://www.mitchell.com/common/types">
+          <typ:OrgID>402971</typ:OrgID>
+          <typ:OrgCode>I9</typ:OrgCode>
+          <typ:UserID>I9TESTPS</typ:UserID>
+          <typ:Guid>123456789</typ:Guid>
+          <typ:FirstName>I9Test</typ:FirstName>
+          <typ:LastName>PremiumShop</typ:LastName>
+          <typ:Email>richa.bajpai@mitchell.com</typ:Email>
+          <typ:UserHier>
+            <typ:HierNode Level="COMPANY" Name="DESJARDINS GROUP GENERAL INS" Code="I9" ID="443">
+              <typ:HierNode Level="REGION" Name="Mitchell" Code="MX" ID="402362">
+                <typ:HierNode Level="DIVISION" Name="Mitchell" Code="MX" ID="402363">
+                  <typ:HierNode Level="OFFICE" Name="Mitchell" Code="MMX" ID="402364">
+                    <typ:HierNode Level="USER" Name="I9Test PremiumShop" Code="I9TESTPS" ID="402971"/>
+                  </typ:HierNode>
+                </typ:HierNode>
+              </typ:HierNode>
+            </typ:HierNode>
+          </typ:UserHier>
+          <typ:AppCode>CMAPES</typ:AppCode>
+          <typ:AppCode>CPUPDN</typ:AppCode>
+          <typ:AppCode>NETACT</typ:AppCode>
+          <typ:AppCode>SIPAD</typ:AppCode>
+          <typ:StaffType>ADMINISTRATOR</typ:StaffType>
+        </apd:UserInfo>
+      </apd:TargetUserInfo>
+      <apd:TargetDRPUserInfo>
+        <apd:UserInfo xmlns:typ="http://www.mitchell.com/common/types">
+          <typ:OrgID>393186</typ:OrgID>
+          <typ:OrgCode>BS</typ:OrgCode>
+          <typ:UserID>95054638</typ:UserID>
+          <typ:Guid>1234567890</typ:Guid>
+          <typ:FirstName>Z9</typ:FirstName>
+          <typ:LastName>SCRUMptious Premium Shop</typ:LastName>
+          <typ:Email>SCRUMptious@mitchell.com</typ:Email>
+          <typ:UserHier>
+            <typ:HierNode Level="COMPANY" Name="" Code="BS" ID="307">
+              <typ:HierNode Level="OFFICE" Name="Z9 SCRUMptious Premium Shop" Code="60503" ID="393185">
+                <typ:HierNode Level="USER" Name="Z9 SCRUMptious Premium Shop" Code="95054638" ID="393186"/>
+              </typ:HierNode>
+            </typ:HierNode>
+          </typ:UserHier>
+          <typ:AppCode>CMATF</typ:AppCode>
+          <typ:AppCode>CMCRD</typ:AppCode>
+          <typ:AppCode>CMVWC</typ:AppCode>
+          <typ:AppCode>CMVWD</typ:AppCode>
+          <typ:AppCode>CMVWE</typ:AppCode>
+          <typ:AppCode>NETACT</typ:AppCode>
+          <typ:AppCode>TOWCT</typ:AppCode>
+          <typ:AppCode>TOWET</typ:AppCode>
+          <typ:AppCode>TOWST</typ:AppCode>
+          <typ:AppCode>TOWVQ</typ:AppCode>
+          <typ:AppCode>TOWVT</typ:AppCode>
+          <typ:AppCode>WCPRCP</typ:AppCode>
+          <typ:AppCode>WCVACS</typ:AppCode>
+          <typ:AppCode>WCVDA</typ:AppCode>
+          <typ:AppCode>WCVEST</typ:AppCode>
+          <typ:AppCode>WCVIWV</typ:AppCode>
+          <typ:AppCode>WCVMSP</typ:AppCode>
+          <typ:AppCode>WCVSP</typ:AppCode>
+          <typ:AppCode>WCVURS</typ:AppCode>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>Z9</typ:CompanyID>
+            <typ:CompanyName>Z9 QA TEST</typ:CompanyName>
+            <typ:UserID>Z9060502</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>I9</typ:CompanyID>
+            <typ:CompanyName>DESJARDINS GROUP GENERAL INS</typ:CompanyName>
+            <typ:UserID>I9TESTPS</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>HT</typ:CompanyID>
+            <typ:CompanyName>THE HARTFORD INSURANCE CO</typ:CompanyName>
+            <typ:UserID>00044</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:StaffType>ESTIMATOR</typ:StaffType>
+        </apd:UserInfo>
+      </apd:TargetDRPUserInfo>
+      <apd:ClaimNumber>18-RB0406117-01</apd:ClaimNumber>
+      <apd:ClientClaimNumber>18-RB0406117-01</apd:ClientClaimNumber>
+      <apd:ClaimId>100005652694</apd:ClaimId>
+      <apd:WorkItemId>est_BS_95054638_20150406052918_18-RB0406117-01_~0~927114</apd:WorkItemId>
+      <apd:DateTime>2015-04-06T05:30:11.522-07:00</apd:DateTime>
+    </apd:APDCommonInfo>
+    <apd:Origin>CARR Standard Estimate Workflow</apd:Origin>
+    <apd:AlertType>ACCEPTED</apd:AlertType>
+    <apd:Message>Upload received.</apd:Message>
+    <apd:EclaimEstId>18-RB0406117-01</apd:EclaimEstId>
+    <apd:SupplementNumber>0</apd:SupplementNumber>
+    <apd:CorrectionNumber>0</apd:CorrectionNumber>
+    <apd:FolderAI>10</apd:FolderAI>
+    <apd:McfFileName>est_BS_95054638_20150406052918_18-RB0406117-01_~0~927114.MCF</apd:McfFileName>
+    <apd:McfPackageType>MCF_XML_MIE_ESTIMATE</apd:McfPackageType>
+    <apd:NoEstimateReviewFlag>false</apd:NoEstimateReviewFlag>
+    <apd:EstimateDate>2014-12-30T17:58:08</apd:EstimateDate>
+    <apd:TaskID>100005088639</apd:TaskID>
+  </apd:APDAlertInfo>
+</apd:APDDeliveryContext>

@@ -1,0 +1,12 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="AssignmentDeliverySmokeTest" nillable="false">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TestUserId" type="xs:string"/>
+				<xs:element name="TestCompanyCode" type="xs:string"/>
+				<xs:element name="TestGuid" type="xs:string"/>
+				<xs:element name="TestBMSFile" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

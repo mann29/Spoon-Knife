@@ -1,0 +1,358 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>assignment-delivery</groupId>
+    <artifactId>assignment-delivery-service-pom</artifactId>
+    <version>1.0.0.0</version>
+  </parent>
+
+  <artifactId>assignment-delivery-ejb</artifactId>
+  <name>assignment-delivery-ejb</name>
+  <description>Assignment Delivery EJB</description>
+  <version>1.0.0.0</version>
+  <packaging>ejb</packaging>
+
+  <dependencies>
+	
+	<!-- System Provided -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>mockito-all</groupId>
+      <artifactId>mockito-all</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>${jbossall-client.groupId}</groupId>
+      <artifactId>${jbossall-client.artifactId}</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.ejb</groupId>
+      <artifactId>ejb-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+		
+   <dependency>
+   	<groupId>com.oracle</groupId>
+      	<artifactId>ojdbc6</artifactId>
+      	<scope>provided</scope>
+    </dependency>
+
+		<dependency>
+      <groupId>org.apache.xmlbeans</groupId>
+      <artifactId>xmlbeans</artifactId>
+      <scope>provided</scope>
+    </dependency>
+	<dependency>  
+     <groupId>common-xml-schema</groupId>  
+     <artifactId>apd-delivery-axmlb</artifactId>  
+	</dependency>
+	
+		
+	<dependency>
+        <groupId>error-logging</groupId>
+        <artifactId>error-logging-client</artifactId>
+     </dependency>
+	 <dependency>
+	 	 	<artifactId>assignment-delivery-schema-axmlb</artifactId>
+  			<groupId>assignment-delivery</groupId>	 
+	 </dependency>
+	 
+  
+  
+	<!-- Mitchell Services -->
+	 <dependency>
+      <groupId>mitchell-common</groupId>
+      <artifactId>mitchell-common</artifactId>
+    </dependency>
+	
+  <dependency>  
+    <groupId>common-xml-schema</groupId>  
+    <artifactId>cieca-bms-2.10.0-extended-axmlb</artifactId>  
+   </dependency> 
+ 	<!-- This Application -->
+ <dependency>  
+    <groupId>common-xml-schema</groupId>  
+    <artifactId>additional-appraisal-assignment-info-axmlb</artifactId>  
+</dependency> 
+
+	<dependency>
+		<groupId>work-assignment</groupId>
+		<artifactId>work-assignment-client</artifactId>
+	</dependency>
+		
+	<dependency>
+		<groupId>work-assignment</groupId>
+		<artifactId>work-assignment-schema-axmlb</artifactId>
+	</dependency>
+
+	<dependency>  
+		<groupId>mcf-service</groupId>  
+		<artifactId>mcf-service-client</artifactId>  
+		 
+	</dependency> 
+
+	<dependency>  
+		<groupId>mcf-service</groupId>  
+		<artifactId>mcf-service-schema-axmlb</artifactId>  
+		
+	</dependency> 
+	
+	<dependency>  
+		<groupId>estimate-package</groupId>  
+		<artifactId>estimate-package-client</artifactId>  
+	</dependency>
+
+	<dependency>  
+		<groupId>estimate-package</groupId>  
+		<artifactId>estimate-package-schema-axmlb</artifactId>  
+   </dependency> 
+
+	<dependency>  
+			<groupId>ecinbox-service</groupId>  
+			<artifactId>ecinbox-schema-axmlb</artifactId>  
+	</dependency> 
+
+	<dependency>  
+		<groupId>ecinbox-service</groupId>  
+		<artifactId>ecinbox-client</artifactId>  
+	</dependency> 
+<dependency>  
+    <groupId>document-store</groupId>  
+    <artifactId>document-store-client</artifactId>  
+   
+</dependency> 
+<dependency>  
+    <groupId>document-store</groupId>  
+    <artifactId>document-archive-tool-schema-axmlb</artifactId>  
+ 
+</dependency> 
+<dependency>  
+    <groupId>ecalert-service</groupId>  
+    <artifactId>ecalert-schema-axmlb</artifactId>  
+    
+</dependency> 
+<dependency>  
+    <groupId>ecalert-service</groupId>  
+    <artifactId>ecalert-client</artifactId>  
+ 
+</dependency> 
+<dependency>  
+    <groupId>file-archive</groupId>  
+    <artifactId>file-archive-schema-axmlb</artifactId>  
+ 
+</dependency> 
+<dependency>  
+    <groupId>file-archive</groupId>  
+    <artifactId>file-archive-client</artifactId>  
+   
+</dependency> 
+
+<dependency>  
+    <groupId>appraisal-assignment-service</groupId>  
+    <artifactId>supplement-request-email-schema-axmlb</artifactId>  
+</dependency> 
+
+<dependency>  
+    <groupId>appraisal-assignment-service</groupId>  
+    <artifactId>appraisal-assignment-schema-axmlb</artifactId>  
+</dependency> 
+<dependency>  
+    <groupId>appraisal-assignment-service</groupId>  
+    <artifactId>appraisal-assignment-client</artifactId>  
+</dependency>
+
+<dependency>  
+    <groupId>transformation</groupId>  
+    <artifactId>transformation-schema-axmlb</artifactId>  
+</dependency> 
+
+<dependency>  
+    <groupId>transformation</groupId>  
+    <artifactId>transformation-client</artifactId>  
+</dependency> 
+
+<dependency>  
+    <groupId>mum-framework</groupId>  
+    <artifactId>cieca-bms-to-mie-schema-axmlb</artifactId>  
+</dependency> 
+
+<dependency>  
+    <groupId>mum-framework</groupId>  
+    <artifactId>cieca-bms-to-mie</artifactId>
+ </dependency> 
+
+<dependency>  
+    <groupId>mum-framework</groupId>  
+    <artifactId>mum-common</artifactId>  
+ </dependency> 
+
+<dependency>  
+    <groupId>mum-framework</groupId>  
+    <artifactId>mum-common-schema-axmlb</artifactId>  
+ </dependency> 
+ 
+ <dependency>  
+    <groupId>common-xml-schema</groupId>  
+    <artifactId>doc-store-1.50-axmlb</artifactId>  
+ </dependency> 
+
+ <dependency>  
+    <groupId>work-process</groupId>  
+    <artifactId>work-process-schema-axmlb</artifactId>  
+  </dependency> 
+  
+  <dependency>  
+    <groupId>work-process</groupId>  
+    <artifactId>work-process-client</artifactId>  
+</dependency> 
+
+<dependency>  
+    <groupId>common-xml-schema</groupId>  
+    <artifactId>work-process-axmlb</artifactId>  
+</dependency> 
+
+<dependency>  
+    <groupId>common-xml-schema</groupId>  
+    <artifactId>artifact-context-axmlb</artifactId>  
+</dependency> 
+
+
+<dependency>  
+    <groupId>transactional-file</groupId>  
+    <artifactId>transactional-file-schema-axmlb</artifactId>  
+</dependency> 
+
+<dependency>  
+    <groupId>transactional-file</groupId>  
+    <artifactId>transactional-file-client</artifactId>  
+</dependency> 
+
+<dependency>  
+    <groupId>sequence-gen</groupId>  
+    <artifactId>sequence-gen-client</artifactId>  
+</dependency> 
+
+<dependency>  
+    <groupId>mum-framework</groupId>  
+    <artifactId>mie-schema-axmlb</artifactId>  
+</dependency>
+
+<dependency>  
+    <groupId>mum-framework</groupId>  
+    <artifactId>mie-mum</artifactId>  
+</dependency> 
+
+<dependency>  
+    <groupId>com.lowagie</groupId>  
+    <artifactId>itext</artifactId>  
+</dependency> 
+
+	<dependency>  
+		<groupId>common-xml-schema</groupId>  
+		<artifactId>additional-task-constraints-axmlb</artifactId>  
+	</dependency> 
+
+	<dependency>
+			<groupId>app-logging</groupId>
+			<artifactId>app-logging-client</artifactId>
+	</dependency>
+	
+	<dependency>
+			<groupId>app-logging</groupId>
+			<artifactId>app-logging-schema-axmlb</artifactId>
+	 </dependency>
+	  
+  <dependency>  
+    <groupId>common-xml-schema</groupId>  
+    <artifactId>nicb-v1.00-axmlb</artifactId>  
+   </dependency> 
+
+	<dependency>  
+		<groupId>system-configuration</groupId>  
+		<artifactId>system-configuration</artifactId>
+		<scope>provided</scope>		
+	</dependency> 
+	
+	<dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>assignment-delivery-java</artifactId>
+      <version>1.0.0.0</version>
+    </dependency>
+	
+	<!-- Test Only -->
+
+		<dependency>
+		  <groupId>jmock</groupId>
+		  <artifactId>jmock-cglib</artifactId>
+		  <scope>test</scope>
+		</dependency>
+
+        <dependency>
+          <groupId>org.mockito</groupId>
+          <artifactId>mockito-all</artifactId>
+          <scope>test</scope>
+        </dependency>
+		
+		<dependency>
+		  <groupId>jmock</groupId>
+		  <artifactId>jmock</artifactId>
+		  <scope>test</scope>
+		</dependency>
+		
+		<dependency> 
+		    <groupId>junit</groupId> 
+		    <artifactId>junit</artifactId> 
+		    <scope>test</scope>
+		</dependency> 
+		
+		<dependency>
+		  <groupId>org.powermock</groupId>
+		  <artifactId>powermock-api-mockito</artifactId>
+		  <scope>test</scope>
+		</dependency>
+		
+		<dependency>
+		  <groupId>org.powermock</groupId>
+		  <artifactId>powermock-core</artifactId>
+		   <scope>test</scope>
+		</dependency>
+		
+		<dependency>
+		  <groupId>org.powermock</groupId>
+		  <artifactId>powermock-module-junit4</artifactId>
+		  <scope>test</scope>
+	   </dependency>
+	   
+	   <dependency>
+      <groupId>standard-assignment-common</groupId>
+      <artifactId>common-java</artifactId>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-ejb-plugin</artifactId>
+        <configuration>
+          <generateClient>false</generateClient>
+          <ejbVersion>3.0</ejbVersion>
+        </configuration>
+      </plugin>
+
+    </plugins>
+     </build>
+
+
+</project>

@@ -1,0 +1,125 @@
+<apd:APDDeliveryContext Version="1.0" xmlns:apd="http://www.mitchell.com/schemas/apddelivery">
+  <apd:MessageType>ALERT</apd:MessageType>
+  <apd:APDAlertInfo>
+    <apd:APDCommonInfo>
+      <apd:InsCoCode>I9</apd:InsCoCode>
+      <apd:SourceUserInfo>
+        <apd:UserInfo xmlns:typ="http://www.mitchell.com/common/types">
+          <typ:OrgID>387247</typ:OrgID>
+          <typ:OrgCode>BS</typ:OrgCode>
+          <typ:UserID>95000460</typ:UserID>
+          <typ:Guid>1234567890</typ:Guid>
+          <typ:FirstName>SCRUMptious</typ:FirstName>
+          <typ:LastName>shop</typ:LastName>
+          <typ:Email>shawn.mcdougal@mitchell.com</typ:Email>
+          <typ:UserHier>
+            <typ:HierNode Level="COMPANY" Name="" Code="BS" ID="307">
+              <typ:HierNode Level="OFFICE" Name="SCRUMptious shop" Code="56005" ID="387246">
+                <typ:HierNode Level="USER" Name="SCRUMptious shop" Code="95000460" ID="387247"/>
+              </typ:HierNode>
+            </typ:HierNode>
+          </typ:UserHier>
+          <typ:AppCode>NETACT</typ:AppCode>
+          <typ:AppCode>WCVACS</typ:AppCode>
+          <typ:AppCode>WCVSB</typ:AppCode>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>I9</typ:CompanyID>
+            <typ:CompanyName>DESJARDINS GROUP GENERAL INS</typ:CompanyName>
+            <typ:UserID>11021999</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>OA</typ:CompanyID>
+            <typ:CompanyName>CSAA Insurance Group</typ:CompanyName>
+            <typ:UserID>OA056004</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>SF</typ:CompanyID>
+            <typ:CompanyName>STATE FARM INSURANCE COMPANIES</typ:CompanyName>
+            <typ:UserID>11021999</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:StaffType>ESTIMATOR</typ:StaffType>
+        </apd:UserInfo>
+      </apd:SourceUserInfo>
+      <apd:TargetUserInfo>
+        <apd:UserInfo xmlns:typ="http://www.mitchell.com/common/types">
+          <typ:OrgID>402450</typ:OrgID>
+          <typ:OrgCode>I9</typ:OrgCode>
+          <typ:UserID>11021999</typ:UserID>
+          <typ:Guid>123456789</typ:Guid>
+          <typ:FirstName>SCRUMptious</typ:FirstName>
+          <typ:LastName>BS</typ:LastName>
+          <typ:Email>SCRUMptious@mitchell.com</typ:Email>
+          <typ:UserHier>
+            <typ:HierNode Level="COMPANY" Name="DESJARDINS GROUP GENERAL INS" Code="I9" ID="443">
+              <typ:HierNode Level="REGION" Name="Mitchell" Code="MX" ID="402362">
+                <typ:HierNode Level="DIVISION" Name="Mitchell" Code="MX" ID="402363">
+                  <typ:HierNode Level="OFFICE" Name="Mitchell" Code="MMX" ID="402364">
+                    <typ:HierNode Level="USER" Name="SCRUMptious BS" Code="11021999" ID="402450"/>
+                  </typ:HierNode>
+                </typ:HierNode>
+              </typ:HierNode>
+            </typ:HierNode>
+          </typ:UserHier>
+          <typ:AppCode>CMAPES</typ:AppCode>
+          <typ:AppCode>CPUPDN</typ:AppCode>
+          <typ:AppCode>NETACT</typ:AppCode>
+          <typ:StaffType>ADMINISTRATOR</typ:StaffType>
+        </apd:UserInfo>
+      </apd:TargetUserInfo>
+      <apd:TargetDRPUserInfo>
+        <apd:UserInfo xmlns:typ="http://www.mitchell.com/common/types">
+          <typ:OrgID>387247</typ:OrgID>
+          <typ:OrgCode>BS</typ:OrgCode>
+          <typ:UserID>95000460</typ:UserID>
+          <typ:Guid>1234567890</typ:Guid>
+          <typ:FirstName>SCRUMptious</typ:FirstName>
+          <typ:LastName>shop</typ:LastName>
+          <typ:Email>shawn.mcdougal@mitchell.com</typ:Email>
+          <typ:UserHier>
+            <typ:HierNode Level="COMPANY" Name="" Code="BS" ID="307">
+              <typ:HierNode Level="OFFICE" Name="SCRUMptious shop" Code="56005" ID="387246">
+                <typ:HierNode Level="USER" Name="SCRUMptious shop" Code="95000460" ID="387247"/>
+              </typ:HierNode>
+            </typ:HierNode>
+          </typ:UserHier>
+          <typ:AppCode>NETACT</typ:AppCode>
+          <typ:AppCode>WCVACS</typ:AppCode>
+          <typ:AppCode>WCVSB</typ:AppCode>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>I9</typ:CompanyID>
+            <typ:CompanyName>DESJARDINS GROUP GENERAL INS</typ:CompanyName>
+            <typ:UserID>11021999</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>OA</typ:CompanyID>
+            <typ:CompanyName>CSAA Insurance Group</typ:CompanyName>
+            <typ:UserID>OA056004</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>SF</typ:CompanyID>
+            <typ:CompanyName>STATE FARM INSURANCE COMPANIES</typ:CompanyName>
+            <typ:UserID>11021999</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:StaffType>ESTIMATOR</typ:StaffType>
+        </apd:UserInfo>
+      </apd:TargetDRPUserInfo>
+      <apd:ClaimNumber>18-RB0331013-01</apd:ClaimNumber>
+      <apd:ClientClaimNumber>18-RB0331013-01</apd:ClientClaimNumber>
+      <apd:ClaimId>100005649991</apd:ClaimId>
+      <apd:WorkItemId>est_BS_95000460_20150331020232_18-RB0331013-01_~0~511354</apd:WorkItemId>
+      <apd:DateTime>2015-03-31T02:03:17.948-07:00</apd:DateTime>
+    </apd:APDCommonInfo>
+    <apd:Origin>CARR Standard Estimate Workflow</apd:Origin>
+    <apd:AlertType>ACCEPTED</apd:AlertType>
+    <apd:Message>Upload received.</apd:Message>
+    <apd:EclaimEstId>18-RB0331013-01</apd:EclaimEstId>
+    <apd:SupplementNumber>0</apd:SupplementNumber>
+    <apd:CorrectionNumber>0</apd:CorrectionNumber>
+    <apd:FolderAI>10</apd:FolderAI>
+    <apd:McfFileName>est_BS_95000460_20150331020232_18-RB0331013-01_~0~511354.MCF</apd:McfFileName>
+    <apd:McfPackageType>MCF_XML_MIE_ESTIMATE</apd:McfPackageType>
+    <apd:NoEstimateReviewFlag>false</apd:NoEstimateReviewFlag>
+    <apd:EstimateDate>2014-12-28T14:31:18</apd:EstimateDate>
+    <apd:TaskID>100005085036</apd:TaskID>
+  </apd:APDAlertInfo>
+</apd:APDDeliveryContext>

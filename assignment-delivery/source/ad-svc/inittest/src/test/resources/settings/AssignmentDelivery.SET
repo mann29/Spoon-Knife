@@ -1,0 +1,58 @@
+<AssignmentDelivery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="AssignmentDelivery.xsd">
+  <FileArchive>
+    <StagingSubDir>/assignmentdelivery/fcs</StagingSubDir>
+  </FileArchive>
+  <BmsToMie>
+    <TempDir>${NAS_APPLICATION_DIRECTORY_PATH}/mitchell/applications/SIP/AssignmentDelivery</TempDir>
+  </BmsToMie>
+  <Handlers>
+    <ECLAIM_MCFXML>com.mitchell.services.business.partialloss.assignmentdelivery.handler.impl.eclaim.EClaimDeliveryHandler</ECLAIM_MCFXML>
+    <ARC7>com.mitchell.services.business.partialloss.assignmentdelivery.handler.impl.arc7.ARC7DeliveryHandler</ARC7>
+    <ARC5>com.mitchell.services.business.partialloss.assignmentdelivery.handler.impl.arc5.ARC5DeliveryHandler</ARC5>
+  </Handlers>
+  <AlertMessages>
+	<CancellationAlertMsg>Appraisal Assignment has been cancelled for Claim Number: [ </CancellationAlertMsg>
+  </AlertMessages>  
+  <Arc5>
+    <CopyDir>${NAS_APPLICATION_DIRECTORY_PATH}/organizations/sf/arc5asmtmie</CopyDir>
+  </Arc5>
+  <Hostname/>
+  <ConvSuppToOrigNoticeFilePath>${NAS_APPLICATION_DIRECTORY_PATH}/organizations/mx/templates/SupplementRequest/Convert_Supp_To_Original_Notice.txt</ConvSuppToOrigNoticeFilePath>
+  <Notification>
+	<Error>
+		<Email>
+			<FromDisplayName>Mitchell Support</FromDisplayName>
+			<FromAddr>mitchell@mitchell.com</FromAddr>
+		</Email>
+		<Fax>
+			<FromName>Mitchell Support</FromName>
+			<FromAddr>mitchell@mitchell.com</FromAddr>
+			<FromNumber>858-578-6550</FromNumber>
+		</Fax>
+	</Error>
+	<Primary>
+		<Email>
+			<FromDisplayName>Mitchell Support</FromDisplayName>
+			<FromAddr>mitchell@mitchell.com</FromAddr>
+		</Email>
+		<Fax>
+		<FromName>Mitchell Support</FromName>
+			<FromAddr>mitchell@mitchell.com</FromAddr>
+			<FromNumber>858-578-6550</FromNumber>
+		</Fax>
+	</Primary>
+ </Notification>    
+ <Options>
+	<SimpleNotificationFlag>true</SimpleNotificationFlag>
+ </Options>
+ <Cleanup>true</Cleanup>
+    <AssignmentEmail>
+        <URLLink>${MYMITCHELL_HTTPS_URL}/EnterPrisePortal/EEPAssignments/Authentication.aspx</URLLink>
+        <XSLTPath>${NAS_APPLICATION_DIRECTORY_PATH}/organizations/default/templates/emails/AssignmentEmail.xslt</XSLTPath>
+        <CreationSubject>assignment created</CreationSubject>
+        <CancelSubject>assignment canceled</CancelSubject>
+        <FromAddress>donot_reply@mitchell.com</FromAddress>
+        <FromDisplayName>donot_reply@mitchell.com</FromDisplayName>
+		<URLLink4DRP>${MYMITCHELL_HTTPS_URL}</URLLink4DRP>
+    </AssignmentEmail>
+</AssignmentDelivery>

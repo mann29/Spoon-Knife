@@ -1,0 +1,6 @@
+<AssignmentDeliverySmokeTest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="AssignmentDeliverySmokeTest.XSD">
+   <TestUserId>M2DIS10</TestUserId>
+   <TestCompanyCode>M2</TestCompanyCode>
+   <TestGuid>guid</TestGuid>
+   <TestBMSFile>D:\temp\sample_bms.xml</TestBMSFile>
+</AssignmentDeliverySmokeTest>

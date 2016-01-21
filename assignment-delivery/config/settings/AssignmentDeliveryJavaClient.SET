@@ -1,0 +1,7 @@
+<AssignmentDeliveryJavaClient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="AssignmentDeliveryJavaClient.xsd">
+	<JNDI>
+		<ProviderUrl>${J2EE_PROVIDER_URL}</ProviderUrl>
+<EJBName>com.mitchell.services.business.partialloss.assignmentdelivery.AssignmentDeliveryRemote</EJBName>
+		<JNDIFactory>org.jnp.interfaces.NamingContextFactory</JNDIFactory>
+	</JNDI>
+</AssignmentDeliveryJavaClient>

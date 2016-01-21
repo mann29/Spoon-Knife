@@ -1,0 +1,196 @@
+<EmailRequest xmlns="http://www.mitchell.com/services/core/notification/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Message>
+    <Type xsi:nil="true"/>
+    <Body>
+      <Text>
+      <![CDATA[<html xmlns:mxs="http://www.mitchell.com/schemas/assignmentdelivery">
+			<head>
+			<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<style type="text/css">
+			a {text-decoration:underline;color:#0072bc}
+			a:link, a:visited, a:active, a.link:visited; a.link:link {text-decoration:underline;color:#869311}
+			a:hover, a.link:hover {text-decoration:underline;}
+			</style>
+			</head>
+			<body style="background-color:#999; padding:0; margin: 0;">
+			<table style="background-color:#999; margin:0; padding:0;" cellpadding="20" align="center" width="100%">
+			<table align="center" style=" font-family: Verdana, Geneva, sans-serif; background-color:#fff;" cellspacing="0" cellpadding="5" width="724">
+			<tr>
+			<td align="center">
+			<table cellpadding="0" cellspacing="0" width="710">
+			<tr>
+			<td align="center" width="600">
+			<table style="background-color:#fff" cellspacing="0" cellpadding="5" align="center" border="0" width="710">
+			<tr bgcolor="#FFFFFF">
+			<td colspan="2"><img alt="Mitchell WorkCenter" height="81" width="700" src="http://www.mitchell.com/emarketing/images/generic-email-header.jpg"></td>
+			</tr>
+			<tr>
+			<td align="right"><a name="French"></a><a style="font-family:verdana; font-size:80%;" title="Click to view mail in English" href="#English">View email in English</a></td>
+			</tr>
+			<tr>
+			<td style="text-align:left; padding-left:35px; padding-top:25px; padding-right:35px; padding-bottom:15px; font-family: Verdana, Geneva, sans-serif; color: #333; font-size: 12px;" valign="top" colspan="2">
+			<p style="line-height:22px; font-size:16px; color:#72a493; font-weight:bold" class="text">Nouvelle assignation</p>
+			<p style="line-height:22px; color:#333333" class="text">L'assignation d'&eacute;valuation suivante vous a &eacute;t&eacute; attribu&eacute;e Assignation de l'&eacute;valuation</p>
+			<p style="line-height:22px; color:#333333" class="text">Si vous n'utilisez pas RC Connect pour communiquer avec cet assureur, veuillez ignorer ce courriel. <ul>
+			<li>EXCEPTION&nbsp;: si vous &ecirc;tes un r&eacute;parateur hors r&eacute;seau recevant une assignation pour cette compagnie d'assurance, veuillez conserver ce courriel. Il contient le seul lien que vous recevrez pour acc&eacute;der aux renseignements.</li>
+			</ul>
+			</p>
+			<p style="line-height:22px; color:#333333; font-weight: bold;" class="text">Renseignements administratifs/sur le v&eacute;hicule<hr>
+			</p>
+			<table style="line-height:22px; color:#333333; font-size: 10pt; font-family: Verdana, Geneva, sans-serif;" class="text">
+			<tr>
+			<td width="200" style="font-weight: bold; text-align: right; vertical-align: top">
+															Type de couverture&nbsp;:
+														</td><td style="vertical-align: top">Collision</td>
+			</tr>
+			<tr>
+			<td style="font-weight: bold; text-align: right; vertical-align: top">
+															Nom du contact&nbsp;:
+														</td><td style="vertical-align: top">sdf</td>
+			</tr>
+			<tr>
+			<td style="font-weight: bold; text-align: right; vertical-align: top">
+															Marque du v&eacute;hicule&nbsp;:
+														</td><td style="vertical-align: top">, Mod&egrave;le , Ann&eacute;e </td>
+			</tr>
+			<tr>
+			<td style="font-weight: bold; text-align: right; vertical-align: top">
+															Point d'impact&nbsp;:
+														</td><td style="vertical-align: top"></td>
+			</tr>
+			<tr>
+			<td style="font-weight: bold; text-align: right; vertical-align: top">
+															M&eacute;mo dommages&nbsp;:
+														</td><td style="vertical-align: top"></td>
+			</tr>
+			<tr>
+			<td style="font-weight: bold; text-align: right; vertical-align: top">
+															M&eacute;mo assignation&nbsp;:
+														</td><td style="vertical-align: top"></td>
+			</tr>
+			<tr>
+			<td style="font-weight: bold; text-align: right; vertical-align: top">
+															Pr&eacute;f&eacute;rence de date&nbsp;:
+														</td><td style="vertical-align: top"></td>
+			</tr>
+			</table>
+			<br>
+			<hr>
+			<br>
+			<p>
+			<a style="line-height:22px; font-size:16px; font-weight:bold" href="https://www-dev.mymitchell.com/EnterPrisePortal/EEPAssignments/Authentication.aspx?coCd=OA&amp;taskId=100005243085">Afficher l'assignation compl&egrave;te</a>
+			<br> Veuillez cliquer sur le lien suivant et entrer le num&eacute;ro d'identification du v&eacute;hicule associ&eacute; &agrave; ce sinistre.
+			                                                              </p>
+			<p style="line-height:22px; color:#333333" class="text">Cordialement, <br>CSAA Insurance Group</p>
+			</td>
+			</tr>
+			</table>
+			</td>
+			</tr>
+			</table>
+			</td>
+			</tr>
+			<tr>
+			<td valign="middle" width="500"></td>
+			</tr>
+			</table>
+			<table align="center" style=" font-family: Verdana, Geneva, sans-serif; background-color:#fff;" cellspacing="0" cellpadding="5" width="724">
+			<hr style="color:#04B4AE; height:1px;">
+			<tr>
+			<td align="center">
+			<table cellpadding="0" cellspacing="0" width="710">
+			<tr>
+			<td align="center" width="600">
+			<table style="background-color:#fff" cellspacing="0" cellpadding="5" align="center" border="0" width="710">
+			<tr>
+			<td colspan="2"></td>
+			</tr>
+			<tr>
+			<td align="right"><a name="English"></a><a style="font-family:verdana; font-size:80%;" title="Click to view mail in French" href="#French">Visualiser le courriel en Fran&ccedil;ais</a></td>
+			</tr>
+			<tr>
+			<td style="text-align:left; padding-left:35px; padding-top:25px; padding-right:35px; padding-bottom:15px; font-family: Verdana, Geneva, sans-serif; color: #333; font-size: 12px;" valign="top" colspan="2">
+			<p style="line-height:22px; font-size:16px; color:#72a493; font-weight:bold" class="text">New Assignment</p>
+			<p style="line-height:22px; color:#333333" class="text">You have been assigned the following Appraisal Assignment</p>
+			<p style="line-height:22px; color:#333333" class="text">If you don't use RC Connect to communicate with this carrier please disregard this email
+			                                                              <ul>
+			<li>EXCEPTION: If you are a Non-Network shop receiving an assignment for this carrier, please save this email. It is the only link you will receive to access the information.</li>
+			</ul>
+			</p>
+			<p style="line-height:22px; color:#333333; font-weight: bold;" class="text">Administrative/Vehicle Information<hr>
+			</p>
+			<table style="line-height:22px; color:#333333; font-size: 10pt; font-family: Verdana, Geneva, sans-serif;" class="text">
+			<tr>
+			<td width="150" style="font-weight: bold; text-align: right; vertical-align: top">
+			                                                                                  Coverage Type:
+			                                                                           </td><td style="vertical-align: top">Collision</td>
+			</tr>
+			<tr>
+			<td style="font-weight: bold; text-align: right; vertical-align: top">
+			                                                                                  Contact Name:
+			                                                                           </td><td style="vertical-align: top">sdf</td>
+			</tr>
+			<tr>
+			<td style="font-weight: bold; text-align: right; vertical-align: top">
+			                                                                                  Vehicle Make:
+			                                                                           </td><td style="vertical-align: top">, Model , Year </td>
+			</tr>
+			<tr>
+			<td style="font-weight: bold; text-align: right; vertical-align: top">
+			                                                                                  Point of Impact:
+			                                                                           </td><td style="vertical-align: top"></td>
+			</tr>
+			<tr>
+			<td style="font-weight: bold; text-align: right; vertical-align: top">
+			                                                                                  Damage Memo:
+			                                                                           </td><td style="vertical-align: top"></td>
+			</tr>
+			<tr>
+			<td style="font-weight: bold; text-align: right; vertical-align: top">
+			                                                                                  Assignment Memo:
+			                                                                           </td><td style="vertical-align: top"></td>
+			</tr>
+			<tr>
+			<td style="font-weight: bold; text-align: right; vertical-align: top">
+			                                                                                  Date Preference:
+			                                                                           </td><td style="vertical-align: top"></td>
+			</tr>
+			</table>
+			<br>
+			<hr>
+			<br>
+			<p>
+			<a style="line-height:22px; font-size:16px; font-weight:bold" href="https://www-dev.mymitchell.com/EnterPrisePortal/EEPAssignments/Authentication.aspx?coCd=OA&amp;taskId=100005243085">View full assignment</a>
+			<br>
+			                                                              Click the link above and enter the Vehicle Identification Number associated with this claim.
+			                                                              </p>
+			<p style="line-height:22px; color:#333333" class="text">Regards,<br>CSAA Insurance Group</p>
+			</td>
+			</tr>
+			</table>
+			</td>
+			</tr>
+			</table>
+			</td>
+			</tr>
+			<tr>
+			<td valign="middle" width="500"></td>
+			</tr>
+			</table>
+			</table>
+			</body>
+			</html>]]>
+	</Text>
+    </Body>
+  </Message>
+  <EmailParameter>
+    <FromEmailAddress>donot_reply@mitchell.com</FromEmailAddress>
+    <FromDisplayName>CSAA Insurance Group</FromDisplayName>
+    <To>himanshu.khanna@infogain.com</To>
+    <To>fdss@dsz.com</To>
+    <Subject>Nouvelle assignation-CSAA Insurance Group  pour le numéro de sinistre :WE4545-01. /
+
+New Assignment-CSAA Insurance Group for Claim:WE4545-01</Subject>
+    <MimeType>text/html</MimeType>
+  </EmailParameter>
+</EmailRequest>

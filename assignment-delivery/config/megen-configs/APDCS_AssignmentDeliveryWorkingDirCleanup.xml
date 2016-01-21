@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EventGenerator Disabled="false" Id="AssignmentDeliveryWorkingDirCleanup" Group="APD.PARTIALLOSS" Signature="23508fffc3b85cd8946a54ef2cb84fbe" Version="1.00" xmlns="http://www.mitchell.com/eventgenerator/beans">
+	<Description>
+        Every night at 4:05AM, scan the Assignment Delivery working directory and delete files older than 30 days.
+		<Details>
+			<Version>1.0.0.0</Version>
+			<Date>2015-03-24</Date>
+			<Author Id="rb0702" Name="Randy Bird" Email="Randy.Bird@mitchell.com"/>
+			<Organization Id="APD.PARTIALLOSS" Name="APD.PARTIALLOSS" Email="APD-TheSentinels@mitchell.com"/>
+			<Product>APD.PARTIALLOSS - AssignmentDeliveryWorkingDirCleanup</Product>
+			<Notes>
+				<Note Link="$/APD-PARTIALLOSS/Non_Compiled_Pkgs/megen-jobs" Type="TFS">Mitchell TFS Repository Location</Note>
+			</Notes>
+			<History>
+				<Revision Version="1.0.0.0" Date="2015-03-24" Author="rb0702">Add product info and TFS ref to job details</Revision>
+			</History>
+		</Details>
+	</Description>
+	<Trigger>
+		<!--Nightly at 4:50AM-->
+		<CronPattern>50 04 * * * ?</CronPattern>
+	</Trigger>
+	<EventScanner Type="DirectoryEventScanner" Id="ScanStep">
+		<Declarations>
+			<Variable Name="NAS_BASE" Type="SYSTEMCONFIGURATIONTOKEN">NAS_WORKFLOWS_DIRECTORY_PATH</Variable>
+			<Variable Name="ASSIGNMENT_DELIVERY_WORK_DIR" Type="JAVASCRIPT">'${NAS_BASE}' + '/mitchell/applications/SIP/AssignmentDelivery'</Variable>
+			<Parameter Name="Pattern">.*\.*</Parameter>
+			<Parameter Name="RegexPatternFlag">true</Parameter>
+			<Parameter Name="MaxEventsPerScan">2000</Parameter>
+			<Parameter Name="Directory">${ASSIGNMENT_DELIVERY_WORK_DIR}</Parameter>
+			<Parameter Name="FileType">FILE</Parameter>
+			<Parameter Name="FifoOrderingFlag">true</Parameter>
+			<!-- 30 days-->
+			<Parameter Name="MinAgeSecs">2592000</Parameter>
+		</Declarations>
+	</EventScanner>
+	<EventProcessor Type="FileSystemPlugin" Id="DeleteStep">
+		<Declarations>
+			<Variable Name="TargetFile" Type="CONTEXTREF">ScanStep.SourceFile</Variable>
+			<Parameter Name="FileSystemOperation">DELETE</Parameter>
+			<Parameter Name="InputFile">${TargetFile}</Parameter>
+		</Declarations>
+	</EventProcessor>
+</EventGenerator>

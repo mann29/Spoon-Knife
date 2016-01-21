@@ -1,0 +1,45 @@
+<app:AdditionalAppraisalAssignmentInfo xmlns:app="http://www.mitchell.com/schemas/appraisalassignment" xmlns:sch="http://www.mitchell.com/schemas" xmlns:apd="http://www.mitchell.com/schemas/apddelivery">
+  <app:AssignmentDetails>
+    <app:InspectionSiteType>SHOP</app:InspectionSiteType>
+    <app:SiteLocationId>392363</app:SiteLocationId>
+    <app:InspectionSiteGeoCode>
+      <app:AddressValidStatus>Valid</app:AddressValidStatus>
+      <app:Latitude>32.90467</app:Latitude>
+      <app:Longitude>-117.1133</app:Longitude>
+    </app:InspectionSiteGeoCode>
+    <app:PrimaryContactType>Insured</app:PrimaryContactType>
+    <app:IsTravelRequiredFlag>true</app:IsTravelRequiredFlag>
+    <app:VehicleLocationZIPCodeSource>Primary</app:VehicleLocationZIPCodeSource>
+  </app:AssignmentDetails>
+   <app:NotificationDetails>
+                      <app:NotificationEmailTo NotifyRecipients="true">
+    					  <app:EmailAddress>alok.sharma@mitchell.com</app:EmailAddress>
+					      <app:EmailAddress>radhika.verma@mitchell.com</app:EmailAddress>
+				   	 </app:NotificationEmailTo>
+				     <app:NotificationEmailCC NotifyRecipients="true">
+					      <app:EmailAddress>alok.sharma@mitchell.com</app:EmailAddress>
+					      <app:EmailAddress>radhika.verma@mitchell.com</app:EmailAddress>
+				     </app:NotificationEmailCC>
+  </app:NotificationDetails>
+  <app:MOIDetails>
+    <app:TempUserSelectedMOI>
+      <app:MethodOfInspection>NSDO</app:MethodOfInspection>
+      <app:ResourceSelectionDeferredFlag>false</app:ResourceSelectionDeferredFlag>
+      <app:MOIOrgID>392363</app:MOIOrgID>
+    </app:TempUserSelectedMOI>
+    <app:UserSelectedMOI>
+      <app:MethodOfInspection>NSDO</app:MethodOfInspection>
+      <app:ResourceSelectionDeferredFlag>false</app:ResourceSelectionDeferredFlag>
+      <app:MOIOrgID>392363</app:MOIOrgID>
+    </app:UserSelectedMOI>
+  </app:MOIDetails>
+  <app:AdditionalAssignmentDetails>
+    <app:IsCAT>false</app:IsCAT>
+  </app:AdditionalAssignmentDetails>
+  <app:AssignmentSaveStep>ASSIGNMENT_DETAILS</app:AssignmentSaveStep>
+  <app:PropertyInfo>
+    <app:PropertyDamageAssignment>
+      <app:PropertyType>MTR_VEH</app:PropertyType>
+    </app:PropertyDamageAssignment>
+  </app:PropertyInfo>
+</app:AdditionalAppraisalAssignmentInfo>

@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <!-- APD Super Pom is Parent -->
+  <parent>
+    <groupId>com.mitchell.maven.apd</groupId>
+    <artifactId>super-pom</artifactId>
+    <version>1.0.0.0</version>
+	  <relativePath>..</relativePath>
+  </parent>
+  
+  <!-- Service Root Pom Identification -->
+  <groupId>assignment-delivery</groupId>
+  <artifactId>assignment-delivery-root-pom</artifactId>
+  <version>1.0.0.0</version>
+  <packaging>pom</packaging>
+  <name>assignment-delivery</name>
+  <description>
+    Assignment Delivery Service.
+  </description>
+    
+  <!-- ******************** Site Information ********************* -->	
+  <distributionManagement>
+    <site>
+      <id>www.mitchell.com</id>
+      <url>scp://http://localhost:7080//docs/assignment-delivery</url>
+    </site>
+  </distributionManagement>
+
+  <developers>
+    <developer>
+      <id>ClaimSolutions</id>
+      <organization>APD</organization>
+    </developer>         
+  </developers>
+
+  <!-- Sub-Modules -->
+  <modules>
+    <module>source</module>
+  </modules>
+  
+</project>

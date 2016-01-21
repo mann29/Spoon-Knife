@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+   <properties>
+      <title>Assignment Delivery Service</title>
+      <author email="darren.kessler@mitchell.com">Darren Kessler</author>
+   </properties>
+   <body>
+   
+      <release version="2014.4" date="9/23/2014" description="PSI-2014.4">    
+		<action dev="Darren Kessler" type="add">
+          Added logic to remove control and multi-byte characters from specific BMS fields prior to invoking the BMS To MIE Transformation. Bug #412037. 9/23/2014.		  
+        </action>
+      </release>
+   
+      <release version="1.0.0.0" date="8/27/2013" description="JBoss Version.">    
+		<action dev="Darren Kessler" type="add">
+          Added logic to truncate FAX Subject and FromName. 8/27/2013.		  
+        </action>
+		<action dev="Vinod Yachareni" type="add">
+          Changed the Subject in the AssignmentEmail.xlst to have fewer fixed characters. 8/28/2013.		  
+        </action> 
+      </release>
+   </body>
+</document>
+

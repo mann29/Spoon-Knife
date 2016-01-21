@@ -1,0 +1,194 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>assignment-delivery</groupId>
+    <artifactId>assignment-delivery-service-pom</artifactId>
+    <version>1.0.0.0</version>
+    <relativePath>..</relativePath>
+  </parent>
+
+  <artifactId>assignment-delivery-java</artifactId>
+  <name>assignment-delivery-java</name>
+  <description>Assignment Delivery Java</description>
+  <packaging>jar</packaging>
+
+  <dependencies>
+
+    <!-- System Provided -->
+
+    <dependency>
+      <groupId>${jbossall-client.groupId}</groupId>
+      <artifactId>${jbossall-client.artifactId}</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.xmlbeans</groupId>
+      <artifactId>xmlbeans</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.oracle</groupId>
+      <artifactId>ojdbc6</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- Mitchell -->
+
+    <dependency>
+      <groupId>mitchell-common</groupId>
+      <artifactId>mitchell-common</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>common-xml-schema</groupId>
+      <artifactId>apd-delivery-axmlb</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>common-xml-schema</groupId>
+      <artifactId>cieca-bms-2.10.0-extended-axmlb</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>error-logging</groupId>
+      <artifactId>error-logging-client</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>error-logging</groupId>
+      <artifactId>error-logging-schema-axmlb</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>app-logging</groupId>
+      <artifactId>app-logging-client</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>app-logging</groupId>
+      <artifactId>app-logging-schema-axmlb</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>system-configuration</groupId>
+      <artifactId>system-configuration</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>custom-settings</groupId>
+      <artifactId>custom-settings-client</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>custom-settings</groupId>
+      <artifactId>custom-settings-schema-axmlb</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>mitchell-common</groupId>
+      <artifactId>mitchell-common-envelope</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>notification</groupId>
+      <artifactId>notification-client</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>notification</groupId>
+      <artifactId>notification-schema-axmlb</artifactId>
+    </dependency>
+
+
+    <dependency>
+      <groupId>user-info</groupId>
+      <artifactId>user-info-schema-axmlb</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>user-info</groupId>
+      <artifactId>user-info-client</artifactId>
+
+    </dependency>
+    <!-- This Application -->
+
+    <dependency>
+      <groupId>springframework</groupId>
+      <artifactId>spring</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>aopalliance</groupId>
+      <artifactId>aopalliance</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>message-bus</groupId>
+      <artifactId>message-bus-schema-axmlb</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>message-bus</groupId>
+      <artifactId>message-bus-api</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>ecinbox-service</groupId>
+      <artifactId>ecinbox-schema-axmlb</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>common-xml-schema</groupId>
+      <artifactId>mcf-36-estimate-axmlb</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>mcf-service</groupId>
+      <artifactId>mcf-service-client</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>ecinbox-service</groupId>
+      <artifactId>ecinbox-client</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-all</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>integration-test-helper</groupId>
+      <artifactId>integration-test-helper-client</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+
+
+</project>
