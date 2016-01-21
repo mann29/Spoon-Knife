@@ -1,0 +1,49 @@
+TO: $APPRAISER_NAME$
+From: $NAME$
+Date: $SUPPLEMENT_DATE$
+
+Subject: Supplement Request for Claim # $CLAIM_NUMBER$
+
+Instructions: $COMPANY_NAME$ would like to recommend that you make the following changes to estimate # $EXTERNAL_ESTIMATE_ID$.
+
+Vehicle Owner: $OWNERNAME$
+
+Vehicle Information: $YEAR$ $MAKE$ $MODEL$ $COLOR$
+
+
+
+Summary Notes:
+
+$SUPPLEMENT_COMMENTS$
+
+
+
+Recommended Changes:
+
+$RECOMMENDED_CHANGES$
+
+
+
+Supplement Instructions for UltraMate Estimates
+
+1.  Open eClaim Manager.
+2.  Locate and open the Claim Folder in eClaim Manager.
+3.  Launch UltraMate from within eClaim Manager.
+4.  Update the estimate in UltraMate as appropriate.
+5.  Calculate and Commit the estimate to return to eClaim Manager.
+6.  Click the lightning bolt icon to send the estimate to the Insurance Company.
+
+
+
+Confidentiality Statement
+
+The information contained in this message is CONFIDENTIAL and is for the intended addressee only.
+Any unauthorized use, dissemination of the information, or copying of this message is prohibited.
+If you are not the intended addressee, please notify the sender immediately and delete this message.
+
+
+
+$NAME$
+$TELEPHONE$
+$EMAIL$
+$FAX$

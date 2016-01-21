@@ -1,0 +1,12 @@
+﻿Instructions de supplément pour des estimations Audatex/Pathways  
+
+1.  Ouvrez votre logiciel d'estimation.
+2.  Situez l'estimation en utilisant le n° de réclamation, le n° d'estimation, ou les renseignements sur le véhicule.
+3.  Ouvrez l'estimation et mettez-la à jour selon le besoin.
+4.  Validez ou verrouillez l'estimation.
+5.  Exportez l'EMS de l'estimation à partir de votre logiciel d'estimation.
+6.  Créez une image d'impression de l'estimation au format PDF.
+7.  Ouvrez le gestionnaire eClaim.
+8.  Trouvez le dossier Réclamation dans le gestionnaire eClaim et ouvrez-le.
+9.  Importez l'estimation de supplément et PDF dans le gestionnaire eClaim.
+10. Cliquez sur l'icône en forme d'éclair pour envoyer l'estimation à l'assureur.

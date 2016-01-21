@@ -1,0 +1,15 @@
+<EstimatePackageJavaClient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EstimatePackageJavaClient.xsd">
+
+  <ProviderUrl>${J2EE_PROVIDER_URL}</ProviderUrl>
+  <JNDIFactory>org.jnp.interfaces.NamingContextFactory</JNDIFactory>
+  <EJBJndi>com.mitchell.services.technical.partialloss.estimate.ejb.EstimatePackageRemote</EJBJndi>
+  
+  <WSEJBJndi>com.mitchell.services.technical.partialloss.estimate.ejb.EstimatePackageWSHome</WSEJBJndi>
+
+  <DevelopmentTesting>false</DevelopmentTesting>
+
+  <MimeTypeMappingFilePath>${NAS_APPLICATION_DIRECTORY_PATH}/mitchell/hostprocessing/EstimatePackageService/MitchellMimeMap.types</MimeTypeMappingFilePath>
+  <AttachTypeMappingFilePath>${NAS_APPLICATION_DIRECTORY_PATH}/mitchell/hostprocessing/EstimatePackageService/AttachmentTypeMappings.xml</AttachTypeMappingFilePath>
+  <AttachTypeDocTypeMappingFilePath>${NAS_APPLICATION_DIRECTORY_PATH}/mitchell/hostprocessing/EstimatePackageService/AttachTypeDocTypeMappings.xml</AttachTypeDocTypeMappingFilePath>
+
+</EstimatePackageJavaClient>

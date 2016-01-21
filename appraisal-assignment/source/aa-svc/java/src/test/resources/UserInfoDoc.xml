@@ -1,0 +1,48 @@
+<typ:UserInfo xmlns:typ="http://www.mitchell.com/common/types">
+  <typ:OrgID>373206</typ:OrgID>
+  <typ:OrgCode>Z6</typ:OrgCode>
+  <typ:UserID>Z6AKST02</typ:UserID>
+  <typ:FirstName>Z6AKST02</typ:FirstName>
+  <typ:LastName>Appraiser2</typ:LastName>
+  <typ:Email>amit.kumar@mitchell.com</typ:Email>
+  <typ:UserHier>
+    <typ:HierNode Level="COMPANY" Name="CARR - TEST" Code="Z6" ID="249050">
+      <typ:HierNode Level="REGION" Name="TEST REGION" Code="R1" ID="249094">
+        <typ:HierNode Level="DIVISION" Name="TEST DIVISION" Code="D1" ID="249096">
+          <typ:HierNode Level="OFFICE" Name="TEST OFFICE2" Code="OFF2" ID="249101">
+            <typ:HierNode Level="USER" Name="Z6AKST02 Appraiser2" Code="Z6AKST02" ID="373206"/>
+          </typ:HierNode>
+        </typ:HierNode>
+      </typ:HierNode>
+    </typ:HierNode>
+  </typ:UserHier>
+  <typ:AppCode>AASAD</typ:AppCode>
+  <typ:AppCode>CMAPES</typ:AppCode>
+  <typ:AppCode>CMATF</typ:AppCode>
+  <typ:AppCode>CMCRD</typ:AppCode>
+  <typ:AppCode>CMDLF</typ:AppCode>
+  <typ:AppCode>CMSRCH</typ:AppCode>
+  <typ:AppCode>CMVWC</typ:AppCode>
+  <typ:AppCode>CMVWD</typ:AppCode>
+  <typ:AppCode>CMVWE</typ:AppCode>
+  <typ:AppCode>MCMAD</typ:AppCode>
+  <typ:AppCode>MCMDIR</typ:AppCode>
+  <typ:AppCode>MCMDLD</typ:AppCode>
+  <typ:AppCode>MCMUPL</typ:AppCode>
+  <typ:AppCode>NETACT</typ:AppCode>
+  <typ:AppCode>UMTYPA</typ:AppCode>
+  <typ:AppCode>UMTYPB</typ:AppCode>
+  <typ:AppCode>UMTYPC</typ:AppCode>
+  <typ:AppCode>WCACAA</typ:AppCode>
+  <typ:AppCode>WCAEUP</typ:AppCode>
+  <typ:AppCode>WCAEVW</typ:AppCode>
+  <typ:AppCode>WCAROA</typ:AppCode>
+  <typ:AppCode>WCAUOA</typ:AppCode>
+  <typ:AppCode>WCAUSA</typ:AppCode>
+  <typ:AppCode>WCAVAA</typ:AppCode>
+  <typ:AppCode>WCDEUP</typ:AppCode>
+  <typ:AppCode>WCPHLP</typ:AppCode>
+  <typ:AppCode>WCPIWV</typ:AppCode>
+  <typ:AppCode>WCPMAL</typ:AppCode>
+  <typ:StaffType>ADMINISTRATOR</typ:StaffType>
+</typ:UserInfo>

@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="AppraisalAssignmentClient" nillable="false">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Remote"/>
+				<xs:element ref="Local"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Remote" nillable="false">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ProviderUrl" type="xs:string"/>
+				<xs:element name="JNDIFactory" type="xs:string"/>
+				<xs:element name="EJBJndi" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+		<xs:element name="Local" nillable="false">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ProviderUrl" type="xs:string"/>
+				<xs:element name="JNDIFactory" type="xs:string"/>
+				<xs:element name="EJBJndi" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

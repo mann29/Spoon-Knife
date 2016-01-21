@@ -1,0 +1,7 @@
+<IntegrationTestHelper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="IntegrationTestHelper.xsd">
+
+  <ProviderUrl>${J2EE_PROVIDER_URL}</ProviderUrl>
+  <JNDIFactory>org.jnp.interfaces.NamingContextFactory</JNDIFactory>
+  <EJBJndi>com.mitchell.services.inttesthelper.ejb.IntegrationTestHelperRemote</EJBJndi>
+
+</IntegrationTestHelper>

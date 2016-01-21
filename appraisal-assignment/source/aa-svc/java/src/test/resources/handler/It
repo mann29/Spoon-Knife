@@ -1,0 +1,13 @@
+<ItineraryView Version="1.0" xmlns="http://www.mitchell.com/schemas">
+  <Disposition>RESCHEDULE</Disposition>
+  <ReasonCode/>
+  <Notes>test uuuuuuuuuu </Notes>
+  <AssignmentSchedule>
+    <Urgency>99</Urgency>
+    <PreferredScheduleDate>2014-09-20</PreferredScheduleDate>
+    <PreferredScheduleStartTime>00:01:00</PreferredScheduleStartTime>
+    <PreferredScheduleEndTime>12:00:00</PreferredScheduleEndTime>
+  </AssignmentSchedule>
+  <WorkAssignmentTaskID>101000179812</WorkAssignmentTaskID>
+  <TCN>51</TCN>
+</ItineraryView>

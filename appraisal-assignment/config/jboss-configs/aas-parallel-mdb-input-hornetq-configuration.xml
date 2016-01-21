@@ -1,0 +1,32 @@
+<configuration xmlns="urn:hornetq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hornetq/schema/hornetq-configuration.xsd">
+
+   <address-settings>
+
+      <address-setting match="jms.queue.PARTIALLOSS.AAS_PARALLELMDB_INPUT">
+        <dead-letter-address>jms.queue.PARTIALLOSS.AAS_PARALLELMDB_ERROR_INPUT</dead-letter-address>
+        <expiry-address>jms.queue.PARTIALLOSS.AAS_PARALLELMDB_EXPIRY</expiry-address>
+        <redelivery-delay>150</redelivery-delay>
+        <max-delivery-attempts>2</max-delivery-attempts>
+      </address-setting>
+
+      <address-setting match="jms.queue.PARTIALLOSS.AAS_PARALLELMDB_ERROR_INPUT">
+        <dead-letter-address>jms.queue.PARTIALLOSS.AAS_PARALLELMDB_EXPIRY</dead-letter-address>
+        <expiry-address>jms.queue.PARTIALLOSS.AAS_PARALLELMDB_EXPIRY</expiry-address>
+		<!-- Yes the deadletter has an MDB listening -->
+        <redelivery-delay>150</redelivery-delay>
+        <max-delivery-attempts>2</max-delivery-attempts>
+      </address-setting>
+
+      <address-setting match="jms.queue.PARTIALLOSS.AAS_PARALLELMDB_RESPONSE">
+        <dead-letter-address>jms.queue.PARTIALLOSS.AAS_PARALLELMDB_EXPIRY</dead-letter-address>
+        <expiry-address>jms.queue.PARTIALLOSS.AAS_PARALLELMDB_EXPIRY</expiry-address>
+		<redistribution-delay>25</redistribution-delay>
+        <max-delivery-attempts>-1</max-delivery-attempts>
+      </address-setting>
+	  
+	  <address-setting match="jms.queue.PARTIALLOSS.AAS_PARALLELMDB_EXPIRY">
+      </address-setting>
+
+   </address-settings>
+
+</configuration>

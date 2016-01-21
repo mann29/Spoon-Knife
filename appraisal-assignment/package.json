@@ -1,0 +1,50 @@
+{
+  "name": "appraisal-assignment-service",
+  "description": "APD-ClaimsSolutions appraisal-assignment-service",
+  "author": "ninjaneers@mitchell.com",
+  "release": "1.0",
+  "build": "@@BUILD_NUMBER@@",
+  "arch": "windows",
+  "category": "/APD/platform",
+
+  "source-base": "",
+  "dest-base": "//",
+  "contents": [
+    {
+      "source": "source\\aa-svc\\ear\\target\\appraisal-assignment-service.ear",
+      "dest": "//appl//services//appraisal-assignment-service//deploy"
+    },
+    {
+      "source": "config\\jboss-configs\\*.xml",
+      "dest": "//appl//services//appraisal-assignment-service//deploy-configs"
+    },
+    {
+      "source": "config\\settings\\*.XSD",
+      "dest": "//appl//services//appraisal-assignment-service//settings"
+    },
+    {
+      "source": "config\\settings\\*.SET",
+      "dest": "//appl//services//appraisal-assignment-service//settings"
+    },
+	{
+      "source": "config\\xslt\\**",
+      "dest": "//mdev//data//remote//dev//organizations//mx//templates"
+    }
+  ],
+
+  "dependencies": { },
+
+  "pre-install": { },
+
+  "post-install": [
+      "/bin/bash /appl/scripts/jboss_move_files.sh appraisal-assignment-service"
+    ],
+
+  "pre-uninstall": [
+      "/bin/bash /appl/scripts/jboss_clean_files.sh appraisal-assignment-service"
+    ],
+
+  "post-uninstall": { }
+
+
+}

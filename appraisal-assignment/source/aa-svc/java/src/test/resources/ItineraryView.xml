@@ -1,0 +1,7 @@
+<ItineraryView Version="1.0" xmlns="http://www.mitchell.com/schemas">
+  <Disposition>RESCHEDULE</Disposition>
+  <ReasonCode>Reason</ReasonCode>
+  <Notes>My Comments</Notes>
+  <WorkAssignmentTaskID>100005210651</WorkAssignmentTaskID>
+  <TCN>37</TCN>
+</ItineraryView>

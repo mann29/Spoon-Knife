@@ -1,0 +1,12 @@
+<AppraisalAssignmentClient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="AppraisalAssignmentClient.XSD">
+	<Remote>
+		<ProviderUrl>${J2EE_PROVIDER_URL}</ProviderUrl>
+		<JNDIFactory>org.jnp.interfaces.NamingContextFactory</JNDIFactory>
+		<EJBJndi>com.mitchell.services.business.partialloss.appraisalassignment.ejb.AppraisalAssignmentServiceRemote</EJBJndi>
+	</Remote>
+	<Local>
+		<ProviderUrl>${J2EE_PROVIDER_URL}</ProviderUrl>
+		<JNDIFactory>org.jnp.interfaces.NamingContextFactory</JNDIFactory>
+		<EJBJndi>com.mitchell.services.business.partialloss.appraisalassignment.ejb.AppraisalAssignmentServiceLocal</EJBJndi>
+	</Local>
+</AppraisalAssignmentClient>

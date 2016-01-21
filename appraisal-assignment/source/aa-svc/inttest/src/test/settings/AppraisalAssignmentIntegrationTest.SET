@@ -1,0 +1,6 @@
+<AppraisalAssignmentIntegrationTest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="AppraisalAssignmentIntegrationTest.xsd">
+	<TemplateMitchellEnvelopePathForSaveAA>template_ME_saveAppraisalAssignment.xml</TemplateMitchellEnvelopePathForSaveAA>
+	<TemplateMitchellEnvelopePathForUpdateAA>template_ME_updateAppraisalAssignment.xml</TemplateMitchellEnvelopePathForUpdateAA>	
+	<DevUserOrgId>387358</DevUserOrgId>
+	<DevClaimNumberFormatString>##-#######-##</DevClaimNumberFormatString>
+</AppraisalAssignmentIntegrationTest>

@@ -1,0 +1,12 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="AppraisalAssignmentIntegrationTest" nillable="false">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TemplateMitchellEnvelopePathForSaveAA" type="xs:string" />
+				<xs:element name="TemplateMitchellEnvelopePathForUpdateAA" type="xs:string" />				
+				<xs:element name="DevUserOrgId" type="xs:string" />	
+				<xs:element name="DevClaimNumberFormatString" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,39 @@
+<Environment Name="JBCI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!-- Changed by dk4130 -->
+	<Token Name="J2EE_PROVIDER_URL"
+	       comment="Provider URL">/Environment/ConfigList/Config[@Name="SIMPLE_PROVIDER_URL"]</Token>
+	<Token Name="NAS_APPLICATION_DIRECTORY_PATH"
+	       comment="NAS Base path">/Environment/ConfigList/Config[@Name="SIMPLE_NAS_PATH"]</Token>
+	
+	
+	<ConfigList>
+		
+		<!-- Default Needs to be the CI Environment 
+		<Config Name="SIMPLE_PROVIDER_URL">jnp://dapp14lxv:1199</Config>
+		-->
+		
+		<!-- JBC7 -->
+		<Config Name="SIMPLE_PROVIDER_URL">jnp://dapp10lxv:1199,dapp11lxv:1199</Config>
+		
+		<!-- JBC9 
+		<Config Name="SIMPLE_PROVIDER_URL">jnp://dapp16lxv:1199,dapp17lxv:1199</Config>
+		-->
+		
+		<!-- JBCI3 -->
+		<!-- <Config Name="SIMPLE_PROVIDER_URL">jnp://djbci3n1lxv:1199,djbci3n2lxv:1199</Config> -->
+        
+
+		<!-- Local 
+		<Config Name="SIMPLE_PROVIDER_URL">jnp://localhost:1099</Config>
+		-->
+		
+		<!-- Default Needs to be the CI Environment -->
+		<Config Name="SIMPLE_NAS_PATH">/mdev/data/remote/dev</Config>
+		
+		<!-- Local 
+		<Config Name="SIMPLE_NAS_PATH">C:/HPRA-JBOSS/localnas</Config>
+		-->
+		
+	</ConfigList>
+</Environment>

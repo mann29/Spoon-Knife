@@ -1,0 +1,21 @@
+<typ:UserDetail xmlns:typ="http://www.mitchell.com/services/core/userinfo/types">
+  <typ:FirstName>Thakur</typ:FirstName>
+  <typ:LastName>Parvinder</typ:LastName>
+  <typ:UserName>Thakur Parvinder</typ:UserName>
+  <typ:Address>
+    <typ:Address1>US-56</typ:Address1>
+    <typ:Address2 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <typ:City>Great Bend</typ:City>
+    <typ:State>KS</typ:State>
+    <typ:Zip>67530</typ:Zip>
+    <typ:Country>United States</typ:Country>
+    <typ:Latitude>38.36512</typ:Latitude>
+    <typ:Longitude>-98.71186</typ:Longitude>
+  </typ:Address>
+  <typ:Fax>1234561234</typ:Fax>
+  <typ:Phone>1234567894</typ:Phone>
+  <typ:PhoneExt>12345</typ:PhoneExt>
+  <typ:Email>nisha.chopra@infogain.com</typ:Email>
+  <typ:ProviderType xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <typ:ContactPreference xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+</typ:UserDetail>

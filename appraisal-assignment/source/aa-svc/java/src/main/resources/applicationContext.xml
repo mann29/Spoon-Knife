@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="AssignmentTaskHandler" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.delegator.AssignmentTaskHandlerImpl" factory-method="getHandler">
+	     <property name="apdProxy" ref="APDProxy"/>
+	     <property name="appLogProxy" ref="AppLogProxy"/>
+	     <property name="claimProxy" ref="ClaimProxy"/>
+	     <property name="errorLogProxy" ref="ErrorLogProxy"/>
+	     <property name="estimatePackageProxy" ref="EstimatePackageProxy"/>
+	     <property name="userInfoProxy" ref="UserInfoProxy"/>
+	     <property name="workAssignmentProxy" ref="WorkAssignmentProxy"/>
+	     <property name="aasUtils" ref="AASUtils"/>
+	</bean>
+	
+	<bean id="AppraisalAssignmentServiceHandler" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.delegator.AppraisalAssignmentServiceHandlerImpl" >
+	 
+          <property name="mitchellEnvelopeHandler" ref="MitchellEnvelopeHandler"/>
+          <property name="workAssignmentHandler" ref="WorkAssignmentHandler"/> 
+           <property name="errorLogUtil" ref="AASErrorLogUtil"/>
+          <property name="commonUtils" ref="AASCommonUtils"/>
+          <property name="appLogUtil" ref="AASAppLogUtil"/> 
+          <property name="userInfoUtils" ref="UserInfoUtils"/>
+          <property name="claimProxy" ref="ClaimProxy"/> 
+          <property name="carrHelperProxy" ref="CARRHelperProxy"/> 
+          <property name="estimatePackageProxy" ref="EstimatePackageProxy"/> 
+          <property name="appraisalAssignmentDAO" ref="AppraisalAssignmentDAO"/> 
+          <property name="appraisalAssignmentUtils" ref="AppraisalAssignmentUtils"/> 
+          <property name="appraisalAssignmentMandFieldUtils" ref="AppraisalAssignmentMandFieldUtils"/> 
+          <property name="appraisalAssignmentConfig" ref="AppraisalAssignmentConfig"/> 
+          <property name="testAssignmentHandler" ref="TestAssignmentHandler"/>
+          <property name="messageBusHandler" ref="MessageBusHandler"/> 
+          <property name="customSettingProxy" ref="CustomSettingProxy"/>
+  	</bean>
+    
+    <bean id="AppraisalAssignmentMandFieldUtils" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.AppraisalAssignmentMandFieldUtils" >
+         <property name="appraisalAssignmentUtils" ref="AppraisalAssignmentUtils"/>
+          <property name="commonUtils" ref="AASCommonUtils"/>
+	</bean>
+    
+    <bean id="AppraisalAssignmentUtils" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.AppraisalAssignmentUtils" >
+      <property name="userInfoProxy" ref="UserInfoProxy"/>
+      <property name="customSettingProxy" ref="CustomSettingProxy"/>
+    </bean>
+    
+     <bean id="AppraisalAssignmentDAO" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.AppraisalAssignmentDAO">
+      </bean>
+      
+    <bean id="UserInfoUtils" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.util.UserInfoUtilsImpl">
+          <property name="userInfoProxy" ref="UserInfoProxy"/>
+          <property name="commonUtils" ref="AASCommonUtils"/>
+          <property name="appraisalAssignmentUtils" ref="AppraisalAssignmentUtils"/>
+    </bean>
+
+	
+	 <bean id="WorkAssignmentHandler"  singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.util.WorkAssignmentHandlerImpl" >
+           <property name="workAssignmentProxy" ref="WorkAssignmentProxy"/>
+           <property name="errorLogUtil" ref="AASErrorLogUtil"/>
+           <property name="userInfoUtils" ref="UserInfoUtils"/>
+            <property name="workAssignmentMapper" ref="WorkAssignmentMapper"/>
+            <property name="claimProxy" ref="ClaimProxy"/>    
+            <property name="commonUtils" ref="AASCommonUtils"/>                                             
+	</bean>
+    
+	<bean id="WorkAssignmentMapper" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.mapping.WorkAssignmentMapper" >
+         <property name="appraisalAssignmentUtils" ref="AppraisalAssignmentUtils"/>
+         <property name="userInfoUtils" ref="UserInfoUtils"/>
+     </bean>
+	
+    <bean id="MitchellEnvelopeHandler" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.util.MitchellEnvelopeHandlerImpl">
+	        <property name="errorLogUtil" ref="AASErrorLogUtil"/>
+    	    <property name="aasCommonUtils" ref="AASCommonUtils"/>
+            <property name="estimatePackageProxy" ref="EstimatePackageProxy"/>
+	</bean>
+	
+	
+    <bean id="AASErrorLogUtil" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.util.AASErrorLogUtilImpl">
+	</bean>
+	
+	
+	<bean id="AASCommonUtils" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.util.AASCommonUtilsImpl">
+            <property name="errorLogUtil" ref="AASErrorLogUtil"/>
+            <property name="claimProxy" ref="ClaimProxy"/> 
+            <property name="systemConfigProxy" ref="SystemConfigProxy"/> 
+            <property name="appraisalAssignmentConfig" ref="AppraisalAssignmentConfig"/>
+	</bean>
+	
+	<bean id="AASEmailProxy" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.util.AASEmailProxyImpl">
+            
+	</bean>
+	
+	<bean id="AASAppLogUtil" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.util.AASAppLogUtilImpl">
+	    <property name="userInfoProxy" ref="UserInfoProxy"/>
+        <property name="mitchellEnvelopeHandler" ref="MitchellEnvelopeHandler"/>
+        <property name="appLogProxy" ref="AppLogProxy"/>
+        <property name="systemConfigProxy" ref="SystemConfigProxy"/>
+	</bean>
+	
+  <bean id="ShopIdentifierProxy"  singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.proxy.ShopIdentifierProxyImpl"> </bean>
+
+	 <bean id="CustomSettingProxy" init-method="init" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.proxy.CustomSettingProxyImpl">
+	</bean>
+     
+	 <bean id="EstimatePackageProxy"  singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.proxy.EstimatePackageProxyImpl">
+	
+	</bean>
+	
+    <bean id="ErrorLogProxy" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.proxy.ErrorLogProxyImpl">
+    </bean>
+    
+     <bean id="ClaimProxy" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.proxy.ClaimProxyImpl">
+    </bean>
+    
+     <bean id="CARRHelperProxy" singleton="false" init-method="init" class="com.mitchell.services.business.partialloss.appraisalassignment.proxy.CARRHelperProxyImpl">
+    </bean>
+     
+     <bean id="WorkAssignmentProxy" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.proxy.WorkAssignmentProxyImpl">
+     </bean>
+     
+    
+     <bean id="UserInfoProxy"  init-method="init" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.proxy.UserInfoProxyImpl">
+     </bean>
+    
+      
+  	<bean id="APDProxy" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.proxy.APDProxyImpl"/>
+	
+	<bean id="AppLogProxy" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.proxy.AppLogProxyImpl"/>
+  
+	<bean id="AASUtils" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.proxy.AASUtilsImpl">
+        <property name="appraisalAssignmentUtils" ref="AppraisalAssignmentUtils"/>
+     </bean>
+    
+    <bean id="AppraisalAssignmentConfig" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.AppraisalAssignmentConfig">
+	    <property name="systemConfigProxy" ref="SystemConfigProxy"/> 
+    </bean>
+
+    <bean id="SystemConfigProxy" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.proxy.SystemConfigProxyImpl"/>
+
+    <bean id="TestAssignmentHandler" singleton="false" init-method="init" class="com.mitchell.services.business.partialloss.appraisalassignment.delegator.TestAssignmentHandlerImpl">
+		<property name="appraisalAssignmentConfig" ref="AppraisalAssignmentConfig"/> 
+        <property name="workAssignmentHandler" ref="WorkAssignmentHandler"/> 
+    </bean>
+    
+    <bean id="MessageBusHandler" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.delegator.MessageBusHandlerImpl">
+        <property name="messageBusProxy" ref="MessageBusProxy"/> 
+    </bean>
+    
+    <bean id="MessageBusProxy" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.proxy.MessageBusProxyImpl"/>
+    
+    
+    <bean id="CultureDAO" class="com.mitchell.services.business.partialloss.appraisalassignment.dao.CultureDAOImpl">                                     
+    	<property name="systemConfigProxy" ref="SystemConfigProxy"/>
+    </bean>
+    <bean id="SupplementRequestDocBuildr" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.supprequest.SupplementRequestDocBuildr">                                     
+    </bean>
+    <bean id="SupplementNotification" singleton="false" class="com.mitchell.services.business.partialloss.appraisalassignment.supprequest.SupplementNotification">                                     
+    </bean>
+</beans>

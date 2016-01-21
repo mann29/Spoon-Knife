@@ -1,0 +1,120 @@
+<AnnotatedEstimate Version="1.1" xmlns="http://www.mitchell.com/schemas/estimate">
+	<FirstReviewTimeStamp>2014-07-31T00:04:45.68663-07:00</FirstReviewTimeStamp>
+	<LastestReviewTimeStamp>2014-11-03T21:30:14.3841299-08:00</LastestReviewTimeStamp>
+	<ComplianceSection>
+		<ComplianceSignature>
+			<ClaimNumber>6768788-01</ClaimNumber>
+			<EstimateID>6768788-01</EstimateID>
+			<SupplementNumber>1</SupplementNumber>
+			<ReviewTimestamp>2014-07-30T05:07:24</ReviewTimestamp>
+			<ReviewCount>0</ReviewCount>
+		</ComplianceSignature>
+		<ComplianceChanges>
+			<ComplianceComments>Notes</ComplianceComments>
+		</ComplianceChanges>
+	</ComplianceSection>
+	<EstimateSection>
+		<EstimateSignature>
+			<DocumentID>100001512039</DocumentID>
+			<ClaimNum>6768788-01</ClaimNum>
+		</EstimateSignature>
+		<EstimateChanges>
+			<AdminComments />
+			<DamageLines>
+				<DamageLineInfo>
+					<LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" LastCommentID="6" UserAddedLine="false">1</LineNum>
+					<UserAddedLineNumber />
+					<Operation>REMOVE/REPLACE/PARTIAL</Operation>
+					<Description>Puerta dl iz</Description>
+					<PartType>NW</PartType>
+					<PartNumber>C2Z2061</PartNumber>
+					<PartQuantity>3</PartQuantity>
+					<UnitPartPrice>19.1333333333333</UnitPartPrice>
+					<PartPrice>57.4</PartPrice>
+					<LaborType>GLS</LaborType>
+					<PriceAdjustment>
+						<AdjustmentAmt>87.50</AdjustmentAmt>
+						<AdjustmentPct>5.20</AdjustmentPct>
+					</PriceAdjustment>
+					<TotalPartPrice>152.43</TotalPartPrice>
+					<Amount>152.43</Amount>
+					<LineType>CurrentClaim</LineType>
+				</DamageLineInfo>
+				<DamageLineInfo>
+					<LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" LastCommentID="5" UserAddedLine="false">2</LineNum>
+					<UserAddedLineNumber />
+					<Operation>BETTERMENT-L</Operation>
+					<Description>Puerta dl iz</Description>
+					<PartType>RC</PartType>
+					<LaborType>BDS</LaborType>
+					<LaborHours>5.9</LaborHours>
+					<LaborHourlyRate>87.50</LaborHourlyRate>
+					<LaborAdjustment>
+						<AdjustmentPct>18.50</AdjustmentPct>
+						<AdjustmentHours>15.00</AdjustmentHours>
+					</LaborAdjustment>
+					<LaborCost>2167.0687500</LaborCost>
+					<Amount>2167.0687500</Amount>
+					<OriginalAmount>2167.0687500</OriginalAmount>
+					<LineType>CurrentClaim</LineType>
+				</DamageLineInfo>
+				<DamageLineInfo>
+					<LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" LastCommentID="5" UserAddedLine="false">3</LineNum>
+					<UserAddedLineNumber />
+					<Operation>REFINISH</Operation>
+					<Description>Puesta a disposición del vehículo</Description>
+					<PartType>RC</PartType>
+					<LaborType>ELE</LaborType>
+					<LaborHours>4.1</LaborHours>
+					<LaborHourlyRate>87.50</LaborHourlyRate>
+					<LaborAdjustment>
+						<AdjustmentPct>5.50</AdjustmentPct>
+						<AdjustmentHours>1.60</AdjustmentHours>
+					</LaborAdjustment>
+					<LaborCost>526.1812500</LaborCost>
+					<Amount>526.1812500</Amount>
+					<OriginalAmount>526.1812500</OriginalAmount>
+					<LineType>CurrentClaim</LineType>
+				</DamageLineInfo>
+			</DamageLines>
+			<ReviewComments>Notes</ReviewComments>
+			<RepairTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LAB</TotalType>
+					<TotalTypeDesc>Body</TotalTypeDesc>
+					<TotalHours>5.9</TotalHours>
+					<TotalAmt>2167.06</TotalAmt>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LAM</TotalType>
+					<TotalTypeDesc>Mechanical</TotalTypeDesc>
+					<TotalHours>4.1</TotalHours>
+					<TotalAmt>526.18</TotalAmt>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LAT</TotalType>
+					<TotalTypeDesc>Labor - Total</TotalTypeDesc>
+					<TotalHours>10.0</TotalHours>
+					<TotalAmt>2693.24</TotalAmt>
+				</LaborTotalsInfo>
+				<PartsTotalsInfo>
+					<TotalType>PA</TotalType>
+					<TotalTypeDesc>Parts</TotalTypeDesc>
+					<TotalAmt>152.43</TotalAmt>
+				</PartsTotalsInfo>
+				<OtherChargesTotalsInfo>
+					<TotalType>Paints</TotalType>
+					<TotalTypeDesc>Paints - Total</TotalTypeDesc>
+					<TotalAmt>0</TotalAmt>
+				</OtherChargesTotalsInfo>
+				<SummaryTotalsInfo>
+					<TotalType>TOT</TotalType>
+					<TotalSubType>TT</TotalSubType>
+					<TotalTypeDesc>Net Total</TotalTypeDesc>
+					<TotalAmt>3443.2607</TotalAmt>
+				</SummaryTotalsInfo>
+				<RepairTotalsType>Current Claim</RepairTotalsType>
+			</RepairTotalsInfo>
+		</EstimateChanges>
+	</EstimateSection>
+</AnnotatedEstimate>

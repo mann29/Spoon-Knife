@@ -1,0 +1,12 @@
+Supplement Instructions for Audatex/Pathways Estimates  
+
+1.  Open your estimating software.
+2.  Locate the estimate using the Claim #, Estimate #, or Vehicle Information.
+3.  Open the estimate and make updates as appropriate.
+4.  Commit/Lock the estimate.
+5.  Export the EMS for the estimate from your estimating software.
+6.  Create an Estimate Print Image in PDF Format.
+7.  Open eClaim Manager.
+8.  Locate and open the Claim Folder in eClaim Manager.
+9.  Import the Supplement estimate and PDF into eClaim Manager.
+10. Click the lightning bolt icon to send the estimate to the Insurance Company.

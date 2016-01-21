@@ -1,0 +1,126 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>appraisal-assignment-service</groupId>
+    <artifactId>appraisal-assignment-svc-pom</artifactId>
+    <version>1.0.0.4</version>
+  </parent>
+
+  <artifactId>appraisal-assignment-ejb</artifactId>
+  <name>appraisal-assignment-ejb</name>
+  <description>Appraisal Assignment EJB</description>
+  <packaging>ejb</packaging>
+
+  <dependencies>
+	
+	<!-- System Provided -->
+
+    <dependency>
+      <groupId>${jbossall-client.groupId}</groupId>
+      <artifactId>${jbossall-client.artifactId}</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.ejb</groupId>
+      <artifactId>ejb-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.xmlbeans</groupId>
+      <artifactId>xmlbeans</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>${jbossall-client.groupId}</groupId>
+      <artifactId>${jbossall-client.artifactId}</artifactId>
+      <scope>provided</scope>
+    </dependency>
+	
+	<!-- Third Party -->
+
+
+	
+	<!-- This Application -->
+    <dependency>
+      <groupId>appraisal-assignment-service</groupId>
+      <artifactId>appraisal-assignment-java</artifactId>
+      <version>${project.version}</version>
+    </dependency> 
+	
+	<!-- Mitchell Common -->
+
+    <dependency>
+      <groupId>mitchell-common</groupId>
+      <artifactId>mitchell-common</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>mitchell-common</groupId>
+      <artifactId>mitchell-common-envelope</artifactId>
+    </dependency>
+ 	
+	<!-- Mitchell Services -->
+
+    <dependency>
+      <groupId>system-configuration</groupId>
+      <artifactId>system-configuration</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>user-info</groupId>
+      <artifactId>user-info-schema-axmlb</artifactId>
+    </dependency>
+	
+	<!-- Test Only -->
+
+    <dependency>
+      <groupId>integration-test-helper</groupId>
+      <artifactId>integration-test-helper-client</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-all</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-ejb-plugin</artifactId>
+        <configuration>
+          <generateClient>false</generateClient>
+          <ejbVersion>3.0</ejbVersion>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+
+
+    </plugins>
+  </build>
+
+
+</project>

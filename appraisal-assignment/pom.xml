@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <!-- APD Super Pom is Parent -->
+  <parent>
+    <groupId>com.mitchell.maven.apd</groupId>
+    <artifactId>super-pom</artifactId>
+    <version>1.0.0.0</version>
+	  <relativePath>..</relativePath>
+  </parent>
+  
+  <!-- Service Root Pom Identification -->
+  <groupId>appraisal-assignment-service</groupId>
+  <artifactId>appraisal-assignment-root-pom</artifactId>
+  <!-- ******************************************************************************************
+       The version of the ear pom needs to match this version.
+       In addition, for each of the following poms the version of the parent must be updated to match this version.
+	   source
+	     aa-svc
+	       ejb
+	       java
+  -->  
+  <version>1.0.0.4</version>
+  <packaging>pom</packaging>
+  <name>appraisal-assignment-service</name>
+  <description>
+    Appraisal Assignment Service provides business APIs to  work on appraisal assignments.
+  </description>
+    
+  <!-- ******************** Site Information ********************* -->	
+  <distributionManagement>
+    <site>
+      <id>www.mitchell.com</id>
+      <url>scp://http://localhost:7080//docs/appraisal-assignment</url>
+    </site>
+  </distributionManagement>
+
+  <developers>
+    <developer>
+      <id>ClaimSolutions</id>
+      <organization>APD</organization>
+    </developer>         
+  </developers>
+
+  <!-- Sub-Modules -->
+  <modules>
+    <module>source</module>
+  </modules>
+  
+  <build>
+    <plugins>
+	
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+      
+    </plugins>
+  </build>
+  
+</project>

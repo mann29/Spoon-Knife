@@ -1,0 +1,15 @@
+<configuration xmlns="urn:hornetq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hornetq/schema/hornetq-configuration.xsd">
+
+   <address-settings>
+      <address-setting match="jms.queue.PARTIALLOSS.ASSIGNMENT_FAILURE_RESPONSE_INPUT">
+         <dead-letter-address>jms.queue.PARTIALLOSS.ASSIGNMENT_FAILURE_RESPONSE_INPUT_DEADLETTER</dead-letter-address>
+         <expiry-address>jms.queue.PARTIALLOSS.ASSIGNMENT_FAILURE_RESPONSE_INPUT_DEADLETTER</expiry-address>
+         <redelivery-delay>150</redelivery-delay>
+	   <max-delivery-attempts>3</max-delivery-attempts>
+      </address-setting>
+	  
+      <address-setting match="jms.queue.PARTIALLOSS.ASSIGNMENT_FAILURE_RESPONSE_INPUT_DEADLETTER">
+       </address-setting>
+   </address-settings>
+</configuration>
+
