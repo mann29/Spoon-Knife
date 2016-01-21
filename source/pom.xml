@@ -1,0 +1,322 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>appraisal-assignment-service</groupId>
+		<artifactId>appraisal-assignment-root-pom</artifactId>
+		<version>1.0.0.4</version>
+		<relativePath>..</relativePath>
+	</parent>
+
+	<artifactId>appraisal-assignment-source-pom</artifactId>
+	<name>appraisal-assignment-source</name>
+	<description>Appraisal Assignment Source</description>
+	<packaging>pom</packaging>
+
+	<dependencyManagement>
+		<dependencies>
+
+			<!--common-xml-schema-->
+			<dependency>
+				<groupId>common-xml-schema</groupId>
+				<artifactId>apd-delivery-axmlb</artifactId>
+				<version>1.0.0.1</version>
+			</dependency>
+			<dependency>
+				<groupId>common-xml-schema</groupId>
+				<artifactId>cieca-bms-2.10.0-extended-axmlb</artifactId>
+				<version>1.0.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>common-xml-schema</groupId>
+				<artifactId>additional-appraisal-assignment-info-axmlb</artifactId>
+				<version>1.0.0.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>common-xml-schema</groupId>
+				<artifactId>additional-task-constraints-axmlb</artifactId>
+				<version>1.0.0.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>common-xml-schema</groupId>
+				<artifactId>annotate-estimate-axmlb</artifactId>
+				<version>1.0.2.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>common-xml-schema</groupId>
+				<artifactId>mitchell-envelope-10-axmlb</artifactId>
+				<version>1.0.0.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>common-xml-schema</groupId>
+				<artifactId>compliance-log-axmlb</artifactId>
+				<version>1.0.1.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>common-xml-schema</groupId>
+				<artifactId>mcf-36-estimate-axmlb</artifactId>
+				<version>1.0.0.1</version>
+			</dependency>
+
+			<dependency>
+				<groupId>mitchell-common</groupId>
+				<artifactId>mitchell-common-envelope</artifactId>
+				<version>1.0.0.2</version>
+			</dependency>
+			
+			<!-- Validation -->
+			<dependency>
+				<groupId>validation</groupId>
+				<artifactId>validation-schema-axmlb</artifactId>
+				<version>1.0.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>validation</groupId>
+				<artifactId>validation</artifactId>
+				<version>1.0.0.0</version>
+			</dependency> 
+
+			<!-- App logging-->
+			<dependency>
+				<groupId>app-logging</groupId>
+				<artifactId>app-logging-client</artifactId>
+				<version>1.0.0.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>app-logging</groupId>
+				<artifactId>app-logging-schema-axmlb</artifactId>
+				<version>1.0.0.0</version>
+			</dependency> 
+
+			<!--Custom Setting-->
+			<dependency>
+				<groupId>custom-settings</groupId>
+				<artifactId>custom-settings-client</artifactId>
+				<version>1.0.0.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>custom-settings</groupId>
+				<artifactId>custom-settings-schema-axmlb</artifactId>
+				<version>1.0.0.0</version>
+			</dependency> 
+
+			<!--Claim MCF client-->
+			<dependency>
+				<groupId>claim-service</groupId>
+				<artifactId>claim-service-client</artifactId>
+				<version>1.0.7.13</version>
+			</dependency> 
+
+			<!-- Error Logging-->
+			<dependency>
+				<groupId>error-logging</groupId>
+				<artifactId>error-logging-client</artifactId>
+				<version>1.0.1.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>error-logging</groupId>
+				<artifactId>error-logging-schema-axmlb</artifactId>
+				<version>1.0.1.0</version>
+			</dependency> 
+
+			<!-- Estimate Package-->
+			<dependency>
+				<groupId>estimate-package</groupId>
+				<artifactId>estimate-package-client</artifactId>
+				<version>1.1.3.3</version>
+			</dependency>
+
+			<dependency>
+				<groupId>estimate-package</groupId>
+				<artifactId>estimate-package-schema-axmlb</artifactId>
+				<version>1.0.3.0</version>
+			</dependency> 
+
+			<!-- Geo Service-->
+			<dependency>
+				<groupId>geo-service</groupId>
+				<artifactId>geo-service-schema-axmlb</artifactId>
+				<version>1.0.1.0</version>
+			</dependency>
+			<dependency>
+				<groupId>geo-service</groupId>
+				<artifactId>geo-service-client</artifactId>
+				<version>1.0.3.0</version>
+			</dependency>
+			<dependency>
+				<groupId>geo-service</groupId>
+				<artifactId>geo-service-java</artifactId>
+				<version>1.0.0.0</version>
+			</dependency> 
+			<!-- Message Bus-->
+			<dependency>
+				<groupId>message-bus</groupId>
+				<artifactId>message-bus-api</artifactId>
+				<version>1.0.0.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>message-bus</groupId>
+				<artifactId>message-bus-schema-axmlb</artifactId>
+				<version>1.0.0.0</version>
+			</dependency> 
+
+			<!--Mitchell Common-->
+			<dependency>
+				<groupId>mitchell-common</groupId>
+				<artifactId>mitchell-common</artifactId>
+				<version>1.0.13.0</version>
+			</dependency> 
+
+			<!--Notification-->
+			<dependency>
+				<groupId>notification</groupId>
+				<artifactId>notification-schema-axmlb</artifactId>
+				<version>1.0.0.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>notification</groupId>
+				<artifactId>notification-client</artifactId>
+				<version>1.0.0.0</version>
+			</dependency> 
+
+			<!-- UserInfo -->
+			<dependency>
+				<groupId>user-info</groupId>
+				<artifactId>user-info-client</artifactId>
+				<version>1.0.1.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>user-info</groupId>
+				<artifactId>user-info-schema-axmlb</artifactId>
+				<version>1.0.0.0</version>
+			</dependency> 
+
+			<!-- Work Assignment-->
+			<dependency>
+				<groupId>work-assignment</groupId>
+				<artifactId>work-assignment-schema-axmlb</artifactId>
+				<version>1.0.0.9</version>
+			</dependency>
+
+			<dependency>
+				<groupId>work-assignment</groupId>
+				<artifactId>work-assignment-client</artifactId>
+				<version>1.0.6.3</version>
+			</dependency> 
+
+      <!-- Daytona Shop Identifiert-->
+      <dependency>
+        <groupId>daytona-shop-identifier</groupId>
+        <artifactId>daytona-shop-identifier</artifactId>
+        <version>1.0.6</version>
+      </dependency>
+
+			<!-- System Configuration -->
+			<dependency>
+				<groupId>system-configuration</groupId>
+				<artifactId>system-configuration</artifactId>
+				<version>1.0.0.0</version>
+			</dependency> 
+
+			<!-- Third Party-->
+
+
+			<dependency>
+				<groupId>jmock</groupId>
+				<artifactId>jmock-cglib</artifactId>
+				<version>1.2.0</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>jmock</groupId>
+				<artifactId>jmock</artifactId>
+				<version>1.2.0</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>integration-test-helper</groupId>
+				<artifactId>integration-test-helper-client</artifactId>
+				<version>1.0.1.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.8.2</version>
+			</dependency> 
+
+			<dependency>
+				<groupId>org.mockito</groupId>
+				<artifactId>mockito-all</artifactId>
+				<version>1.9.5</version>
+			</dependency> 
+
+			<dependency>
+				<groupId>cglib</groupId>
+				<artifactId>cglib</artifactId>
+				<version>2.1_3</version>
+				<scope>test</scope>
+			</dependency> 
+
+			<!-- APDDelivery -->
+			<dependency>
+				<groupId>apd-delivery</groupId>
+				<artifactId>apd-delivery-client</artifactId>
+				<version>1.0.1.0</version>
+			</dependency> 
+
+			<!-- CARRHelper -->
+			<dependency>
+				<groupId>carr-helper</groupId>
+				<artifactId>carr-helper-client</artifactId>
+				<version>1.0.1.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>appraisal-assignment-schema-axmlb</artifactId>
+				<version>1.0.5.0</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>supplement-request-email-schema-axmlb</artifactId>
+				<version>1.0.3.0</version>
+			</dependency>
+		</dependencies>
+
+	</dependencyManagement>
+
+	<modules>
+		<module>aa-svc</module>
+	</modules>
+
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>	
+
+
+		</plugins>
+	</build>
+
+</project>

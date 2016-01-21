@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This file contains the list of all binary dependencies that need to be copied before compiling projects/solution.
+    Currently, the following keyword for build locations are supported:
+    $(SourceDir), $(BuildDir), $(DropLocation)
+-->
+<CopyFilesWildcard>
+  <CopyFiles>
+    <SourcePath>$(SourceDir)\source\aa-svc\ear\target</SourcePath>
+    <DestinationPath>$(DropLocation)\SCM_Appraisal-Assignment\Img\java</DestinationPath>
+    <FilePatterns>*.ear</FilePatterns>
+  </CopyFiles>
+  <CopyFiles>
+    <SourcePath>$(SourceDir)\source\aa-svc\java\target\surefire-reports</SourcePath>
+    <DestinationPath>$(DropLocation)\SCM_Appraisal-Assignment\Img\java\Test-Reports</DestinationPath>
+    <FilePatterns>*.*</FilePatterns>
+  </CopyFiles>
+  <!-- ========= This is the standard Maven copy block for config , sql and other directories ========= -->
+  <CopyFiles>
+    <SourcePath>$(SourceDir)\sql</SourcePath>
+    <DestinationPath>$(DropLocation)\SCM_Appraisal-Assignment\Img\sql</DestinationPath>
+    <FilePatterns>*.*</FilePatterns>
+  </CopyFiles>
+  <CopyFiles>
+    <SourcePath>$(SourceDir)\config</SourcePath>
+    <DestinationPath>$(DropLocation)\SCM_Appraisal-Assignment\Img\config</DestinationPath>
+    <FilePatterns>*.*</FilePatterns>
+  </CopyFiles>
+  <CopyFiles>
+    <SourcePath>$(SourceDir)\documents\deploy</SourcePath>
+    <DestinationPath>$(DropLocation)\SCM_Appraisal-Assignment\documents\deploy</DestinationPath>
+    <FilePatterns>*.*</FilePatterns>
+  </CopyFiles>
+  <CopyFiles>
+    <SourcePath>$(SourceDir)\documents\release-notes</SourcePath>
+    <DestinationPath>$(DropLocation)\SCM_Appraisal-Assignment\documents\release-notes</DestinationPath>
+    <FilePatterns>*.*</FilePatterns>
+  </CopyFiles>
+  <!-- =================================================================================================-->
+</CopyFilesWildcard>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppraisalAssignment xsi:noNamespaceSchemaLocation="AppraisalAssignment.XSD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<AppraisalAssignmentDAODataSource>CCDBDataSource</AppraisalAssignmentDAODataSource>
+	<SuppRequest> 
+		<!-- Update OutputHTMLDocsFlag token from ENVIRONMENT_LOCATION to BASE_ENV -->	      
+		<OutputHTMLDocsFlag>${BASE_ENV}</OutputHTMLDocsFlag>		
+		<TempDir>${NAS_APPLICATION_DIRECTORY_PATH}/mitchell/applications/AppraisalAssignment</TempDir>
+		<TemplateBaseDir>${NAS_APPLICATION_DIRECTORY_PATH}/organizations/mx/templates/SupplementRequest</TemplateBaseDir>
+		<Email>
+    		<FromDisplayName>Appraisal Assignment Service</FromDisplayName>
+    		<FromEmailAddress>donotreply@mitchell.com</FromEmailAddress>
+		</Email>
+		
+		<TextFormat>
+			<SubmitSupplementCmntTemplate>The Supplement Request has been sent to $APPRAISER_NAME$ by $NAME$</SubmitSupplementCmntTemplate>
+			<SubmitSupplementCmntTemplateProps>APPRAISER_NAME,NAME</SubmitSupplementCmntTemplateProps>
+			<EmailSubjectTemplate>Supplement Request for Claim # $CLAIM_NUMBER$</EmailSubjectTemplate>
+			<EmailSubjectTemplateProps>CLAIM_NUMBER</EmailSubjectTemplateProps>
+			<TemplatePrefix>$</TemplatePrefix>
+			<TemplateSuffix>$</TemplateSuffix>
+      
+			<!-- updated template file and line item annotation template file for MIE BMS -->
+			<MIE>
+				<TemplateFile>BMS_Supp_Request_Template.txt</TemplateFile>
+				<TemplateProps>APPRAISER_NAME,NAME,SUPPLEMENT_DATE,CLAIM_NUMBER,COMPANY_NAME,EXTERNAL_ESTIMATE_ID,OWNERNAME,YEAR,MAKE,MODEL,COLOR,SUPPLEMENT_COMMENTS,RECOMMENDED_CHANGES_TEMPLATE,PRIOR_DAMAGE_CHANGES_TEMPLATE,SUPPLEMENT_INSTRUCTIONS_STEPS,NAME,TELEPHONE,EMAIL,FAX</TemplateProps>
+				<AnnotationTemplateFile>BMS_Supp_Request_Line_Item_Template.txt</AnnotationTemplateFile>
+				<AnnotationTemplateProps>LINE_NUMBER,RECOMMENDED_CHANGES,OPERATION,LINE_DESCRIPTION,PARTS_TYPE,PARTS_QUANTITY,PARTS_UNIT_PRICE,PARTS_PRICE,LABOR_HOURS,LABOR_COST,AMOUNT,ANNOTATION_CODE,ANNOTATION_COMMENT</AnnotationTemplateProps>
+			</MIE>
+
+			<EMS>
+				<TemplateFile>EMS_Supplement_Request_Template.txt</TemplateFile>
+				<TemplateProps>APPRAISER_NAME,NAME,SUPPLEMENT_DATE,EXTERNAL_ESTIMATE_ID,COMPANY_NAME,CLAIM_NUMBER,OWNERNAME,YEAR,MAKE,MODEL,COLOR,SUPPLEMENT_COMMENTS,NAME,TELEPHONE,EMAIL,FAX</TemplateProps>
+			</EMS>
+
+			<!-- Added for getting RELATED & UNRELATED PRIOR DAMAGE template file & properties -->
+			<PriorDamage>
+				<TemplateFile>BMS_Supp_Request_Prior_Damage_Template.txt</TemplateFile>
+				<TemplateProps>PRIOR_DAMAGE_CHANGES,RECOMMENDED_CHANGES</TemplateProps>
+			</PriorDamage>			
+
+			<!-- Added for getting MIE & CCCAUDATEX Supplement Instructions template file -->
+			<SupplementInstructions>
+				<MIETemplateFile>UM_BMS_Supp_Request_Instructions_Template.txt</MIETemplateFile>
+				<CCCAudatexTemplateFile>NON_UM_BMS_Supp_Request_Instructions_Template.txt</CCCAudatexTemplateFile>
+				<GMRTemplateFile>NON_UM_BMS_Supp_Request_Instructions_Template</GMRTemplateFile>
+			</SupplementInstructions>
+		</TextFormat>
+		
+	</SuppRequest>	
+	<ExposureActivityLogMessages>
+		<CreateAAActivityLog>The Appraisal Assignment Created Successfully - ORIGINAL</CreateAAActivityLog>
+		<CreateSupplementAAActivityLog>The Supplement Appraisal Assignment Created Successfully - SUPPLEMENT</CreateSupplementAAActivityLog>
+		<CancelAAActivityLog>The Appraisal Assignment Cancelled Successfully</CancelAAActivityLog>
+		<UnCancelAAActivityLog>The Appraisal Assignment Uncancelled Successfully</UnCancelAAActivityLog>
+	    <DispatchAAActivityLog>Appraisal Assignment dispatched to</DispatchAAActivityLog>
+		<UpdateAAActivityLog>The Appraisal Assignment Updated Successfully</UpdateAAActivityLog>
+		<AssignAAActivityLog>The Appraisal Assignment Assigned Successfully to</AssignAAActivityLog>
+		<ReAssignAAActivityLog>The Assignment has been reassigned from</ReAssignAAActivityLog>
+        <AddressValidateAAActivityLogSuccess>The Vehicle Location Address is Passed</AddressValidateAAActivityLogSuccess>
+        <AddressValidateAAActivityLogFailure>The Vehicle Location Address is Failed </AddressValidateAAActivityLogFailure>
+		<CompleteAAActivityLog>The Appraisal Assignment Completed Successfully</CompleteAAActivityLog>
+		<InProgressAAActivityLog>Appraisal Assignment received</InProgressAAActivityLog>
+		<RejectedAAActivityLog>Appraisal Assignment rejected</RejectedAAActivityLog>
+		<UnScheduleAAActivityLog>Appraisal Assignment was rescheduled</UnScheduleAAActivityLog>
+		<DriveInAppointmentActivityLog>Drive-in appointment scheduled on </DriveInAppointmentActivityLog>
+		<AssignToDispatchCenterActivityLog>Assignment Dispatch Center Change</AssignToDispatchCenterActivityLog>
+	</ExposureActivityLogMessages>
+	<AssignmentActivityLogEvents>
+		<CreateAAAssignmentActivityLogDesc>Appraisal Assignment created</CreateAAAssignmentActivityLogDesc>
+		<CreateSupplementAAAssignmentActivityLogDesc>Supplement Appraisal Assignment created</CreateSupplementAAAssignmentActivityLogDesc>
+		<UpdateAAAssignmentActivityLogDesc>Appraisal Assignment updated</UpdateAAAssignmentActivityLogDesc>		
+		<DispatchAAAssignmentActivityLogDesc>Appraisal Assignment dispatched</DispatchAAAssignmentActivityLogDesc>
+		<DispatchSupplementAAAssignmentActivityLogDesc>Supplement Appraisal Assignment dispatched</DispatchSupplementAAAssignmentActivityLogDesc>
+		<UnCancelAAAssignmentActivityLogDesc>Appraisal Assignment uncancelled</UnCancelAAAssignmentActivityLogDesc>
+		<CancelAAAssignmentActivityLogDesc>Appraisal Assignment cancelled</CancelAAAssignmentActivityLogDesc>
+		<AssignAAAssignmentActivityLogDesc>Appraisal Assignment assigned</AssignAAAssignmentActivityLogDesc>
+		<ReAssignAAAssignmentActivityLogDesc>Appraisal Assignment re-assigned</ReAssignAAAssignmentActivityLogDesc>
+		<HoldAAAssignmentActivityLogDesc>Appraisal Assignment on hold</HoldAAAssignmentActivityLogDesc>
+		<RemoveHoldAAAssignmentActivityLogDesc>Appraisal Assignment removed from onhold</RemoveHoldAAAssignmentActivityLogDesc>
+		<UnScheduleAAAssignmentActivityLogDesc>Appraisal Assignment unschedule</UnScheduleAAAssignmentActivityLogDesc>
+		<UpdateDispositionAAAssignmentActivityLogDesc>Assignment Status updated successfully</UpdateDispositionAAAssignmentActivityLogDesc>
+		<ClosedAAAssignmentActivityLogDesc>Appraisal Assignment completed</ClosedAAAssignmentActivityLogDesc>
+		<RejectedAAAssignmentActivityLogDesc>Appraisal Assignment Rejected</RejectedAAAssignmentActivityLogDesc>
+		<ReceivedAAAssignmentActivityLogDesc>Appraisal Assignment Received</ReceivedAAAssignmentActivityLogDesc>
+	</AssignmentActivityLogEvents>
+    <AppLogging>
+        <AppLoggingTemplateBaseDir>${NAS_APPLICATION_DIRECTORY_PATH}/organizations/mx/templates/AppLogging</AppLoggingTemplateBaseDir>
+		<AppLoggingTemplateXslFile>AppLoggingMapping.xsl</AppLoggingTemplateXslFile>
+    </AppLogging>
+	<TestAssignmentDispatcher>Z5:SLADISP1</TestAssignmentDispatcher>
+	<ParallelProcessing>
+      <QueueConnectionFactoryName>java:/JmsXA</QueueConnectionFactoryName>
+      <InputQueueName>PARTIALLOSS.AAS_PARALLELMDB_INPUT</InputQueueName>
+      <ResponseQueueName>PARTIALLOSS.AAS_PARALLELMDB_RESPONSE</ResponseQueueName>
+      <MessageExpirationSecs>300</MessageExpirationSecs>
+      <MaxResponseWaitTimeMillis>180000</MaxResponseWaitTimeMillis>
+	  <MinParallelListSize>3</MinParallelListSize>
+	</ParallelProcessing>
+	<!-- TimeZone mapping list in following order : Windows Time Zone Name, Time Zone Code, Short Mitchell Timezone Name  -->
+	<TimeZoneMappingList>Pacific Standard Time,PST,PT;Central Standard Time,CST,CT;Eastern Standard Time,EST,ET;Hawaiian Standard Time,HST,HT;Alaskan Standard Time,AST,AKT;Mountain Standard Time,MST,MT;US Mountain Standard Time,MST,AZT;Atlantic Standard Time,PRT,AT;Newfoundland Standard Time,CNT,NT;Central Europe Standard Time,ECT,CET;</TimeZoneMappingList>
+	<VehicleTypeExpertiseSkillsList>VN,SU,PC,TK,CC,CI,CU,DL,DV,DX,FG,IP,ST,TM,TR,TX,US:Auto;S1,FM,HE,OL,FD,SV,TP,RA,RC,RU,MT,UV:Other;MC:Motorcycles;AT:ATV;SN:Snowmobile;BV:Marine;CO,HT,:Heavy Truck;RV:Recreational Vehicles;TL:Trailer</VehicleTypeExpertiseSkillsList>
+	<StaticImageBaseUrl>${STATIC_CONTENT_SERVER_URL}</StaticImageBaseUrl>
+
+</AppraisalAssignment>
+

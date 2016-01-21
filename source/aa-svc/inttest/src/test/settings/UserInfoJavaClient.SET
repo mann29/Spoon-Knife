@@ -1,0 +1,7 @@
+<UserInfoJavaClient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="UserInfoJavaClient.xsd">
+	<!--             client side settings starts                                    -->
+	<ProviderUrl>${J2EE_PROVIDER_URL}</ProviderUrl>
+	<JNDIFactory>org.jnp.interfaces.NamingContextFactory</JNDIFactory>
+	<EJBJndi>com.mitchell.services.core.userinfo.ejb.UserInfoServiceEJBRemote</EJBJndi>
+	<!--             client side settings ends                                    -->
+</UserInfoJavaClient>

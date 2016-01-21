@@ -1,0 +1,410 @@
+<AnnotatedEstimate Version="1.1" xmlns="http://www.mitchell.com/schemas/estimate">
+	<FirstReviewTimeStamp>2015-02-12T10:02:37.4851852-08:00</FirstReviewTimeStamp>
+	<LastestReviewTimeStamp>2015-02-12T10:02:37.4851852-08:00</LastestReviewTimeStamp>
+	<ComplianceSection>
+		<ComplianceSignature>
+			<SupplementNumber>0</SupplementNumber>
+			<ReviewCount>0</ReviewCount>
+		</ComplianceSignature>
+		<ComplianceChanges />
+	</ComplianceSection>
+	<EstimateSection>
+		<EstimateSignature>
+			<DocumentID>000000000115-001</DocumentID>
+			<ClaimNum>000000000115-001</ClaimNum>
+			<PolicyNum>0335636870353</PolicyNum>
+		</EstimateSignature>
+		<EstimateChanges>
+			<AdminComments />
+			<DefaultVarianceType>Total</DefaultVarianceType>
+			<DamageLines>
+				<DamageLineInfo>
+					<ID>CurrentClaim2</ID>
+					<LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" UserAddedLine="false">2</LineNum>
+					<Operation>REMOVE/REPLACE</Operation>
+					<Description>Bumper cover w/park sensors w/lamp wash</Description>
+					<PartType>NW</PartType>
+					<PartNumber>C2C20193XXX</PartNumber>
+					<PartQuantity>1</PartQuantity>
+					<UnitPartPrice>1248.45</UnitPartPrice>
+					<PartPrice PPJudgement="false" IncludeInd="false" Taxable="true">1248.45</PartPrice>
+					<LaborType>BDY</LaborType>
+					<LaborHours LHJudgement="false" IncludeInd="false">2.6</LaborHours>
+					<LaborCost>130.0</LaborCost>
+					<Amount>1378.45</Amount>
+					<OriginalAmount>1373.25</OriginalAmount>
+					<LineType>CurrentClaim</LineType>
+				</DamageLineInfo>
+				<DamageLineInfo>
+					<ID>CurrentClaim4</ID>
+					<LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" UserAddedLine="false">4</LineNum>
+					<Description>Add for h'lamp washer</Description>
+					<LaborType>BDY</LaborType>
+					<LaborHours LHJudgement="false" IncludeInd="false">0.6</LaborHours>
+					<LaborCost>30.0</LaborCost>
+					<Amount>30.0</Amount>
+					<OriginalAmount>28.80</OriginalAmount>
+					<LineType>CurrentClaim</LineType>
+				</DamageLineInfo>
+				<DamageLineInfo>
+					<ID>CurrentClaim5</ID>
+					<LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" UserAddedLine="false">5</LineNum>
+					<Description>Add for distance sens</Description>
+					<LaborType>BDY</LaborType>
+					<LaborHours LHJudgement="false" IncludeInd="false">0.5</LaborHours>
+					<LaborCost>25.0</LaborCost>
+					<Amount>25.0</Amount>
+					<OriginalAmount>24.00</OriginalAmount>
+					<LineType>CurrentClaim</LineType>
+				</DamageLineInfo>
+				<DamageLineInfo>
+					<ID>CurrentClaim6</ID>
+					<LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" UserAddedLine="false">6</LineNum>
+					<Description>Aim distance sensor</Description>
+					<LaborType>BDY</LaborType>
+					<LaborHours LHJudgement="false" IncludeInd="false">0.7</LaborHours>
+					<LaborCost>35.0</LaborCost>
+					<Amount>35.0</Amount>
+					<OriginalAmount>33.60</OriginalAmount>
+					<LineType>CurrentClaim</LineType>
+				</DamageLineInfo>
+				<DamageLineInfo>
+					<ID>CurrentClaim7</ID>
+					<LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" UserAddedLine="false">7</LineNum>
+					<Description>Add for park sensor</Description>
+					<LaborType>BDY</LaborType>
+					<LaborHours LHJudgement="false" IncludeInd="false">0.8</LaborHours>
+					<LaborCost>40.0</LaborCost>
+					<Amount>40.0</Amount>
+					<OriginalAmount>38.40</OriginalAmount>
+					<LineType>CurrentClaim</LineType>
+				</DamageLineInfo>
+				<DamageLineInfo>
+					<ID>CurrentClaim9</ID>
+					<LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" UserAddedLine="false">9</LineNum>
+					<Operation>REMOVE/REPLACE</Operation>
+					<Description>RT Headlamp assy to VIN G45139</Description>
+					<PartType>NW</PartType>
+					<PartNumber>C2C22619</PartNumber>
+					<PartQuantity>1</PartQuantity>
+					<UnitPartPrice>1218.00</UnitPartPrice>
+					<PartPrice PPJudgement="false" IncludeInd="false" Taxable="true">1218.00</PartPrice>
+					<LaborType>BDY</LaborType>
+					<LaborHours LHJudgement="false" IncludeInd="false">0.4</LaborHours>
+					<LaborCost>20.0</LaborCost>
+					<Amount>1238.00</Amount>
+					<OriginalAmount>1237.20</OriginalAmount>
+					<LineType>CurrentClaim</LineType>
+				</DamageLineInfo>
+				<DamageLineInfo>
+					<ID>CurrentClaim10</ID>
+					<LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" UserAddedLine="false">10</LineNum>
+					<Description>Aim headlamps</Description>
+					<LaborType>BDY</LaborType>
+					<LaborHours LHJudgement="false" IncludeInd="false">0.5</LaborHours>
+					<LaborCost>25.0</LaborCost>
+					<Amount>25.0</Amount>
+					<OriginalAmount>24.00</OriginalAmount>
+					<LineType>CurrentClaim</LineType>
+				</DamageLineInfo>
+				<DamageLineInfo>
+					<ID>CurrentClaim11</ID>
+					<LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" UserAddedLine="false">11</LineNum>
+					<Operation>REMOVE/REPLACE</Operation>
+					<Description>LT Headlamp assy to VIN G45139</Description>
+					<PartType>NW</PartType>
+					<PartNumber>C2C22626</PartNumber>
+					<PartQuantity>1</PartQuantity>
+					<UnitPartPrice>1218.00</UnitPartPrice>
+					<PartPrice PPJudgement="false" IncludeInd="false" Taxable="true">1218.00</PartPrice>
+					<LaborType>BDY</LaborType>
+					<LaborHours LHJudgement="false" IncludeInd="false">0.4</LaborHours>
+					<LaborCost>20.0</LaborCost>
+					<Amount>1238.00</Amount>
+					<OriginalAmount>1237.20</OriginalAmount>
+					<LineType>CurrentClaim</LineType>
+				</DamageLineInfo>
+				<DamageLineInfo>
+					<ID>CurrentClaim13</ID>
+					<LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" UserAddedLine="false">13</LineNum>
+					<Operation>REMOVE/REPLACE</Operation>
+					<Description>Hood w/o leaper (ALU)</Description>
+					<PartType>NW</PartType>
+					<PartNumber>C2C37987</PartNumber>
+					<PartQuantity>1</PartQuantity>
+					<UnitPartPrice>1852.38</UnitPartPrice>
+					<PartPrice PPJudgement="false" IncludeInd="false" Taxable="true">1852.38</PartPrice>
+					<LaborType>BDY</LaborType>
+					<LaborHours LHJudgement="false" IncludeInd="false">2.0</LaborHours>
+					<LaborCost>100.0</LaborCost>
+					<Amount>1952.38</Amount>
+					<OriginalAmount>1948.38</OriginalAmount>
+					<LineType>CurrentClaim</LineType>
+				</DamageLineInfo>
+				<DamageLineInfo>
+					<ID>CurrentClaim17</ID>
+					<LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" UserAddedLine="false">17</LineNum>
+					<Operation>REMOVE/REPLACE</Operation>
+					<Description>RT Fender w/o Super V8 (ALU)</Description>
+					<PartType>NW</PartType>
+					<PartNumber>C2C25394</PartNumber>
+					<PartQuantity>1</PartQuantity>
+					<UnitPartPrice>883.05</UnitPartPrice>
+					<PartPrice PPJudgement="false" IncludeInd="false" Taxable="true">883.05</PartPrice>
+					<LaborType>BDY</LaborType>
+					<LaborHours LHJudgement="false" IncludeInd="false">3.2</LaborHours>
+					<LaborCost>160.0</LaborCost>
+					<Amount>1043.05</Amount>
+					<OriginalAmount>1036.65</OriginalAmount>
+					<LineType>CurrentClaim</LineType>
+				</DamageLineInfo>
+				<DamageLineInfo>
+					<ID>CurrentClaim21</ID>
+					<LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" UserAddedLine="false">21</LineNum>
+					<Operation>REMOVE/REPLACE</Operation>
+					<Description>LT Fender w/o Super V8 (ALU)</Description>
+					<PartType>NW</PartType>
+					<PartNumber>C2C25397</PartNumber>
+					<PartQuantity>1</PartQuantity>
+					<UnitPartPrice>883.05</UnitPartPrice>
+					<PartPrice PPJudgement="false" IncludeInd="false" Taxable="true">883.05</PartPrice>
+					<LaborType>BDY</LaborType>
+					<LaborHours LHJudgement="false" IncludeInd="false">3.2</LaborHours>
+					<LaborCost>160.0</LaborCost>
+					<Amount>1043.05</Amount>
+					<OriginalAmount>1036.65</OriginalAmount>
+					<LineType>CurrentClaim</LineType>
+				</DamageLineInfo>
+				<DamageLineInfo>
+					<ID>CurrentClaim26</ID>
+					<LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" UserAddedLine="false">26</LineNum>
+					<Operation>REMOVE/REPLACE</Operation>
+					<Description>Driver air bag granite</Description>
+					<PartType>NW</PartType>
+					<PartNumber>C2C25680LGP</PartNumber>
+					<PartQuantity>1</PartQuantity>
+					<UnitPartPrice>1143.30</UnitPartPrice>
+					<PartPrice PPJudgement="false" IncludeInd="false" Taxable="true">1143.30</PartPrice>
+					<LaborType>BDY</LaborType>
+					<LaborHours LHJudgement="false" IncludeInd="false">0.4</LaborHours>
+					<LaborCost>20.0</LaborCost>
+					<Amount>1163.30</Amount>
+					<OriginalAmount>1162.50</OriginalAmount>
+					<LineType>CurrentClaim</LineType>
+				</DamageLineInfo>
+				<DamageLineInfo>
+					<ID>CurrentClaim27</ID>
+					<LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" UserAddedLine="false">27</LineNum>
+					<Description>Air bag system diagnosis</Description>
+					<LaborType>BDY</LaborType>
+					<LaborHours LHJudgement="false" IncludeInd="false">0.5</LaborHours>
+					<LaborCost>25.0</LaborCost>
+					<Amount>25.0</Amount>
+					<OriginalAmount>24.00</OriginalAmount>
+					<LineType>CurrentClaim</LineType>
+				</DamageLineInfo>
+				<DamageLineInfo>
+					<ID>CurrentClaim28</ID>
+					<LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" UserAddedLine="false">28</LineNum>
+					<Operation>REMOVE/REPLACE</Operation>
+					<Description>Psngr air bag</Description>
+					<PartType>NW</PartType>
+					<PartNumber>C2C37711</PartNumber>
+					<PartQuantity>1</PartQuantity>
+					<UnitPartPrice>787.95</UnitPartPrice>
+					<PartPrice PPJudgement="false" IncludeInd="false" Taxable="true">787.95</PartPrice>
+					<LaborType>BDY</LaborType>
+					<LaborHours LHJudgement="false" IncludeInd="false">0.5</LaborHours>
+					<LaborCost>25.0</LaborCost>
+					<Amount>812.95</Amount>
+					<OriginalAmount>811.95</OriginalAmount>
+					<LineType>CurrentClaim</LineType>
+				</DamageLineInfo>
+			</DamageLines>
+			<ReviewComments>asd</ReviewComments>
+			<ProfileInfo>
+				<RateInfo>
+					<RateType>BDY</RateType>
+					<RateDesc>Body</RateDesc>
+					<RateTierInfo>
+						<Rate>50</Rate>
+						<ThresholdAmt>0</ThresholdAmt>
+					</RateTierInfo>
+				</RateInfo>
+			</ProfileInfo>
+			<RepairTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LAB</TotalType>
+					<TotalTypeDesc>Body</TotalTypeDesc>
+					<TotalHours>16.3</TotalHours>
+					<TotalAmt>815</TotalAmt>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LABA</TotalType>
+					<TotalTypeDesc>Body Additional Labor</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LABS</TotalType>
+					<TotalTypeDesc>Body Labor Sublet</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LAF</TotalType>
+					<TotalTypeDesc>Frame</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LAFA</TotalType>
+					<TotalTypeDesc>Frame Additional Labor</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LAFS</TotalType>
+					<TotalTypeDesc>Frame Labor Sublet</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LAG</TotalType>
+					<TotalTypeDesc>Glass</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LAGA</TotalType>
+					<TotalTypeDesc>Glass Additional Labor</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LAGS</TotalType>
+					<TotalTypeDesc>Glass Labor Sublet</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LAM</TotalType>
+					<TotalTypeDesc>Mechanical</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LAMA</TotalType>
+					<TotalTypeDesc>Mechanical Additional Labor</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LAMS</TotalType>
+					<TotalTypeDesc>Mechanical Labor Sublet</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LAR</TotalType>
+					<TotalTypeDesc>Paint</TotalTypeDesc>
+					<TotalHours>15.1</TotalHours>
+					<TotalAmt>724.8</TotalAmt>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LARA</TotalType>
+					<TotalTypeDesc>Paint Additional Labor</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LARS</TotalType>
+					<TotalTypeDesc>Paint Labor Sublet</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LAS</TotalType>
+					<TotalTypeDesc>Structural</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LASA</TotalType>
+					<TotalTypeDesc>Structural Additional Labor</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LASS</TotalType>
+					<TotalTypeDesc>Structural Labor Sublet</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LAE</TotalType>
+					<TotalTypeDesc>Electrical</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LAD</TotalType>
+					<TotalTypeDesc>Diagnostic</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LAP</TotalType>
+					<TotalTypeDesc>PDR</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LA1</TotalType>
+					<TotalTypeDesc>User Defined 1</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LA2</TotalType>
+					<TotalTypeDesc>User Defined 2</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LA3</TotalType>
+					<TotalTypeDesc>User Defined 3</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LA4</TotalType>
+					<TotalTypeDesc>User Defined 4</TotalTypeDesc>
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType />
+					<TotalTypeDesc />
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType />
+					<TotalTypeDesc />
+				</LaborTotalsInfo>
+				<LaborTotalsInfo>
+					<TotalType>LAT</TotalType>
+					<TotalTypeDesc>Labor - Total</TotalTypeDesc>
+					<TotalHours>31.4</TotalHours>
+					<TotalAmt>1539.8</TotalAmt>
+				</LaborTotalsInfo>
+				<PartsTotalsInfo>
+					<TotalType>PA</TotalType>
+					<TotalTypeDesc>Parts</TotalTypeDesc>
+					<TotalAmt>9234.18</TotalAmt>
+				</PartsTotalsInfo>
+				<OtherChargesTotalsInfo>
+					<TotalType>OTTW</TotalType>
+					<TotalTypeDesc>Other - Towing</TotalTypeDesc>
+					<TotalAmt>0</TotalAmt>
+				</OtherChargesTotalsInfo>
+				<OtherChargesTotalsInfo>
+					<TotalType>OTST</TotalType>
+					<TotalTypeDesc>Other - Storage</TotalTypeDesc>
+					<TotalAmt>0</TotalAmt>
+				</OtherChargesTotalsInfo>
+				<OtherChargesTotalsInfo>
+					<TotalType>MAHW</TotalType>
+					<TotalTypeDesc>Materials - Hazardous Waste</TotalTypeDesc>
+					<TotalAmt>0</TotalAmt>
+				</OtherChargesTotalsInfo>
+				<OtherChargesTotalsInfo>
+					<TotalType>OTAC</TotalType>
+					<TotalTypeDesc>Other - Additional Cost</TotalTypeDesc>
+					<TotalAmt>0</TotalAmt>
+				</OtherChargesTotalsInfo>
+				<OtherChargesTotalsInfo>
+					<TotalType>TOT</TotalType>
+					<TotalTypeDesc>Total</TotalTypeDesc>
+					<TotalAmt>0</TotalAmt>
+				</OtherChargesTotalsInfo>
+				<SummaryTotalsInfo>
+					<TotalType>MAT</TotalType>
+					<TotalTypeDesc>Materials</TotalTypeDesc>
+					<TotalAmt>422.8</TotalAmt>
+				</SummaryTotalsInfo>
+				<SummaryTotalsInfo>
+					<TotalType>TOT</TotalType>
+					<TotalSubType>CE</TotalSubType>
+					<TotalTypeDesc>Gross Total</TotalTypeDesc>
+					<TaxTotalAmt>772.56</TaxTotalAmt>
+					<TotalAmt>11969.34</TotalAmt>
+				</SummaryTotalsInfo>
+				<SummaryTotalsInfo>
+					<TotalType>TOT</TotalType>
+					<TotalSubType>TT</TotalSubType>
+					<TotalTypeDesc>Net Total</TotalTypeDesc>
+					<TotalAdjustmentInfo>
+						<AdjustmentType>Adjustment</AdjustmentType>
+						<TotalAdjustmentAmt>0.00</TotalAdjustmentAmt>
+					</TotalAdjustmentInfo>
+					<TotalAmt>11969.34</TotalAmt>
+				</SummaryTotalsInfo>
+				<RepairTotalsType>Current Claim</RepairTotalsType>
+			</RepairTotalsInfo>
+		</EstimateChanges>
+	</EstimateSection>
+</AnnotatedEstimate>

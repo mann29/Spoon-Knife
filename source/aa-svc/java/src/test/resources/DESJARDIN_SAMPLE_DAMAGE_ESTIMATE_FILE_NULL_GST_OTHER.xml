@@ -1,0 +1,922 @@
+<VehicleDamageEstimateAddRq xmlns="http://www.cieca.com/BMS">
+  <RqUID>3bccb213-ac18-3721-0703-f25f64460c03</RqUID>
+  <RefClaimNum>12-1342324-01</RefClaimNum>
+  <DocumentInfo>
+    <BMSVer>5.1.1</BMSVer>
+    <DocumentType>E</DocumentType>
+    <DocumentID>12-1342324-0120151005231551</DocumentID>
+    <VendorCode>M</VendorCode>
+    <DocumentVer>
+      <DocumentVerCode>EM</DocumentVerCode>
+      <DocumentVerNum>0</DocumentVerNum>
+    </DocumentVer>
+    <DocumentVer>
+      <DocumentVerCode>VN</DocumentVerCode>
+      <DocumentVerNum>0</DocumentVerNum>
+    </DocumentVer>
+    <DocumentStatus>C</DocumentStatus>
+    <CreateDateTime>2015-10-05T23:18:02.793-07:00</CreateDateTime>
+    <TransmitDateTime>2015-10-05T23:18:02.793-07:00</TransmitDateTime>
+  </DocumentInfo>
+  <ApplicationInfo>
+    <ApplicationType>Estimating</ApplicationType>
+    <ApplicationName>ULTRAMATE</ApplicationName>
+    <ApplicationVer>7.1</ApplicationVer>
+    <DatabaseVer>JUL_15_V</DatabaseVer>
+    <DatabaseDateTime>2015-07-01T12:00:00-00:00</DatabaseDateTime>
+  </ApplicationInfo>
+  <ApplicationInfo>
+    <ApplicationType>Program</ApplicationType>
+    <ApplicationName>ULTRAMATE PROGRAM VERSION</ApplicationName>
+    <ApplicationVer>7.1.179</ApplicationVer>
+  </ApplicationInfo>
+  <ApplicationInfo>
+    <ApplicationType>Conversion</ApplicationType>
+    <ApplicationName>MieToCiecaBms</ApplicationName>
+    <ApplicationVer>MUM70SPR249</ApplicationVer>
+  </ApplicationInfo>
+  <EventInfo>
+    <AssignmentEvent>
+      <CreateDateTime>2015-10-05T12:00:00-00:00</CreateDateTime>
+    </AssignmentEvent>
+    <EstimateEvent>
+      <CommitDateTime>2015-10-05T23:15:51.000-07:00</CommitDateTime>
+      <UploadDateTime>2015-10-05T23:18:02.794-07:00</UploadDateTime>
+      <PrintDateTime>2015-10-05T23:15:51.000-07:00</PrintDateTime>
+    </EstimateEvent>
+  </EventInfo>
+  <AdminInfo>
+    <InsuranceCompany>
+      <Party>
+        <OrgInfo>
+          <CompanyName>Desjardins General Insurance Group</CompanyName>
+        </OrgInfo>
+      </Party>
+    </InsuranceCompany>
+    <PolicyHolder>
+      <Party>
+        <PersonInfo>
+          <PersonName>
+            <LastName>test</LastName>
+          </PersonName>
+        </PersonInfo>
+      </Party>
+    </PolicyHolder>
+    <Estimator>
+      <Party>
+        <PersonInfo>
+          <PersonName>
+            <FirstName>SCRUMptious</FirstName>
+            <LastName>I9ST01</LastName>
+          </PersonName>
+          <Communications>
+            <CommQualifier>AL</CommQualifier>
+            <Address>
+              <Address1>9341 Boulevard Sainte-Anne</Address1>
+              <City>Sainte-Anne-de-Beaupré</City>
+              <StateProvince>QC</StateProvince>
+              <PostalCode>G0A 3C0</PostalCode>
+            </Address>
+          </Communications>
+        </PersonInfo>
+        <ContactInfo>
+          <Communications>
+            <CommQualifier>WP</CommQualifier>
+            <CommPhone>+1-123-4567890</CommPhone>
+          </Communications>
+        </ContactInfo>
+      </Party>
+      <Affiliation>69</Affiliation>
+    </Estimator>
+    <InspectionSite>
+      <Party>
+        <OrgInfo>
+          <CompanyName>SCRUMptious BS</CompanyName>
+          <Communications>
+            <CommQualifier>AL</CommQualifier>
+            <Address>
+              <Address1>9341 Boulevard Sainte-Anne</Address1>
+              <City>Sainte-Anne-de-Beaupré</City>
+              <StateProvince>QC</StateProvince>
+              <PostalCode>G0A 3C0</PostalCode>
+            </Address>
+          </Communications>
+        </OrgInfo>
+        <ContactInfo>
+          <Communications>
+            <CommQualifier>TE</CommQualifier>
+            <CommPhone>123-4567890</CommPhone>
+          </Communications>
+        </ContactInfo>
+      </Party>
+    </InspectionSite>
+    <RepairFacility>
+      <Party>
+        <OrgInfo>
+          <CompanyName>SCRUMptious BS</CompanyName>
+          <Communications>
+            <CommQualifier>AL</CommQualifier>
+            <Address>
+              <Address1>9341 Boulevard Sainte-Anne</Address1>
+              <City>Sainte-Anne-de-Beaupré</City>
+              <StateProvince>QC</StateProvince>
+              <PostalCode>G0A 3C0</PostalCode>
+            </Address>
+          </Communications>
+        </OrgInfo>
+        <ContactInfo>
+          <Communications>
+            <CommQualifier>WP</CommQualifier>
+            <CommPhone>+1-123-4567890</CommPhone>
+          </Communications>
+        </ContactInfo>
+      </Party>
+    </RepairFacility>
+    <Sender>
+      <Party>
+        <OrgInfo>
+          <CompanyName>Mitchell International</CompanyName>
+          <IDInfo>
+            <IDQualifierCode>FI</IDQualifierCode>
+            <IDNum>362849492</IDNum>
+          </IDInfo>
+        </OrgInfo>
+      </Party>
+    </Sender>
+    <OtherParty>
+      <Party>
+        <OrgInfo>
+          <CompanyName>I9</CompanyName>
+        </OrgInfo>
+      </Party>
+      <AdminType>CMP</AdminType>
+    </OtherParty>
+  </AdminInfo>
+  <EstimatorIDs>
+    <OriginalEstimatorID>11021999</OriginalEstimatorID>
+    <CurrentEstimatorID>11021999</CurrentEstimatorID>
+  </EstimatorIDs>
+  <ClaimInfo>
+    <ClaimNum>12-1342324-01</ClaimNum>
+    <PolicyInfo>
+      <CoverageInfo>
+        <Coverage>
+          <CoverageCategory>C</CoverageCategory>
+          <DeductibleInfo>
+            <DeductibleStatus>FK</DeductibleStatus>
+            <DeductibleAmt>0.00</DeductibleAmt>
+          </DeductibleInfo>
+        </Coverage>
+      </CoverageInfo>
+    </PolicyInfo>
+    <LossInfo>
+      <Facts>
+        <LossDateTime>2015-09-01T12:00:00-00:00</LossDateTime>
+      </Facts>
+      <Inspection>
+        <InspectionSiteCode>OTHR</InspectionSiteCode>
+      </Inspection>
+      <TotalLossInd>N</TotalLossInd>
+    </LossInfo>
+  </ClaimInfo>
+  <VehicleInfo>
+    <VINInfo>
+      <VINAvailabilityCode>Unreadable</VINAvailabilityCode>
+    </VINInfo>
+    <VehicleDesc>
+      <ModelYear>2014</ModelYear>
+      <MakeDesc>Audi</MakeDesc>
+      <ModelName>A4 allroad</ModelName>
+      <SubModelDesc>Progressiv</SubModelDesc>
+      <VehicleType>PC</VehicleType>
+      <VehicleOptions>
+        <Option>
+          <OptionCode>DAB</OptionCode>
+          <OptionDesc>Passenger-Front Air Bag</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>ES</OptionCode>
+          <OptionDesc>Power Driver Seat</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>PL</OptionCode>
+          <OptionDesc>Power Door Locks</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>PW</OptionCode>
+          <OptionDesc>Power Windows</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>PS</OptionCode>
+          <OptionDesc>Power Steering</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>DEF</OptionCode>
+          <OptionDesc>Electric Defogger</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>AC</OptionCode>
+          <OptionDesc>Air Conditioning</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>CC</OptionCode>
+          <OptionDesc>Cruise Control</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>TW</OptionCode>
+          <OptionDesc>Tilt Steering Wheel</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>FMS</OptionCode>
+          <OptionDesc>AM-FM Stereo</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>ABR</OptionCode>
+          <OptionDesc>Driver-Front Air Bag</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>DHM</OptionCode>
+          <OptionDesc>Heated Mirror</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>DAC</OptionCode>
+          <OptionDesc>Dual A/C</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>LTH</OptionCode>
+          <OptionDesc>Leather Seats</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>PPS</OptionCode>
+          <OptionDesc>Power Passenger Seat</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>ZG</OptionCode>
+          <OptionDesc>Left-Curtain Air Bag</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>PRM</OptionCode>
+          <OptionDesc>Premium Sound Sys.</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>ABS</OptionCode>
+          <OptionDesc>Anti-Lock Brake Sys. (ABS)</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>PT</OptionCode>
+          <OptionDesc>Traction Control/Electronic</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>FOG</OptionCode>
+          <OptionDesc>Fog Lights</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>ALW</OptionCode>
+          <OptionDesc>Alum/Alloy Wheels</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>PRL</OptionCode>
+          <OptionDesc>Power Rear Liftgate</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>MQ</OptionCode>
+          <OptionDesc>Memory Seats</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>TDS</OptionCode>
+          <OptionDesc>Theft Deterrent Sys.</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>NGS</OptionCode>
+          <OptionDesc>Navigation Sys.</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>AI</OptionCode>
+          <OptionDesc>Auxiliary Input</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>BPC</OptionCode>
+          <OptionDesc>Bluetooth Wireless Connectivity</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>HD</OptionCode>
+          <OptionDesc>Hard Drive</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>LSW</OptionCode>
+          <OptionDesc>Leather Steering Wheel</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>SLR</OptionCode>
+          <OptionDesc>Satellite Radio</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>CDC</OptionCode>
+          <OptionDesc>CD Player</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>PM</OptionCode>
+          <OptionDesc>Power Remote Mirror</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>MSR</OptionCode>
+          <OptionDesc>Manual Sunroof</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>AC</OptionCode>
+          <OptionDesc>Auto Air Condition</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>TCM</OptionCode>
+          <OptionDesc>Trip Computer</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>FRBS</OptionCode>
+          <OptionDesc>First Row Bucket Seat</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>RHVA</OptionCode>
+          <OptionDesc>Rear Heating, Ventilation &amp; Air Conditioning</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>4WD</OptionCode>
+          <OptionDesc>All Wheel Drive</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>SAG</OptionCode>
+          <OptionDesc>Side Airbags</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>SRAH</OptionCode>
+          <OptionDesc>Second Row Side Airbag With Head Protection</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>IAEM</OptionCode>
+          <OptionDesc>Interior Automatic Day/Night Or Electrochromatic Mirror</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>DSR</OptionCode>
+          <OptionDesc>Dual Sunroof</OptionDesc>
+        </Option>
+        <Option>
+          <OptionCode>MP3P</OptionCode>
+          <OptionDesc>MP3 Player</OptionDesc>
+        </Option>
+      </VehicleOptions>
+      <DatabaseCode>911474</DatabaseCode>
+    </VehicleDesc>
+    <Body>
+      <BodyStyle>4D Wgn</BodyStyle>
+    </Body>
+    <Powertrain>
+      <EngineDesc>2.0L Turbo Inj 4 Cyl</EngineDesc>
+      <EngineCode>00090</EngineCode>
+      <TransmissionInfo>
+        <TransmissionCode>00029</TransmissionCode>
+        <TransmissionDesc>8A</TransmissionDesc>
+      </TransmissionInfo>
+      <Configuration>AWD</Configuration>
+    </Powertrain>
+    <Condition>
+      <DrivableInd>U</DrivableInd>
+      <PriorDamageInd>N</PriorDamageInd>
+    </Condition>
+    <Valuation>
+      <ValuationType>BKV</ValuationType>
+      <ValuationAmt>45700.00</ValuationAmt>
+    </Valuation>
+  </VehicleInfo>
+  <ProfileInfo>
+    <ProfileName>* Mitchell</ProfileName>
+    <RateInfo>
+      <RateType>LA</RateType>
+      <RateDesc>Labor</RateDesc>
+      <TaxableInd>1</TaxableInd>
+      <TaxInfo>
+        <TaxType>LS</TaxType>
+        <TaxableInd>1</TaxableInd>
+        <TaxTierInfo>
+          <TierNum>1</TierNum>
+          <Percentage>10.00</Percentage>
+        </TaxTierInfo>
+      </TaxInfo>
+    </RateInfo>
+    <RateInfo>
+      <RateType>PA</RateType>
+      <RateDesc>Parts</RateDesc>
+      <TaxableInd>1</TaxableInd>
+      <TaxInfo>
+        <TaxType>LS</TaxType>
+        <TaxableInd>1</TaxableInd>
+        <TaxTierInfo>
+          <TierNum>1</TierNum>
+          <Percentage>10.00</Percentage>
+        </TaxTierInfo>
+      </TaxInfo>
+    </RateInfo>
+    <RateInfo>
+      <RateType>PAN</RateType>
+      <RateDesc>New Parts</RateDesc>
+      <TaxableInd>1</TaxableInd>
+      <TaxInfo>
+        <TaxType>LS</TaxType>
+        <TaxableInd>1</TaxableInd>
+      </TaxInfo>
+    </RateInfo>
+    <RateInfo>
+      <RateType>PAG</RateType>
+      <RateDesc>Glass</RateDesc>
+      <TaxableInd>1</TaxableInd>
+      <TaxInfo>
+        <TaxType>LS</TaxType>
+        <TaxableInd>1</TaxableInd>
+      </TaxInfo>
+    </RateInfo>
+    <RateInfo>
+      <RateType>PAL</RateType>
+      <RateDesc>Like Kind &amp; Quality</RateDesc>
+      <TaxableInd>1</TaxableInd>
+      <TaxInfo>
+        <TaxType>LS</TaxType>
+        <TaxableInd>1</TaxableInd>
+      </TaxInfo>
+    </RateInfo>
+    <RateInfo>
+      <RateType>PAR</RateType>
+      <RateDesc>Recored Parts</RateDesc>
+      <TaxableInd>1</TaxableInd>
+      <TaxInfo>
+        <TaxType>LS</TaxType>
+        <TaxableInd>1</TaxableInd>
+      </TaxInfo>
+    </RateInfo>
+    <RateInfo>
+      <RateType>PAC</RateType>
+      <RateDesc>Rechromed Parts</RateDesc>
+      <TaxableInd>1</TaxableInd>
+      <TaxInfo>
+        <TaxType>LS</TaxType>
+        <TaxableInd>1</TaxableInd>
+      </TaxInfo>
+    </RateInfo>
+    <RateInfo>
+      <RateType>PAM</RateType>
+      <RateDesc>Remanufactured Parts</RateDesc>
+      <TaxableInd>1</TaxableInd>
+      <TaxInfo>
+        <TaxType>LS</TaxType>
+        <TaxableInd>1</TaxableInd>
+      </TaxInfo>
+    </RateInfo>
+    <RateInfo>
+      <RateType>PAA</RateType>
+      <RateDesc>Aftermarket Parts</RateDesc>
+      <TaxableInd>1</TaxableInd>
+      <TaxInfo>
+        <TaxType>LS</TaxType>
+        <TaxableInd>1</TaxableInd>
+      </TaxInfo>
+    </RateInfo>
+    <RateInfo>
+      <RateType>OTSL</RateType>
+      <RateDesc>Sublet</RateDesc>
+      <TaxableInd>1</TaxableInd>
+      <TaxInfo>
+        <TaxType>LS</TaxType>
+        <TaxableInd>1</TaxableInd>
+      </TaxInfo>
+    </RateInfo>
+    <RateInfo>
+      <RateType>LAB</RateType>
+      <RateDesc>Body Labor</RateDesc>
+      <RateTierInfo>
+        <TierNum>1</TierNum>
+        <Rate>10.00</Rate>
+      </RateTierInfo>
+      <TaxableInd>1</TaxableInd>
+      <TaxInfo>
+        <TaxType>LS</TaxType>
+        <TaxableInd>1</TaxableInd>
+      </TaxInfo>
+    </RateInfo>
+    <RateInfo>
+      <RateType>LAG</RateType>
+      <RateDesc>Glass Labor</RateDesc>
+      <RateTierInfo>
+        <TierNum>1</TierNum>
+        <Rate>10.00</Rate>
+      </RateTierInfo>
+      <TaxableInd>1</TaxableInd>
+      <TaxInfo>
+        <TaxType>LS</TaxType>
+        <TaxableInd>1</TaxableInd>
+      </TaxInfo>
+    </RateInfo>
+    <RateInfo>
+      <RateType>LAM</RateType>
+      <RateDesc>Mechanical Labor</RateDesc>
+      <RateTierInfo>
+        <TierNum>1</TierNum>
+        <Rate>10.00</Rate>
+      </RateTierInfo>
+      <TaxableInd>0</TaxableInd>
+      <TaxInfo>
+        <TaxType>LS</TaxType>
+        <TaxableInd>0</TaxableInd>
+      </TaxInfo>
+    </RateInfo>
+    <RateInfo>
+      <RateType>LAR</RateType>
+      <RateDesc>Refinish Labor</RateDesc>
+      <RateTierInfo>
+        <TierNum>1</TierNum>
+        <Rate>10.00</Rate>
+      </RateTierInfo>
+      <TaxableInd>1</TaxableInd>
+      <TaxInfo>
+        <TaxType>LS</TaxType>
+        <TaxableInd>1</TaxableInd>
+      </TaxInfo>
+    </RateInfo>
+    <RateInfo>
+      <RateType>LAF</RateType>
+      <RateDesc>Frame Labor</RateDesc>
+      <RateTierInfo>
+        <TierNum>1</TierNum>
+        <Rate>10.00</Rate>
+      </RateTierInfo>
+      <TaxableInd>1</TaxableInd>
+      <TaxInfo>
+        <TaxType>LS</TaxType>
+        <TaxableInd>1</TaxableInd>
+      </TaxInfo>
+    </RateInfo>
+    <RateInfo>
+      <RateType>LAS</RateType>
+      <RateDesc>Structural Labor</RateDesc>
+      <RateTierInfo>
+        <TierNum>1</TierNum>
+        <Rate>10.00</Rate>
+      </RateTierInfo>
+      <TaxableInd>1</TaxableInd>
+      <TaxInfo>
+        <TaxType>LS</TaxType>
+        <TaxableInd>1</TaxableInd>
+      </TaxInfo>
+    </RateInfo>
+    <RateInfo>
+      <RateType>MA2S</RateType>
+      <RateDesc>Clear Coat</RateDesc>
+      <RateTierInfo>
+        <TierNum>1</TierNum>
+        <Percentage>40.00</Percentage>
+      </RateTierInfo>
+      <RateTierInfo>
+        <TierNum>2</TierNum>
+        <Percentage>20.00</Percentage>
+      </RateTierInfo>
+      <MaterialCalcSettings>
+        <CalcMethodCode>1</CalcMethodCode>
+        <CalcMaxHours>999.9</CalcMaxHours>
+      </MaterialCalcSettings>
+    </RateInfo>
+    <RateInfo>
+      <RateType>MA2T</RateType>
+      <RateDesc>Two Tone</RateDesc>
+      <RateTierInfo>
+        <TierNum>1</TierNum>
+        <Percentage>50.00</Percentage>
+      </RateTierInfo>
+      <RateTierInfo>
+        <TierNum>2</TierNum>
+        <Percentage>30.00</Percentage>
+      </RateTierInfo>
+      <MaterialCalcSettings>
+        <CalcMethodCode>1</CalcMethodCode>
+        <CalcMaxHours>999.9</CalcMaxHours>
+      </MaterialCalcSettings>
+    </RateInfo>
+    <RateInfo>
+      <RateType>MA3S</RateType>
+      <RateDesc>Three Stage</RateDesc>
+      <RateTierInfo>
+        <TierNum>1</TierNum>
+        <Percentage>70.00</Percentage>
+      </RateTierInfo>
+      <RateTierInfo>
+        <TierNum>2</TierNum>
+        <Percentage>40.00</Percentage>
+      </RateTierInfo>
+      <MaterialCalcSettings>
+        <CalcMethodCode>1</CalcMethodCode>
+        <CalcMaxHours>999.9</CalcMaxHours>
+      </MaterialCalcSettings>
+    </RateInfo>
+    <PartCertification>
+      <CertificationType>C</CertificationType>
+      <CertifiedOnlyInd>1</CertifiedOnlyInd>
+      <CertifiedPreferredInd>0</CertifiedPreferredInd>
+    </PartCertification>
+    <CostPlusBasisInd>0</CostPlusBasisInd>
+    <EdgingTimeInd>1</EdgingTimeInd>
+    <UndersideTimeInd>1</UndersideTimeInd>
+    <CanadianTax>
+      <TaxableInd>0</TaxableInd>
+      <GoodsServicesTaxRate>10.00</GoodsServicesTaxRate>
+    </CanadianTax>
+  </ProfileInfo>
+  <DamageLineInfo>
+    <LineNum>1</LineNum>
+    <UniqueSequenceNum>29</UniqueSequenceNum>
+    <ManualLineInd>0</ManualLineInd>
+    <AutomatedEntry>0</AutomatedEntry>
+    <LineStatusCode>1</LineStatusCode>
+    <VendorRefNum>101551</VendorRefNum>
+    <LineDesc>Grille Assy</LineDesc>
+    <DescJudgmentInd>0</DescJudgmentInd>
+    <LineDescCode>***IABN***</LineDescCode>
+    <LaborInfo>
+      <LaborType>LAB</LaborType>
+      <LaborOperation>OP2</LaborOperation>
+      <LaborHours>0.4</LaborHours>
+      <DatabaseLaborHours>0.4</DatabaseLaborHours>
+      <LaborHoursCalc>0.4</LaborHoursCalc>
+      <LaborInclInd>0</LaborInclInd>
+      <TaxableInd>1</TaxableInd>
+      <LaborHoursJudgmentInd>0</LaborHoursJudgmentInd>
+      <LaborOperationJudgmentInd>0</LaborOperationJudgmentInd>
+      <LaborTypeJudgmentInd>0</LaborTypeJudgmentInd>
+    </LaborInfo>
+    <AppliedAdjustment>AINA</AppliedAdjustment>
+    <LineMemo>#</LineMemo>
+    <LineType>Current Claim</LineType>
+  </DamageLineInfo>
+  <DamageLineInfo>
+    <LineNum>2</LineNum>
+    <UniqueSequenceNum>31</UniqueSequenceNum>
+    <ParentLineNum>1</ParentLineNum>
+    <ManualLineInd>0</ManualLineInd>
+    <AutomatedEntry>1</AutomatedEntry>
+    <LineStatusCode>1</LineStatusCode>
+    <VendorRefNum>100062</VendorRefNum>
+    <LineDesc>Frt Bumper Cover</LineDesc>
+    <DescJudgmentInd>0</DescJudgmentInd>
+    <LineDescCode>**FIAAB***</LineDescCode>
+    <LaborInfo>
+      <LaborType>LAB</LaborType>
+      <LaborOperation>OP2</LaborOperation>
+      <LaborHours>1.2</LaborHours>
+      <DatabaseLaborHours>1.2</DatabaseLaborHours>
+      <LaborHoursCalc>1.2</LaborHoursCalc>
+      <LaborInclInd>0</LaborInclInd>
+      <TaxableInd>1</TaxableInd>
+      <LaborHoursJudgmentInd>0</LaborHoursJudgmentInd>
+      <LaborOperationJudgmentInd>0</LaborOperationJudgmentInd>
+      <LaborTypeJudgmentInd>0</LaborTypeJudgmentInd>
+    </LaborInfo>
+    <AppliedAdjustment>AINA</AppliedAdjustment>
+    <LineType>Current Claim</LineType>
+  </DamageLineInfo>
+  <DamageLineInfo>
+    <LineNum>3</LineNum>
+    <UniqueSequenceNum>28</UniqueSequenceNum>
+    <ManualLineInd>0</ManualLineInd>
+    <AutomatedEntry>0</AutomatedEntry>
+    <LineStatusCode>1</LineStatusCode>
+    <VendorRefNum>101230</VendorRefNum>
+    <LineDesc>Trans Oil Cooler Pipe                 -M</LineDesc>
+    <DescJudgmentInd>0</DescJudgmentInd>
+    <LineDescCode>***GLUU**A</LineDescCode>
+    <PartInfo>
+      <PartType>PAN</PartType>
+      <PartNum>ORDER FROM DEALER</PartNum>
+      <OEMPartNum>ORDER FROM DEALER</OEMPartNum>
+      <PartPrice>218.96</PartPrice>
+      <OEMPartPrice>218.96</OEMPartPrice>
+      <TaxableInd>1</TaxableInd>
+      <AfterMarketUsage>NU</AfterMarketUsage>
+      <PriceJudgmentInd>0</PriceJudgmentInd>
+      <GlassPartInd>0</GlassPartInd>
+      <PriceInclInd>0</PriceInclInd>
+      <Quantity>1</Quantity>
+    </PartInfo>
+    <LaborInfo>
+      <LaborType>LAB</LaborType>
+      <LaborOperation>OP11</LaborOperation>
+      <LaborHours>1.1</LaborHours>
+      <DatabaseLaborHours>1.1</DatabaseLaborHours>
+      <LaborHoursCalc>1.1</LaborHoursCalc>
+      <LaborInclInd>0</LaborInclInd>
+      <TaxableInd>1</TaxableInd>
+      <LaborHoursJudgmentInd>0</LaborHoursJudgmentInd>
+      <LaborOperationJudgmentInd>0</LaborOperationJudgmentInd>
+      <LaborTypeJudgmentInd>1</LaborTypeJudgmentInd>
+    </LaborInfo>
+    <AppliedAdjustment>AINA</AppliedAdjustment>
+    <LineMemo>#</LineMemo>
+    <LineType>Current Claim</LineType>
+  </DamageLineInfo>
+  <DamageLineInfo>
+    <LineNum>4</LineNum>
+    <UniqueSequenceNum>24</UniqueSequenceNum>
+    <ManualLineInd>0</ManualLineInd>
+    <AutomatedEntry>0</AutomatedEntry>
+    <LineStatusCode>1</LineStatusCode>
+    <VendorRefNum>102100</VendorRefNum>
+    <LineDesc>Alloy Wheel Center Cap</LineDesc>
+    <DescJudgmentInd>0</DescJudgmentInd>
+    <LineDescCode>**4SSES***</LineDescCode>
+    <PartInfo>
+      <PartType>PAN</PartType>
+      <PartNum>8T0 601 170 A  7ZJ</PartNum>
+      <OEMPartNum>8T0 601 170 A  7ZJ</OEMPartNum>
+      <PartPrice>71.18</PartPrice>
+      <OEMPartPrice>71.18</OEMPartPrice>
+      <TaxableInd>1</TaxableInd>
+      <AfterMarketUsage>NU</AfterMarketUsage>
+      <PriceJudgmentInd>0</PriceJudgmentInd>
+      <GlassPartInd>0</GlassPartInd>
+      <PriceInclInd>0</PriceInclInd>
+      <Quantity>1</Quantity>
+    </PartInfo>
+    <LaborInfo>
+      <LaborType>LAM</LaborType>
+      <LaborOperation>OP11</LaborOperation>
+      <LaborHours>0.0</LaborHours>
+      <DatabaseLaborHours>0.0</DatabaseLaborHours>
+      <LaborHoursCalc>0.0</LaborHoursCalc>
+      <LaborInclInd>0</LaborInclInd>
+      <TaxableInd>0</TaxableInd>
+      <LaborHoursJudgmentInd>0</LaborHoursJudgmentInd>
+      <LaborOperationJudgmentInd>0</LaborOperationJudgmentInd>
+      <LaborTypeJudgmentInd>1</LaborTypeJudgmentInd>
+    </LaborInfo>
+    <AppliedAdjustment>AINA</AppliedAdjustment>
+    <LineType>Current Claim</LineType>
+  </DamageLineInfo>
+  <DamageLineInfo>
+    <LineNum>5</LineNum>
+    <UniqueSequenceNum>25</UniqueSequenceNum>
+    <ManualLineInd>0</ManualLineInd>
+    <AutomatedEntry>0</AutomatedEntry>
+    <LineStatusCode>1</LineStatusCode>
+    <VendorRefNum>100604</VendorRefNum>
+    <LineDesc>Upr Engine Timing Cover Seal          -M</LineDesc>
+    <DescJudgmentInd>0</DescJudgmentInd>
+    <LineDescCode>**UENAB***</LineDescCode>
+    <PartInfo>
+      <PartType>PAN</PartType>
+      <PartNum>06H 103 483 D</PartNum>
+      <OEMPartNum>06H 103 483 D</OEMPartNum>
+      <PartPrice>26.85</PartPrice>
+      <OEMPartPrice>26.85</OEMPartPrice>
+      <TaxableInd>1</TaxableInd>
+      <AfterMarketUsage>NU</AfterMarketUsage>
+      <PriceJudgmentInd>0</PriceJudgmentInd>
+      <GlassPartInd>0</GlassPartInd>
+      <PriceInclInd>0</PriceInclInd>
+      <Quantity>1</Quantity>
+    </PartInfo>
+    <LaborInfo>
+      <LaborType>LAM</LaborType>
+      <LaborOperation>OP11</LaborOperation>
+      <LaborHours>0.0</LaborHours>
+      <DatabaseLaborHours>0.0</DatabaseLaborHours>
+      <LaborHoursCalc>0.0</LaborHoursCalc>
+      <LaborInclInd>0</LaborInclInd>
+      <TaxableInd>0</TaxableInd>
+      <LaborHoursJudgmentInd>0</LaborHoursJudgmentInd>
+      <LaborOperationJudgmentInd>0</LaborOperationJudgmentInd>
+      <LaborTypeJudgmentInd>0</LaborTypeJudgmentInd>
+    </LaborInfo>
+    <AppliedAdjustment>AINA</AppliedAdjustment>
+    <LineType>Current Claim</LineType>
+  </DamageLineInfo>
+  <DamageLineInfo>
+    <LineNum>6</LineNum>
+    <UniqueSequenceNum>26</UniqueSequenceNum>
+    <ManualLineInd>0</ManualLineInd>
+    <AutomatedEntry>0</AutomatedEntry>
+    <LineStatusCode>1</LineStatusCode>
+    <VendorRefNum>936001</VendorRefNum>
+    <LineDesc>Towing</LineDesc>
+    <DescJudgmentInd>0</DescJudgmentInd>
+    <LineDescCode>**0YCAB***</LineDescCode>
+    <OtherChargesInfo>
+      <OtherChargesType>OTTW</OtherChargesType>
+      <Price>10.00</Price>
+      <PriceJudgmentInd>1</PriceJudgmentInd>
+      <TaxableInd>1</TaxableInd>
+    </OtherChargesInfo>
+    <AppliedAdjustment>AINA</AppliedAdjustment>
+    <LineType>Current Claim</LineType>
+  </DamageLineInfo>
+  <DamageLineInfo>
+    <LineNum>7</LineNum>
+    <UniqueSequenceNum>27</UniqueSequenceNum>
+    <ManualLineInd>0</ManualLineInd>
+    <AutomatedEntry>0</AutomatedEntry>
+    <LineStatusCode>1</LineStatusCode>
+    <VendorRefNum>936002</VendorRefNum>
+    <LineDesc>Storage</LineDesc>
+    <DescJudgmentInd>0</DescJudgmentInd>
+    <LineDescCode>**0YCAC***</LineDescCode>
+    <OtherChargesInfo>
+      <OtherChargesType>OTST</OtherChargesType>
+      <Price>10.00</Price>
+      <PriceJudgmentInd>1</PriceJudgmentInd>
+      <TaxableInd>1</TaxableInd>
+    </OtherChargesInfo>
+    <AppliedAdjustment>AINA</AppliedAdjustment>
+    <LineType>Current Claim</LineType>
+  </DamageLineInfo>
+  <RepairTotalsInfo>
+    <LaborTotalsInfo>
+      <TotalType>LAB</TotalType>
+      <TotalTypeDesc>Body Labor</TotalTypeDesc>
+      <TotalHours>2.7</TotalHours>
+      <TotalAmt>27.00</TotalAmt>
+    </LaborTotalsInfo>
+    <LaborTotalsInfo>
+      <TotalType>LA</TotalType>
+      <TotalTypeDesc>Labor</TotalTypeDesc>
+      <TotalHours>2.7</TotalHours>
+      <TotalTaxInfo>
+        <TaxType>LS</TaxType>
+        <TierNum>1</TierNum>
+        <TaxAmt>2.70</TaxAmt>
+      </TotalTaxInfo>
+      <TotalTaxInfo>
+        <TaxType>GS</TaxType>
+        <TierNum>1</TierNum>
+        <TaxAmt>2.70</TaxAmt>
+      </TotalTaxInfo>
+      <TaxableAmt>27.00</TaxableAmt>
+      <TaxTotalAmt>2.70</TaxTotalAmt>
+      <TotalAmt>32.40</TotalAmt>
+    </LaborTotalsInfo>
+    <PartsTotalsInfo>
+      <TotalType>PA</TotalType>
+      <TotalTypeDesc>Parts</TotalTypeDesc>
+      <TotalTaxInfo>
+        <TaxType>LS</TaxType>
+        <TierNum>1</TierNum>
+        <TaxAmt>31.70</TaxAmt>
+      </TotalTaxInfo>
+      <TotalTaxInfo>
+        <TaxType>GS</TaxType>
+        <TierNum>1</TierNum>
+        <TaxAmt>31.70</TaxAmt>
+      </TotalTaxInfo>
+      <TaxableAmt>316.99</TaxableAmt>
+      <TaxTotalAmt>31.70</TaxTotalAmt>
+      <TotalAmt>380.39</TotalAmt>
+    </PartsTotalsInfo>
+    <OtherChargesTotalsInfo>
+      <TotalType>OTAC</TotalType>
+      <TotalTypeDesc>Additional Costs</TotalTypeDesc>
+      <TotalTaxInfo>
+        <TaxType>LS</TaxType>
+        <TierNum>1</TierNum>
+        <TaxAmt>2.00</TaxAmt>
+      </TotalTaxInfo>
+      <TotalTaxInfo>
+        <TaxType>GS</TaxType>
+        <TierNum>1</TierNum>
+        <TaxAmt>2.00</TaxAmt>
+      </TotalTaxInfo>
+      <TaxableAmt>20.00</TaxableAmt>
+      <TaxTotalAmt>2.00</TaxTotalAmt>
+      <TotalAmt>24.00</TotalAmt>
+    </OtherChargesTotalsInfo>
+    <SummaryTotalsInfo>
+      <TotalType>TOT</TotalType>
+      <TotalSubType>CE</TotalSubType>
+      <TotalTypeDesc>Gross Total</TotalTypeDesc>
+      <TotalAmt>436.79</TotalAmt>
+    </SummaryTotalsInfo>
+    <SummaryTotalsInfo>
+      <TotalType>TOT</TotalType>
+      <TotalSubType>TT</TotalSubType>
+      <TotalTypeDesc>Net Total</TotalTypeDesc>
+      <TotalAdjustmentInfo>
+        <AdjustmentType>Adjustment</AdjustmentType>
+        <TotalAdjustmentAmt>0.00</TotalAdjustmentAmt>
+      </TotalAdjustmentInfo>
+      <TotalAmt>436.79</TotalAmt>
+    </SummaryTotalsInfo>
+  </RepairTotalsInfo>
+  <RepairTotalsHistory>
+    <TotalVerCode>EM</TotalVerCode>
+    <TotalVerNum>0</TotalVerNum>
+    <HistoryTotalType>DocumentPortionDelta</HistoryTotalType>
+    <HistoryTotalsInfo>
+      <SummaryTotalsInfo>
+        <TotalType>TOT</TotalType>
+        <TotalSubType>TT</TotalSubType>
+        <TotalTypeDesc>Net Total</TotalTypeDesc>
+        <TotalAmt>436.79</TotalAmt>
+      </SummaryTotalsInfo>
+    </HistoryTotalsInfo>
+  </RepairTotalsHistory>
+</VehicleDamageEstimateAddRq>

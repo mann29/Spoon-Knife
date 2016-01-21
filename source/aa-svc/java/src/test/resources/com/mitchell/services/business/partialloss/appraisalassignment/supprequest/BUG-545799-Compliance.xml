@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<Logs Version="2.0" xmlns="http://www.mitchell.com/schemas/compliance"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Log>
+        <CompanyCode>HT</CompanyCode>
+        <ClaimNumber>0768878967</ClaimNumber>
+        <ProfileName>NonNetwork Profile</ProfileName>
+        <ProfileVersion>18</ProfileVersion>
+        <OwnerName>DELBERT H and BARBARA ORTIZ</OwnerName>
+        <RepairLineCount>40</RepairLineCount>
+        <EstimateID>74ed3f6c</EstimateID>
+        <SupplementNumber>01</SupplementNumber>
+        <EstimateCommitDate>2015-06-09T15:56:37</EstimateCommitDate>
+        <EstimateCommittedFlag>Y</EstimateCommittedFlag>
+        <EstimatingSystem>C</EstimatingSystem>
+        <ReviewTimestamp>2015-06-09T14:58:16</ReviewTimestamp>
+        <ReviewCount>1</ReviewCount>
+        <Exceptions>
+            <Exception>
+                <GroupName>Materials</GroupName>
+                <SubGroupName>Max Amount</SubGroupName>
+                <PropertyName>SHOP MATERIALS</PropertyName>
+                <LineNumber>NA</LineNumber>
+                <Description>Shop Materials Not Permitted (Rqd)</Description>
+                <Actual Unit="CURRENCY">31.80</Actual>
+                <Guideline Unit="CURRENCY">0</Guideline>
+                <Severity>REQUIRED</Severity>
+                <PropertyValueID>47</PropertyValueID>
+                <HiddenForAssignment>N</HiddenForAssignment>
+            </Exception>
+            <Exception>
+                <GroupName>Conditional Rules</GroupName>
+                <SubGroupName>NNW - Outer Panel</SubGroupName>
+                <PropertyName>NNW - Outer Panel</PropertyName>
+                <LineNumber>8</LineNumber>
+                <Description>Please consider alt part door (Rqd)</Description>
+                <Actual Unit="CURRENCY">426.22</Actual>
+                <Guideline Unit="CURRENCY">50.00</Guideline>
+                <Severity>REQUIRED</Severity>
+                <PropertyValueID>0</PropertyValueID>
+                <HiddenForAssignment>N</HiddenForAssignment>
+            </Exception>
+            <Exception>
+                <GroupName>Conditional Rules</GroupName>
+                <SubGroupName>NNW - Outer Panel</SubGroupName>
+                <PropertyName>NNW - Outer Panel</PropertyName>
+                <LineNumber>8</LineNumber>
+                <Description>Please consider alt part door (Rqd)</Description>
+                <Actual Unit="CURRENCY">426.22</Actual>
+                <Guideline Unit="CURRENCY">50.00</Guideline>
+                <Severity>REQUIRED</Severity>
+                <PropertyValueID>0</PropertyValueID>
+                <HiddenForAssignment>N</HiddenForAssignment>
+            </Exception>
+        </Exceptions>
+        <Code>5F3-8 ExeVersion: MER V4.6.0.1</Code>
+        <Compliance>2</Compliance>
+        <EstimateGrossTotal>3807.70</EstimateGrossTotal>
+        <Note/>
+        <NeedsAttention>N</NeedsAttention>
+        <CashSettlement>N</CashSettlement>
+    </Log>
+</Logs>

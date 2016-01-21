@@ -1,0 +1,16 @@
+<configuration xmlns="urn:hornetq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hornetq/schema/hornetq-jms.xsd">
+   <queue name="PARTIALLOSS.AAS_PARALLELMDB_INPUT">
+      <entry name="PARTIALLOSS.AAS_PARALLELMDB_INPUT"/>
+   </queue>
+   <queue name="PARTIALLOSS.AAS_PARALLELMDB_ERROR_INPUT">
+      <entry name="PARTIALLOSS.AAS_PARALLELMDB_ERROR_INPUT"/>
+   </queue>
+   <queue name="PARTIALLOSS.AAS_PARALLELMDB_EXPIRY">
+      <entry name="PARTIALLOSS.AAS_PARALLELMDB_EXPIRY"/>
+   </queue>
+   <queue name="PARTIALLOSS.AAS_PARALLELMDB_RESPONSE">
+      <entry name="PARTIALLOSS.AAS_PARALLELMDB_RESPONSE"/>
+   </queue>
+
+</configuration>
+

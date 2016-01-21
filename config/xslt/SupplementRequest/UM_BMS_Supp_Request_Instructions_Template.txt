@@ -1,0 +1,8 @@
+Supplement Instructions for UltraMate Estimates
+
+1.  Open eClaim Manager.
+2.  Locate and open the Claim Folder in eClaim Manager.
+3.  Launch UltraMate from within eClaim Manager.
+4.  Update the estimate in UltraMate as appropriate.
+5.  Calculate and Commit the estimate to return to eClaim Manager.
+6.  Click the lightning bolt icon to send the estimate to the Insurance Company.

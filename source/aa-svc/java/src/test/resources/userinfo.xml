@@ -1,0 +1,25 @@
+<UserInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.mitchell.com/common/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<OrgID>316405</OrgID>
+		<OrgCode>OA</OrgCode>
+		<UserID>OAREV1</UserID>
+		<FirstName>MANISH</FirstName>
+		<LastName>GURNANI</LastName>
+		<Email>manish.gurnani@mitchell.com</Email>
+		<UserHier>
+			<HierNode ID="350" Code="OA" Name="DIRECT ADJUSTING COMPANY" Level="COMPANY">
+				<HierNode ID="74489" Code="99" Name="DEFAULT" Level="REGION">
+					<HierNode ID="151873" Code="9999" Name="DEFAULT" Level="OFFICE">
+						<HierNode ID="316809" Code="MG10564" Name="MANISH GURNANI" Level="USER"/>
+					</HierNode>
+				</HierNode>
+			</HierNode>
+		</UserHier>
+		<AppCode>BRMVRL</AppCode>
+		<AppCode>BRMVUE</AppCode>
+		<AppCode>ECMADM</AppCode>
+		<AppCode>NETACT</AppCode>
+		<AppCode>SIPAD</AppCode>
+		<AppCode>SMWFAD</AppCode>
+		<AppCode>UVIEW</AppCode>
+		<StaffType>ADMINISTRATOR</StaffType>
+</UserInfo>

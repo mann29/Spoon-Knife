@@ -1,0 +1,13 @@
+Line: $LINE_NUMBER$
+Change recommended: $RECOMMENDED_CHANGES$
+Operation: $OPERATION$
+Description: $LINE_DESCRIPTION$
+Parts Type: $PARTS_TYPE$
+Parts Quantity: $PARTS_QUANTITY$
+Parts Unit Price: $PARTS_UNIT_PRICE$
+Parts Extended Price: $PARTS_PRICE$
+Labor Hours: $LABOR_HOURS$
+Labor Cost: $LABOR_COST$
+Amount: $AMOUNT$
+Comment Code: $ANNOTATION_CODE$
+Comment Description: $ANNOTATION_COMMENT$

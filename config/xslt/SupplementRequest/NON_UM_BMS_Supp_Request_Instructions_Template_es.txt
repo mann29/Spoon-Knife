@@ -1,0 +1,12 @@
+﻿Instrucciones de modificación para valoraciones Audatex/Pathways  
+
+1.  Abra el software de valoración.
+2.  Localice la valoración con el Nº de siniestro, Nº valoración, o Información del vehículo.
+3.  Abra la valoración y realice las actualizaciones apropiadas.
+4.  Confirme/bloquee la valoración.
+5.  Exporte el EMS para la valoración desde el software de valoración.
+6.  Cree una imagen de impresión de la valoración en formato PDF.
+7.  Abra eClaim Manager.
+8.  Localice y abra la Carpeta de siniestros en eClaim Manager.
+9.  Importe la valoración de modificación y PDF en eClaim Manager.
+10. Haga clic en el icono del candado con rayo para enviar la valoración a la Compañía de seguros.

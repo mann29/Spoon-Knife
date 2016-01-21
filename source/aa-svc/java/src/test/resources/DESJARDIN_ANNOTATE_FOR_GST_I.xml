@@ -1,0 +1,309 @@
+<AnnotatedEstimate Version="1.1" xmlns="http://www.mitchell.com/schemas/estimate">
+  <FirstReviewTimeStamp>2015-09-07T04:57:14.8477636-07:00</FirstReviewTimeStamp>
+  <LastestReviewTimeStamp>2015-09-24T04:34:34.096912-07:00</LastestReviewTimeStamp>
+  <ComplianceSection>
+    <ComplianceSignature>
+      <SupplementNumber>0</SupplementNumber>
+      <ReviewCount>0</ReviewCount>
+    </ComplianceSignature>
+    <ComplianceChanges/>
+  </ComplianceSection>
+  <EstimateSection>
+    <EstimateSignature>
+      <DocumentID>12-1234656-0120150907165010</DocumentID>
+      <ClaimNum>12-1234656-01</ClaimNum>
+    </EstimateSignature>
+    <EstimateChanges>
+      <AdminComments/>
+      <DamageLines>
+        <DamageLineInfo>
+          <positiveAdjustmentField>90.00000</positiveAdjustmentField>
+          <positiveAdjustmentFieldSpecified>true</positiveAdjustmentFieldSpecified>
+          <negativeAdjustmentFieldSpecified>false</negativeAdjustmentFieldSpecified>
+          <ID>CurrentClaim1</ID>
+          <Discount>0</Discount>
+          <PositiveAdjustment>90.00000</PositiveAdjustment>
+          <LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" LastCommentID="11" UserAddedLine="false">1</LineNum>
+          <UserAddedLineNumber/>
+          <Operation>REMOVE/REPLACE</Operation>
+          <Description>Frt Bumper Face Bar</Description>
+          <PartType>NW</PartType>
+          <PartNumber>N.A.</PartNumber>
+          <PartQuantity>1</PartQuantity>
+          <UnitPartPrice>55000</UnitPartPrice>
+          <PartPrice PPJudgement="true">55000</PartPrice>
+          <LaborType>BDS</LaborType>
+          <LaborHours LHJudgement="true">10</LaborHours>
+          <LaborCost>1000</LaborCost>
+          <Amount>56000</Amount>
+          <OriginalAmount>200.000</OriginalAmount>
+          <LineType>CurrentClaim</LineType>
+        </DamageLineInfo>
+        <DamageLineInfo>
+          <positiveAdjustmentField>8580.00000</positiveAdjustmentField>
+          <positiveAdjustmentFieldSpecified>true</positiveAdjustmentFieldSpecified>
+          <negativeAdjustmentFieldSpecified>false</negativeAdjustmentFieldSpecified>
+          <ID>CurrentClaim2</ID>
+          <Discount>0</Discount>
+          <PositiveAdjustment>8580.00000</PositiveAdjustment>
+          <LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" LastCommentID="7" UserAddedLine="false">2</LineNum>
+          <UserAddedLineNumber/>
+          <Operation>REMOVE/REPLACE</Operation>
+          <Description>R Fender Liner</Description>
+          <PartType>NW</PartType>
+          <PartNumber>N.A.</PartNumber>
+          <PartQuantity>1</PartQuantity>
+          <UnitPartPrice>85000</UnitPartPrice>
+          <PartPrice PPJudgement="true" Taxable="true">85000</PartPrice>
+          <LaborType>BDS</LaborType>
+          <LaborHours LHJudgement="true">10</LaborHours>
+          <LaborCost>1000</LaborCost>
+          <Amount>86000</Amount>
+          <OriginalAmount>200.000</OriginalAmount>
+          <LineType>CurrentClaim</LineType>
+        </DamageLineInfo>
+        <DamageLineInfo>
+          <positiveAdjustmentField>9580.00000</positiveAdjustmentField>
+          <positiveAdjustmentFieldSpecified>true</positiveAdjustmentFieldSpecified>
+          <negativeAdjustmentFieldSpecified>false</negativeAdjustmentFieldSpecified>
+          <ID>CurrentClaim3</ID>
+          <Discount>0</Discount>
+          <PositiveAdjustment>9580.00000</PositiveAdjustment>
+          <LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" LastCommentID="5" UserAddedLine="false">3</LineNum>
+          <UserAddedLineNumber/>
+          <Operation>REMOVE/REPLACE</Operation>
+          <Description>Frt Roof Reinforcement</Description>
+          <PartType>NW</PartType>
+          <PartNumber>N.A.</PartNumber>
+          <PartQuantity>1</PartQuantity>
+          <UnitPartPrice>95000</UnitPartPrice>
+          <PartPrice PPJudgement="true" Taxable="true">95000</PartPrice>
+          <LaborType>BDS</LaborType>
+          <LaborHours LHJudgement="true">10</LaborHours>
+          <LaborCost>1000</LaborCost>
+          <Amount>96000</Amount>
+          <OriginalAmount>200.000</OriginalAmount>
+          <LineType>CurrentClaim</LineType>
+        </DamageLineInfo>
+        <DamageLineInfo>
+          <positiveAdjustmentField>90.00000</positiveAdjustmentField>
+          <positiveAdjustmentFieldSpecified>true</positiveAdjustmentFieldSpecified>
+          <negativeAdjustmentFieldSpecified>false</negativeAdjustmentFieldSpecified>
+          <ID>CurrentClaim4</ID>
+          <Discount>0</Discount>
+          <PositiveAdjustment>90.00000</PositiveAdjustment>
+          <LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" LastCommentID="4" UserAddedLine="false">4</LineNum>
+          <UserAddedLineNumber/>
+          <Operation>REMOVE/REPLACE</Operation>
+          <Description>Luggage Lid Trim Panel</Description>
+          <PartType>NW</PartType>
+          <PartNumber>N.A.</PartNumber>
+          <PartQuantity>1</PartQuantity>
+          <UnitPartPrice>55000</UnitPartPrice>
+          <PartPrice PPJudgement="true">55000</PartPrice>
+          <LaborType>BDS</LaborType>
+          <LaborHours LHJudgement="true">10</LaborHours>
+          <LaborCost>1000</LaborCost>
+          <Amount>56000</Amount>
+          <OriginalAmount>200.000</OriginalAmount>
+          <LineType>CurrentClaim</LineType>
+        </DamageLineInfo>
+        <DamageLineInfo>
+          <positiveAdjustmentField>2490.0000</positiveAdjustmentField>
+          <positiveAdjustmentFieldSpecified>true</positiveAdjustmentFieldSpecified>
+          <negativeAdjustmentFieldSpecified>false</negativeAdjustmentFieldSpecified>
+          <ID>CurrentClaim5</ID>
+          <Discount>0</Discount>
+          <PositiveAdjustment>2490.0000</PositiveAdjustment>
+          <LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" LastCommentID="8" UserAddedLine="false">5</LineNum>
+          <UserAddedLineNumber/>
+          <Operation>REMOVE/REPLACE</Operation>
+          <Description>Towing</Description>
+          <PartType>NW</PartType>
+          <PartNumber>gsdfgd</PartNumber>
+          <PartQuantity>1</PartQuantity>
+          <UnitPartPrice>25000</UnitPartPrice>
+          <PartPrice Taxable="true">25000</PartPrice>
+          <LaborType>BDS</LaborType>
+          <LaborHours>10</LaborHours>
+          <LaborCost>1000</LaborCost>
+          <Amount>25000</Amount>
+          <OriginalAmount>100.00</OriginalAmount>
+          <LineType>CurrentClaim</LineType>
+        </DamageLineInfo>
+        <DamageLineInfo>
+          <positiveAdjustmentFieldSpecified>false</positiveAdjustmentFieldSpecified>
+          <negativeAdjustmentFieldSpecified>false</negativeAdjustmentFieldSpecified>
+          <ID>CurrentClaim6</ID>
+          <Discount>0</Discount>
+          <LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" LastCommentID="6" UserAddedLine="false">6</LineNum>
+          <UserAddedLineNumber/>
+          <Operation>ADD'L COST</Operation>
+          <Description>Storage</Description>
+          <PartType>NW</PartType>
+          <PartNumber>dfgsdg</PartNumber>
+          <PartQuantity>1</PartQuantity>
+          <UnitPartPrice>85000</UnitPartPrice>
+          <PartPrice>85000</PartPrice>
+          <LaborType>BDS</LaborType>
+          <LaborHours>10</LaborHours>
+          <LaborCost>1000</LaborCost>
+          <Amount>85000</Amount>
+          <OriginalAmount>100.00</OriginalAmount>
+          <LineType>CurrentClaim</LineType>
+        </DamageLineInfo>
+        <DamageLineInfo>
+          <positiveAdjustmentFieldSpecified>false</positiveAdjustmentFieldSpecified>
+          <negativeAdjustmentFieldSpecified>false</negativeAdjustmentFieldSpecified>
+          <ID>CurrentClaim7</ID>
+          <Discount>0</Discount>
+          <LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" UserAddedLine="true" UserAddedLineType="New">7</LineNum>
+          <UserAddedLineNumber/>
+          <Operation>REMOVE/REPLACE</Operation>
+          <Description>test</Description>
+          <PartType>NW</PartType>
+          <PartNumber>dgfd</PartNumber>
+          <PartQuantity>1</PartQuantity>
+          <UnitPartPrice>2000</UnitPartPrice>
+          <PartPrice>2000</PartPrice>
+          <LaborType>BDS</LaborType>
+          <LaborHours>10</LaborHours>
+          <LaborCost>1000</LaborCost>
+          <Amount>3000</Amount>
+          <OriginalAmount>0</OriginalAmount>
+          <LineType>CurrentClaim</LineType>
+        </DamageLineInfo>
+        <DamageLineInfo>
+          <positiveAdjustmentFieldSpecified>false</positiveAdjustmentFieldSpecified>
+          <negativeAdjustmentFieldSpecified>false</negativeAdjustmentFieldSpecified>
+          <ID>CurrentClaim8</ID>
+          <Discount>0</Discount>
+          <LineNum IsAbsVariance="false" StrikeThru="false" DataChanged="true" HasComments="false" LastCommentID="2" UserAddedLine="true" UserAddedLineType="New">8</LineNum>
+          <UserAddedLineNumber/>
+          <Operation>ADD'L COST</Operation>
+          <Description>cost test</Description>
+          <PartType>NW</PartType>
+          <PartNumber>test</PartNumber>
+          <PartQuantity>1</PartQuantity>
+          <UnitPartPrice>5874</UnitPartPrice>
+          <PartPrice>5874</PartPrice>
+          <LaborType>BDS</LaborType>
+          <LaborHours>10</LaborHours>
+          <LaborCost>1000</LaborCost>
+          <Amount>6874</Amount>
+          <OriginalAmount>0</OriginalAmount>
+          <LineType>CurrentClaim</LineType>
+        </DamageLineInfo>
+      </DamageLines>
+      <ReviewComments/>
+      <ProfileInfo>
+        <RateInfo>
+          <RateType>BDY</RateType>
+          <RateDesc>Body</RateDesc>
+          <RateTierInfo>
+            <Rate>150</Rate>
+            <ThresholdAmt>0</ThresholdAmt>
+          </RateTierInfo>
+        </RateInfo>
+        <RateInfo>
+          <RateType>BDS</RateType>
+          <RateDesc>Structural</RateDesc>
+          <RateTierInfo>
+            <Rate>100</Rate>
+            <ThresholdAmt>0</ThresholdAmt>
+          </RateTierInfo>
+        </RateInfo>
+        <RateInfo>
+          <RateType>REF</RateType>
+          <RateDesc>Paint</RateDesc>
+          <RateTierInfo>
+            <Rate>200</Rate>
+            <ThresholdAmt>0</ThresholdAmt>
+          </RateTierInfo>
+        </RateInfo>
+        <RateInfo>
+          <RateType>GLS</RateType>
+          <RateDesc>Glass</RateDesc>
+          <RateTierInfo>
+            <Rate>300</Rate>
+            <ThresholdAmt>0</ThresholdAmt>
+          </RateTierInfo>
+        </RateInfo>
+        <RateInfo>
+          <RateType>FRM</RateType>
+          <RateDesc>Frame</RateDesc>
+          <RateTierInfo>
+            <Rate>100</Rate>
+            <ThresholdAmt>0</ThresholdAmt>
+          </RateTierInfo>
+        </RateInfo>
+        <RateInfo>
+          <RateType>MCH</RateType>
+          <RateDesc>Mechanical</RateDesc>
+          <RateTierInfo>
+            <Rate>100</Rate>
+            <ThresholdAmt>0</ThresholdAmt>
+          </RateTierInfo>
+        </RateInfo>
+      </ProfileInfo>
+      <RepairTotalsInfo>
+        <LaborTotalsInfo>
+          <TotalType>LAS</TotalType>
+          <TotalTypeDesc>Structural</TotalTypeDesc>
+          <TotalHours>60</TotalHours>
+          <TotalAmt>6000</TotalAmt>
+        </LaborTotalsInfo>
+        <LaborTotalsInfo>
+          <TotalType>LAT</TotalType>
+          <TotalTypeDesc>Labor - Total</TotalTypeDesc>
+          <TotalHours>60</TotalHours>
+          <TaxableAmt>6000</TaxableAmt>
+          <TaxRate>10.00</TaxRate>
+          <TaxTotalAmt>660</TaxTotalAmt>
+          <GSTTaxableTotalAmt>600</GSTTaxableTotalAmt>
+          <TotalAmt>7260</TotalAmt>
+        </LaborTotalsInfo>
+        <PartsTotalsInfo>
+          <TotalType>PA</TotalType>
+          <TotalTypeDesc>Parts</TotalTypeDesc>
+          <NonTaxableAmt>112000</NonTaxableAmt>
+          <TaxableAmt>205000</TaxableAmt>
+          <TaxRate>10.00</TaxRate>
+          <TaxTotalAmt>22550</TaxTotalAmt>
+          <GSTTaxableTotalAmt>20500</GSTTaxableTotalAmt>
+          <GSTNonTaxableTotalAmt>11200</GSTNonTaxableTotalAmt>
+          <TotalAmt>371250</TotalAmt>
+        </PartsTotalsInfo>
+        <OtherChargesTotalsInfo>
+          <TotalType>OTAC</TotalType>
+          <TotalTypeDesc>Other - Additional Cost</TotalTypeDesc>
+          <NonTaxableAmt>90874</NonTaxableAmt>
+          <TaxRate>10.00</TaxRate>
+          <GSTNonTaxableTotalAmt>9087.4</GSTNonTaxableTotalAmt>
+          <TotalAmt>99961.4</TotalAmt>
+        </OtherChargesTotalsInfo>
+        <SummaryTotalsInfo>
+          <TotalType>TOT</TotalType>
+          <TotalSubType>CE</TotalSubType>
+          <TotalTypeDesc>Gross Total</TotalTypeDesc>
+          <TaxTotalAmt>0</TaxTotalAmt>
+          <TotalAmt>478471.4</TotalAmt>
+        </SummaryTotalsInfo>
+        <SummaryTotalsInfo>
+          <TotalType>TOT</TotalType>
+          <TotalSubType>TT</TotalSubType>
+          <TotalTypeDesc>Net Total</TotalTypeDesc>
+          <TotalAdjustmentInfo>
+            <AdjustmentType>Adjustment</AdjustmentType>
+            <TotalAdjustmentAmt>0</TotalAdjustmentAmt>
+          </TotalAdjustmentInfo>
+          <TotalAmt>478471.4</TotalAmt>
+        </SummaryTotalsInfo>
+        <RepairTotalsType>Current Claim</RepairTotalsType>
+        <GSTTaxRate>10.00</GSTTaxRate>
+        <GSTTaxableIndicator>true</GSTTaxableIndicator>
+        <GSTTaxRateFound>true</GSTTaxRateFound>
+      </RepairTotalsInfo>
+    </EstimateChanges>
+  </EstimateSection>
+</AnnotatedEstimate>

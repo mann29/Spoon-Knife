@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  
+		   xmlns:wcaa="http://www.mitchell.com/schemas"  
+		   xmlns="http://www.mitchell.com/schemas" 
+		   targetNamespace="http://www.mitchell.com/schemas" 
+		   elementFormDefault="qualified" attributeFormDefault="unqualified" 
+		   version="1.0">
+    
+	<xs:element name="ItineraryView" type="ItineraryViewType"/>
+	<xs:complexType name="ItineraryViewType">
+		<xs:sequence>
+			<xs:element name="Disposition" type="xs:string"/>
+			<xs:element name="ReasonCode" type="xs:string" minOccurs="0" />
+			<xs:element name="Notes" type="xs:string" minOccurs="0"/>
+			<xs:element name="AssignmentSchedule" type="wcaa:AssignmentScheduleType" minOccurs="0"/>
+			<xs:element name="WorkAssignmentTaskID" type="xs:long"/>
+			<xs:element name="TCN" type="xs:long"/>
+		</xs:sequence>
+		<xs:attribute name="Version" type="xs:decimal" fixed="1.0"/>
+	</xs:complexType>
+	
+	<xs:complexType name="AssignmentScheduleType">
+		<xs:annotation>
+			<xs:documentation>Type definition for Schedule Preferences</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Urgency" type="xs:integer" minOccurs="0"/>
+			<xs:element name="Duration" type="xs:string" minOccurs="0"/>
+			<xs:element name="IsTravelRequiredFlag" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="IsCallNeeded" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="ConfirmedDateTime" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="ConfirmedBy" type="xs:string" minOccurs="0"/>
+			<xs:element name="PreferredScheduleDate" type="xs:date" minOccurs="0"/>
+			<xs:element name="PreferredScheduleStartTime" type="xs:time" minOccurs="0"/>
+			<xs:element name="PreferredScheduleEndTime" type="xs:time" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+</xs:schema>

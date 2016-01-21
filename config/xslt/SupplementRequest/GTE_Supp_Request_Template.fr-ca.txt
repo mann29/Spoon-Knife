@@ -1,0 +1,51 @@
+﻿À : $APPRAISER_NAME$
+De : $NAME$
+Date : $SUPPLEMENT_DATE$
+
+Objet : Demande de supplément pour le numéro de réclamation $CLAIM_NUMBER$
+
+Instructions : $COMPANY_NAME$ recommande que vous apportiez les modifications suivantes à l’estimation $EXTERNAL_ESTIMATE_ID$.
+
+Propriétaire du véhicule : $OWNERNAME$
+
+Information sur le véhicule :$YEAR$ $MAKE$ $MODEL$ $COLOR$
+
+
+
+Notes résumées :
+
+$SUPPLEMENT_COMMENTS$
+
+
+
+Modifications recommandées :
+
+$ESTIMATE_PROFILE$
+
+$RECOMMENDED_CHANGES_TEMPLATE$
+
+$PRIOR_DAMAGE_CHANGES_TEMPLATE$
+
+$PARTS_SUBTOTALS$
+$LABOR_SUBTOTALS$
+$OTHER_CHARGES_SUBTOTALS$
+$GROSS_TOTAL$
+$ADJUSTMENTS$
+$NET_TOTAL$
+
+$SUPPLEMENT_INSTRUCTIONS_STEPS$
+
+
+
+Déclaration de confidentialité
+
+Les renseignements contenus dans ce message sont CONFIDENTIELS et s'adressent uniquement au destinataire.
+Toute utilisation ou diffusion non autorisée des renseignements ou toute copie de ce message est interdite.
+Si vous n'êtes pas le destinataire, veuillez aviser l'expéditeur immédiatement et supprimer ce message.
+
+
+
+$NAME$
+$TELEPHONE$
+$EMAIL$
+$FAX$

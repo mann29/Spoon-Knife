@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>appraisal-assignment-service</groupId>
+    <artifactId>appraisal-assignment-svc-pom</artifactId>
+    <version>1.0.0.4</version>
+    <relativePath>..</relativePath>
+  </parent>
+  
+  <artifactId>appraisal-assignment-ear</artifactId>
+  <name>appraisal-assignment-ear</name>
+  <description>Appraisal Assignment EAR</description>
+  
+  <packaging>ear</packaging>
+
+  <dependencies>
+	
+	<!-- This Application -->
+
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>appraisal-assignment-ejb</artifactId>
+      <version>${project.version}</version>
+      <type>ejb</type>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-ear-plugin</artifactId>
+        <configuration>
+          <displayName>${project.artifactId}-${project.version}</displayName>
+          <defaultLibBundleDir>/APP-INF/lib</defaultLibBundleDir>
+          <version>5</version>
+          <modules>
+            <ejbModule>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>appraisal-assignment-ejb</artifactId>
+              <bundleFileName>appraisal-assignment-ejb-${project.version}.jar</bundleFileName>
+              <bundleDir>/</bundleDir>
+            </ejbModule>
+          </modules>
+          <archive>
+            <manifest>
+              <addClasspath>false</addClasspath>
+            </manifest>
+          </archive>
+          <jboss>
+            <version>5</version>
+            <loader-repository>com.mitchell:archive=com.mitchell.services.business.partialloss.appraisalassignment</loader-repository>
+          </jboss>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>${maven-site-plugin.version}</version>
+        <configuration>
+          <skip>true</skip>
+          <skipDeploy>true</skipDeploy>
+        </configuration>
+      </plugin>
+
+
+    </plugins>
+	
+    <!-- Name of the ear -->
+    <finalName>appraisal-assignment-service</finalName>
+
+  </build>
+
+
+</project>

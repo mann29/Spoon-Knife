@@ -1,0 +1,156 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="AppraisalAssignment" nillable="false">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="AppraisalAssignmentDAODataSource" type="xs:string" nillable="false"/>
+				<xs:element ref="SuppRequest"/>
+				<xs:element ref="ExposureActivityLogMessages"/>
+				<xs:element ref="AssignmentActivityLogEvents"/>
+                		<xs:element ref="AppLogging"/>
+				<xs:element name="TestAssignmentDispatcher" type="xs:string" nillable="false"/>
+		                <xs:element ref="ParallelProcessing"/>
+				<xs:element name="TimeZoneMappingList" type="xs:string" nillable="false"/>
+				<xs:element name="VehicleTypeExpertiseSkillsList" type="xs:string"/>	
+                <xs:element name="StaticImageBaseUrl" type="xs:string"/>				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SuppRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="OutputHTMLDocsFlag" type="xs:string"/>
+				<xs:element name="TempDir" type="xs:string"/>
+				<xs:element name="TemplateBaseDir" type="xs:string"/>
+				<xs:element name="Email">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="FromDisplayName" type="xs:string"/>
+							<xs:element name="FromEmailAddress" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TextFormat">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SubmitSupplementCmntTemplate" type="xs:string"/>
+							<xs:element name="SubmitSupplementCmntTemplateProps" type="xs:string"/>
+							<xs:element name="EmailSubjectTemplate" type="xs:string"/>
+							<xs:element name="EmailSubjectTemplateProps" type="xs:string"/>
+							<xs:element name="TemplatePrefix" type="xs:string"/>
+							<xs:element name="TemplateSuffix" type="xs:string"/>
+							<xs:element name="MIE">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="TemplateFile" type="xs:string"/>
+										<xs:element name="TemplateProps" type="xs:string"/>
+										<xs:element name="AnnotationTemplateFile" type="xs:string"/>
+										<xs:element name="AnnotationTemplateProps" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="EMS">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="TemplateFile" type="xs:string"/>
+										<xs:element name="TemplateProps" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="PriorDamage">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="TemplateFile" type="xs:string"/>
+										<xs:element name="TemplateProps" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="SupplementInstructions">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="MIETemplateFile" type="xs:string"/>
+										<xs:element name="CCCAudatexTemplateFile" type="xs:string"/>
+										<xs:element name="GMRTemplateFile" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="HTMLFormat" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="XSLTPath" type="xs:string" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ExposureActivityLogMessages">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="CreateAAActivityLog" type="xs:string"/>
+				<xs:element name="CreateSupplementAAActivityLog" type="xs:string"/>
+				<xs:element name="CancelAAActivityLog" type="xs:string"/>
+				<xs:element name="UnCancelAAActivityLog" type="xs:string"/>
+				<xs:element name="DispatchAAActivityLog" type="xs:string"/>
+				<xs:element name="UpdateAAActivityLog" type="xs:string"/>
+				<xs:element name="AssignAAActivityLog" type="xs:string"/>
+				<xs:element name="ReAssignAAActivityLog" type="xs:string"/>
+                <xs:element name="AddressValidateAAActivityLogSuccess" type="xs:string"/>
+                <xs:element name="AddressValidateAAActivityLogFailure" type="xs:string"/>
+				<xs:element name="CompleteAAActivityLog" type="xs:string"/>
+				<xs:element name="InProgressAAActivityLog" type="xs:string"/>
+				<xs:element name="RejectedAAActivityLog" type="xs:string"/>
+				<xs:element name="UnScheduleAAActivityLog" type="xs:string"/>
+				<xs:element name="DriveInAppointmentActivityLog" type="xs:string"/>
+				<xs:element name="AssignToDispatchCenterActivityLog" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AssignmentActivityLogEvents">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="CreateAAAssignmentActivityLogDesc" type="xs:string"/>
+				<xs:element name="CreateSupplementAAAssignmentActivityLogDesc" type="xs:string"/>
+				<xs:element name="UpdateAAAssignmentActivityLogDesc" type="xs:string"/>
+				<xs:element name="DispatchAAAssignmentActivityLogDesc" type="xs:string"/>
+				<xs:element name="DispatchSupplementAAAssignmentActivityLogDesc" type="xs:string"/>
+				<xs:element name="UnCancelAAAssignmentActivityLogDesc" type="xs:string"/>
+				<xs:element name="CancelAAAssignmentActivityLogDesc" type="xs:string"/>
+				<xs:element name="AssignAAAssignmentActivityLogDesc" type="xs:string"/>
+				<xs:element name="ReAssignAAAssignmentActivityLogDesc" type="xs:string"/>
+			        <xs:element name="HoldAAAssignmentActivityLogDesc" type="xs:string"/>
+                <xs:element name="RemoveHoldAAAssignmentActivityLogDesc" type="xs:string"/>
+				<xs:element name="UnScheduleAAAssignmentActivityLogDesc" type="xs:string"/>
+				<xs:element name="UpdateDispositionAAAssignmentActivityLogDesc" type="xs:string"/>
+				<xs:element name="ClosedAAAssignmentActivityLogDesc" type="xs:string"/>
+				<xs:element name="RejectedAAAssignmentActivityLogDesc" type="xs:string"/>
+				<xs:element name="ReceivedAAAssignmentActivityLogDesc" type="xs:string"/>
+				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AppLogging">
+    	<xs:complexType>
+			<xs:sequence>
+				<xs:element name="AppLoggingTemplateBaseDir" type="xs:string"/>
+				<xs:element name="AppLoggingTemplateXslFile" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>		
+    </xs:element>
+
+	<xs:element name="ParallelProcessing">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="QueueConnectionFactoryName" type="xs:string"/>
+          <xs:element name="InputQueueName" type="xs:string"/>
+          <xs:element name="ResponseQueueName" type="xs:string"/>
+		  <xs:element name="MessageExpirationSecs" type="xs:long"/>
+		  <xs:element name="MaxResponseWaitTimeMillis" type="xs:long"/>
+		  <xs:element name="MinParallelListSize" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>		
+    </xs:element>	
+	
+</xs:schema>
