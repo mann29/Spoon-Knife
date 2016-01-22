@@ -1,6 +1,11 @@
 <project xmlns="http://repo.mitchell.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://repo.mitchell.com">
   <modelVersion>4.0.0</modelVersion>
-  
+  <repositories>
+    <repository>
+      <id>my-internal-site</id>
+      <url>http://mavenrepo.mitchell.com/release</url>
+    </repository>
+  </repositories>
   <!-- APD Super Pom is Parent -->
   <parent>
     <groupId>com.mitchell.maven.apd</groupId>
