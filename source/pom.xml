@@ -4,7 +4,7 @@
 	<repositories>
     <repository>
       <id>my-internal-site</id>
-      <url>http://mavenrepo.mitchell.com/release</url>
+      <url>http://mavenrepo.mitchell.com</url>
     </repository>
   </repositories>
 	<parent>
