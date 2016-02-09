@@ -2,7 +2,7 @@
 	<Remote>
 		<ProviderUrl>${J2EE_PROVIDER_URL}</ProviderUrl>
 		<JNDIFactory>org.jnp.interfaces.NamingContextFactory</JNDIFactory>
-		<EJBJndi>com.mitchell.services.business.partialloss.appraisalassignment.ejb.AppraisalAssignmentServiceRemote</EJBJndi>
+		<EJBJndi>1.com.mitchell.services.business.partialloss.appraisalassignment.ejb.AppraisalAssignmentServiceRemote</EJBJndi>
 	</Remote>
 	<Local>
 		<ProviderUrl>${J2EE_PROVIDER_URL}</ProviderUrl>
