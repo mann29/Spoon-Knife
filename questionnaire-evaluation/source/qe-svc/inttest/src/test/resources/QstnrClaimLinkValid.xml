@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rs:QuestionnaireClaimLink 
+ xsi:schemaLocation="http://www.mitchell.com/schemas/questionnaire/QuestionnaireClaimLink.xsd"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:rs="http://www.mitchell.com/schemas/questionnaire" >
+	<rs:CoCd>OA</rs:CoCd>
+	<rs:ClaimID>277763</rs:ClaimID>
+	<rs:QuestionnairesAssociations>
+		<rs:QuestionnaireInfo>
+			<rs:QuestionnaireID>1636</rs:QuestionnaireID>            		
+			<rs:ClaimExposureID>265530</rs:ClaimExposureID>
+		</rs:QuestionnaireInfo>
+	</rs:QuestionnairesAssociations>
+</rs:QuestionnaireClaimLink>

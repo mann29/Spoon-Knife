@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>questionnaire-evaluation-service-pom</artifactId>
+		<groupId>questionnaire-evaluation</groupId>
+		<version>1.0.0.1</version>
+	</parent>
+	<artifactId>questionnaire-evaluation-webservice</artifactId>
+	<packaging>war</packaging>
+	<dependencies>
+		<dependency>
+			<groupId>questionnaire-evaluation</groupId>
+			<artifactId>questionnaire-evaluation-ejb</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>user-info</groupId>
+			<artifactId>user-info-schema-axmlb</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>questionnaire-evaluation</groupId>
+			<artifactId>questionnaire-evaluation-schema-axmlb</artifactId>
+			<version>1.0.1.1</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<packagingIncludes>WEB-INF/lib/questionnaire-evaluation-ejb*.jar,**/*.class</packagingIncludes>
+					<webxml>src/main/webapp/WEB-INF/web.xml</webxml>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

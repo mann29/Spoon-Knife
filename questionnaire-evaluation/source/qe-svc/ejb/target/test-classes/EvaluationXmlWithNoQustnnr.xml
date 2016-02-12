@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MitchellEvaluationDetails  xsi:schemaLocation="http://www.mitchell.com/schemas/evaluationdetails MitchellEvaluationDetails.XSD" xmlns="http://www.mitchell.com/schemas/evaluationdetails" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<EvaluationInfo>
+    <CoCode>IF</CoCode>
+    <EvaluationID>testingQE89095</EvaluationID>
+    <ClaimNumber />
+    <EvaluationType>LOSSEVALUATION</EvaluationType>
+    <ScoringType>POINTS</ScoringType>
+</EvaluationInfo>
+
+</MitchellEvaluationDetails>

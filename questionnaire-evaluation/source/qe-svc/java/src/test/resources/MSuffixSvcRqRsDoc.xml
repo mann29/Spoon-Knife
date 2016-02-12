@@ -1,0 +1,125 @@
+<MitchellSuffixSvcRqRs xmlns="http://www.mitchell.com/schemas/MitchellSuffixRqRs">
+<EvaluationRq>
+<ExternalEvaluationID>abc</ExternalEvaluationID>
+<ClaimInfo>
+<ClaimNumber>000-00-000353</ClaimNumber>
+<IsDraftClaimFlag>false</IsDraftClaimFlag>
+<PolicyNumber>123456</PolicyNumber>
+<PolicyStateProvince>CA</PolicyStateProvince>
+<DateOfLoss>2013-06-06</DateOfLoss>
+<DateReported>2013-07-06</DateReported>
+<CauseOfLoss>ANI</CauseOfLoss>
+<UnderwritingCompany>
+<!--Element BusinessName is optional -->
+<BusinessName>Harford_Insurance_Company</BusinessName>
+<!--Element Email is optional -->
+<Email>amit1980in@gmail.com</Email>
+<!--Element AddressDetails is optional -->
+<AddressDetails>
+<!--Element Address1 is optional -->
+<Address1>139 first floor, Ashiana greens</Address1>
+<!--Element Address2 is optional -->
+<Address2>Indirapuram</Address2>
+<!--Element City is optional -->
+<City>San Diego</City>
+<!--Element State is optional -->
+<State>CA</State>
+<!--Element ZipPostalCode is optional -->
+<ZipPostalCode>92131</ZipPostalCode>
+<CountryCode>US</CountryCode>
+</AddressDetails>
+<!--Element ContactDetails is optional, maxOccurs=unbounded -->
+<ContactDetails>
+<Qualifier>WP</Qualifier>
+<Number>+0-0-000+0</Number>
+</ContactDetails>
+<ContactDetails>
+<Qualifier>HP</Qualifier>
+<Number>+0-0-000+0</Number>
+</ContactDetails>
+<ContactDetails>
+<Qualifier>FX</Qualifier>
+<Number>+0-0-000+0</Number>
+</ContactDetails>
+</UnderwritingCompany>
+<CatFlag>false</CatFlag>
+</ClaimInfo>
+<Suffix>
+<SuffixNumber>01</SuffixNumber>
+<VehicleDetails>
+<VIN>5TBJN32191S135790</VIN>
+<VehicleLocationDetails>
+<Address1>3501 N</Address1>
+<Address2>MILWAUKEE</Address2>
+<City>CHICAGO</City>
+<State>CA</State>
+<ZipPostalCode>90815</ZipPostalCode>
+<CountryCode>US</CountryCode>
+</VehicleLocationDetails>
+</VehicleDetails>
+<VehicleDamage>
+<PrimaryPOI>1</PrimaryPOI>
+<DamageDescription>DamageDescription1</DamageDescription>
+<Drivable>Y</Drivable>
+<SecondaryPOI>1</SecondaryPOI>
+<SecondaryPOI>2</SecondaryPOI>
+<SecondaryPOI>3</SecondaryPOI>
+</VehicleDamage>
+<CoverageTypeOfLoss>COMP</CoverageTypeOfLoss>
+<DeductibleAmt>1</DeductibleAmt>
+<DeductibleStatus>FK</DeductibleStatus>
+<ClaimantDetails>
+<FirstName>siddth</FirstName>
+<LastName>sharma</LastName>
+<Email>siddth@gmail.com</Email>
+<AddressDetails>
+<Address1>1250 Bellflower Blvd. clamint</Address1>
+<Address2>Blvd.</Address2>
+<City>Long Beach</City>
+<State>CA</State>
+<ZipPostalCode>90815</ZipPostalCode>
+<CountryCode>US</CountryCode>
+</AddressDetails>
+<ContactDetails>
+<Qualifier>FX</Qualifier>
+<Number>+1-33333-33333</Number>
+</ContactDetails>
+<ContactDetails>
+<Qualifier>WP</Qualifier>
+<Number>+1-33333-33333</Number>
+</ContactDetails>
+<ContactDetails>
+<Qualifier>HP</Qualifier>
+<Number>Number27</Number>
+</ContactDetails>
+</ClaimantDetails>
+<InsuredDetails>
+<FirstName>siddth09</FirstName>
+<LastName>sharma</LastName>
+<Email>siddth09@gmail.com</Email>
+<AddressDetails>
+<Address1>1250 Bellflower Blvd. insured</Address1>
+<Address2>Blvd.</Address2>
+<City>Long Beach</City>
+<State>CA</State>
+<ZipPostalCode>90815</ZipPostalCode>
+<CountryCode>US</CountryCode>
+</AddressDetails>
+<ContactDetails>
+<Qualifier>CP</Qualifier>
+<Number>+1-33333-33333</Number>
+</ContactDetails>
+<ContactDetails>
+<Qualifier>WP</Qualifier>
+<Number>+1-33333-33333</Number>
+</ContactDetails>
+<ContactDetails>
+<Qualifier>FX</Qualifier>
+<Number>Number30</Number>
+</ContactDetails>
+</InsuredDetails>
+<ClaimAdjusterID>HTDEV</ClaimAdjusterID>
+</Suffix>
+</EvaluationRq>
+<CompanyCode>HT</CompanyCode>
+</MitchellSuffixSvcRqRs>

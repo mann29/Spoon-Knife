@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+ <parent>
+    <artifactId>questionnaire-evaluation-service-pom</artifactId>
+    <groupId>questionnaire-evaluation</groupId>
+    <version>1.0.0.1</version>
+  </parent>
+  
+  <artifactId>questionnaire-evaluation-rest-webservice</artifactId>
+  <packaging>war</packaging>
+  <name>questionnaire-evaluation-rest-webservice</name>
+ 
+  <dependencies>
+  
+  <dependency>
+			<groupId>${jbossall-client.groupId}</groupId>
+			<artifactId>${jbossall-client.artifactId}</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-jaxrs</artifactId>
+			<exclusions>
+				<exclusion>
+					<artifactId>slf4j-api</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>slf4j-simple</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>jcl-over-slf4j</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>javassist</artifactId>
+					<groupId>javassist</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>jsr250-api</artifactId>
+					<groupId>javax.annotation</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-jaxb-provider</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>app-logging</groupId>
+			<artifactId>app-logging-client</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>app-logging</groupId>
+			<artifactId>app-logging-schema-axmlb</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>system-configuration</groupId>
+			<artifactId>system-configuration</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>user-info</groupId>
+			<artifactId>user-info-client</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>user-info</groupId>
+			<artifactId>user-info-schema-axmlb</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>questionnaire-evaluation</groupId>
+			<artifactId>questionnaire-evaluation-ejb</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+  </dependencies>
+ 
+  <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ejb-plugin</artifactId>
+				<configuration>
+					<generateClient>false</generateClient>
+					<ejbVersion>3.0</ejbVersion>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<skipTests>false</skipTests>
+					<systemPropertyVariables>
+						<SettingsFilePath>${project.basedir}/src/test/settings</SettingsFilePath>
+					</systemPropertyVariables>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>test</phase>
+						<goals>
+							<goal>test</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<!-- Use this to include a selection of jars that will be included in the WAR -->
+					<attachClasses>true</attachClasses>
+					<packagingIncludes>WEB-INF/lib/sjsxp-1.0.1.jar,WEB-INF/lib/scannotation-1.0.3.jar,
+					WEB-INF/lib/resteasy*.jar,WEB-INF/lib/jaxrs-api-2.3.0.GA.jar,WEB-INF/lib/jaxb*.jar,
+					WEB-INF/lib/jcip-annotations-1.0.jar,
+					WEB-INF/lib/questionnaire-evaluation-ejb*.jar,
+					**/*.class,WEB-INF/jboss-web.xml,WEB-INF/web.xml</packagingIncludes>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>lib/</classpathPrefix>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+</project>

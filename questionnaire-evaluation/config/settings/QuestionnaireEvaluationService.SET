@@ -1,0 +1,27 @@
+<QuestionnaireEvaluationService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="QuestionnaireEvaluationService.xsd">
+	<FileConfiguration>
+		<EvaluationFileName>EvaluationTest.xml</EvaluationFileName>
+		<EvaluationTempDirectory>${NAS_APPLICATION_DIRECTORY_PATH}/mitchell/hostprocessing/QuestionnaireEvaluation/source</EvaluationTempDirectory>
+		<NASLocation>${NAS_APPLICATION_DIRECTORY_PATH}/mitchell/hostprocessing/QuestionnaireEvaluation/dest</NASLocation>
+	</FileConfiguration>
+	<AllowedCompanyCodes>${ALLOWED_COMPANY_CODES}</AllowedCompanyCodes>
+	<AllowedEvaluationType>LossEvaluation</AllowedEvaluationType>
+	<AllowedCopyToNAS>Y</AllowedCopyToNAS>
+	<!-- IsReportingAllowed is a flag to ON or OFF the Questionnaire Evaluation Reporting  -->
+	<IsReportingAllowed>Y</IsReportingAllowed>
+	<!-- QuestionnaireReportingListenerId is listenerId for Questionnaire Evaluation Reporting -->
+	<QuestionnaireReportingListenerId>157603</QuestionnaireReportingListenerId>
+	<!-- added for contingency changes -->
+	<LinkClaimEvalContingencyEventId>157601</LinkClaimEvalContingencyEventId>
+
+	<QEJavaClient>
+		<ProviderUrl>${J2EE_PROVIDER_URL}</ProviderUrl>
+		<EJBJndi>com.mitchell.services.business.questionnaireevaluation.ejb.QuestionnaireEvaluationEJBRemote</EJBJndi>
+		<JndiFactory>org.jnp.interfaces.NamingContextFactory</JndiFactory>
+	</QEJavaClient>
+	
+	<DB>
+		<DataSourceName>CCDBDataSource</DataSourceName>
+	</DB>
+	<QuestionnaireId>100000006423</QuestionnaireId>
+</QuestionnaireEvaluationService>

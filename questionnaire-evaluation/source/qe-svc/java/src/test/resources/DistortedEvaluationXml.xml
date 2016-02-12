@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MitchellEvaluationDetails  xsi:schemaLocation="http://www.mitchell.com/schemas/evaluationdetails MitchellEvaluationDetails.XSD" xmlns="http://www.mitchell.com/schemas/evaluationdetails" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<EvaluationInfo>
+   <!--  <CoCode>IF</CoCode> -->
+    <EvaluationID>testingQE89095</EvaluationID>
+    <ClaimNumber />
+    <EvaluationType>LOSSEVALUATION</EvaluationType>
+    <ScoringType>POINTS</ScoringType>
+</EvaluationInfo>
+<Questionnaire>
+    <QuestionnaireVersion>5070</QuestionnaireVersion>
+    <QuestionnaireId>29</QuestionnaireId>
+    <EvaluationVersion>test</EvaluationVersion>
+    <EvaluationUserDetails>
+      <!--   <CoCode>IF</CoCode> -->
+        <UserId>PCS01</UserId>
+    </EvaluationUserDetails>
+    <CreateDateTimeStamp>2012-01-17T21:30:13</CreateDateTimeStamp>
+    <QuestionsList>
+        <Question QuestionParamName="TypeOfLoss">
+            <ID>57</ID>
+            <Text>What was the coverage type of loss?</Text>
+            <QuestionScoreID>1000015309</QuestionScoreID>
+            <Answer>Collision</Answer>
+            <Score>0</Score>
+        </Question>
+    </QuestionsList>
+   
+</Questionnaire>
+</MitchellEvaluationDetails>

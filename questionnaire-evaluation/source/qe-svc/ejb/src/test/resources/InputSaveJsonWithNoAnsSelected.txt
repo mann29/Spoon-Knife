@@ -1,0 +1,19 @@
+{
+    "contextDto": {
+        "documentId": 0,
+        "coCode": "M2",
+        "questionnaireID": 0
+    },
+    "qustnnrQustnRqRsDto": {
+        "qustnnreId": 100000006423,
+        "qustnnreVersion": 620,
+        "questionsList": [
+            {
+                "qustnnreQustnId": 100000113529,
+                "qustnText": "Select the type of multiple vehicle collision.",
+                "answrControlType": "CHOICE_SELECTION",
+                "answerList": []
+            }
+        ]
+    }
+}

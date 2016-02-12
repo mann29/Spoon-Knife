@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_5.xsd" version="5">
+  <description>This project is designed to define dependencyManagement/PluginManagement Versions for Mitchell.
+  So once you import this project as PARENT project you get all the global or commonly used artifacts versions.
+  You can override this values in your child project if you want to do that.</description>
+  <display-name>QustionnaireEvaluationService</display-name>
+  <module>
+    <ejb>questionnaire-evaluation-ejb-1.0.0.1.jar</ejb>
+  </module>
+  <module>
+    <web>
+      <web-uri>questionnaire-evaluation-webservice-1.0.0.1.war</web-uri>
+      <context-root>QuestionnaireEvaluationWS</context-root>
+    </web>
+  </module>
+  <module>
+    <web>
+      <web-uri>questionnaire-evaluation-rest-webservice-1.0.0.1.war</web-uri>
+      <context-root>QuestionnaireEvaluationRestWS</context-root>
+    </web>
+  </module>
+  <library-directory>/APP-INF/lib</library-directory>
+</application>

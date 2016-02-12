@@ -1,0 +1,30 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="QuestionnaireEvaluationService" nillable="false">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="FileConfiguration">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="EvaluationFileName" type="xs:string"/>
+							<xs:element name="EvaluationTempDirectory" type="xs:string"/>
+							<xs:element name="NASLocation" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AllowedCompanyCodes" type="xs:string" minOccurs="0"/>
+				<xs:element name="AllowedEvaluationType" type="xs:string" minOccurs="0"/>
+				<xs:element name="AllowedCopyToNAS" type="xs:string" minOccurs="0"/>
+				<xs:element name="LinkClaimEvalContingencyEventId" type="xs:string" minOccurs="0"/>
+				<xs:element name="QEJavaClient">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ProviderUrl" type="xs:string"/>
+							<xs:element name="EJBJndi" type="xs:string"/>
+							<xs:element name="JndiFactory" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,20 @@
+<QuestionnaireEvaluationService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="QuestionnaireEvaluationService.xsd">
+	<FileConfiguration>
+		<EvaluationFileName>EvaluationTest.xml</EvaluationFileName>
+		<EvaluationTempDirectory>/mdev/data/remote/dev/mitchell/hostprocessing/QuestionnaireEvaluation/source</EvaluationTempDirectory>
+		<NASLocation>/mdev/data/remote/dev/mitchell/hostprocessing/QuestionnaireEvaluation/dest</NASLocation>
+	</FileConfiguration>
+	<AllowedCompanyCodes>IF|Z6</AllowedCompanyCodes>
+	<AllowedEvaluationType>LossEvaluation</AllowedEvaluationType>
+	<AllowedCopyToNAS>Y</AllowedCopyToNAS>
+
+	<!-- added for contingency changes -->
+	<LinkClaimEvalContingencyEventId>157601</LinkClaimEvalContingencyEventId>
+
+	<QEJavaClient>
+		<!--<ProviderUrl>jnp://localhost:1099</ProviderUrl>-->
+		<ProviderUrl>jnp://dapp10lxv:1199,dapp11lxv:1199</ProviderUrl>
+		<EJBJndi>com.mitchell.services.business.questionnaireevaluation.ejb.QuestionnaireEvaluationEJBRemote</EJBJndi>		         
+		<JndiFactory>org.jnp.interfaces.NamingContextFactory</JndiFactory>
+	</QEJavaClient>
+</QuestionnaireEvaluationService>

@@ -1,0 +1,90 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.mitchell.maven.apd</groupId>
+		<artifactId>super-pom</artifactId>
+		<version>1.0.0.1</version>
+		<relativePath>../../../../</relativePath>
+	</parent>
+	<groupId>questionnaire-evaluation</groupId>
+	<artifactId>questionnaire-evaluation-client</artifactId>
+	<version>1.0.1.0</version>
+	<packaging>jar</packaging>
+	<properties>
+		<server.class.source.version>1.0.0.1</server.class.source.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>mitchell-common</groupId>
+			<artifactId>mitchell-common</artifactId>
+			<version>1.0.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>user-info</groupId>
+			<artifactId>user-info-schema-axmlb</artifactId>
+			<version>1.0.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>questionnaire-evaluation</groupId>
+			<artifactId>questionnaire-evaluation-schema-axmlb</artifactId>
+			<version>1.0.1.1</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>unpack</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>unpack</goal>
+						</goals>
+						<configuration>
+							<artifactItems>
+								<!-- From the EJB Jar -->
+								<artifactItem>
+									<groupId>questionnaire-evaluation</groupId>
+									<artifactId>questionnaire-evaluation-ejb</artifactId>
+									<version>${server.class.source.version}</version>
+									<outputDirectory>target/classes</outputDirectory>
+									<includes>
+										com/mitchell/services/business/questionnaireevaluation/client/QuestionnaireEvaluationClient.class,
+										com/mitchell/services/business/questionnaireevaluation/ejb/QuestionnaireEvaluationEJBRemote.class   
+		                    </includes>
+								</artifactItem>
+
+								<!-- From the Java Jar -->
+
+								<artifactItem>
+									<groupId>questionnaire-evaluation</groupId>
+									<artifactId>questionnaire-evaluation-java</artifactId>
+									<version>${server.class.source.version}</version>
+									<outputDirectory>target/classes</outputDirectory>
+									<includes>
+										com/mitchell/services/business/questionnaireevaluation/proxy/SystemConfigurationProxy.class,
+										com/mitchell/services/business/questionnaireevaluation/proxy/SystemConfigurationProxyImpl.class,
+										com/mitchell/services/business/questionnaireevaluation/constants/QuestionnaireEvaluationConstants.class  
+		                    </includes>
+								</artifactItem>
+
+							</artifactItems>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>${maven-site-plugin.version}</version>
+				<configuration>
+					<skip>true</skip>
+					<skipDeploy>true</skipDeploy>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,44 @@
+{
+  "name": "questionnaire-evaluation",
+  "description": "APD-ClaimsSolutions questionnaire-evaluation",
+  "author": "ninjaneers@mitchell.com",
+  "release": "1.0",
+  "build": "@@BUILD_NUMBER@@",
+  "arch": "windows",
+  "category": "/APD/platform",
+
+  "source-base": "",
+  "dest-base": "//",
+  "contents": [
+    {
+      "source": "source\\qe-svc\\ear\\target\\QuestionnaireEvaluationService.ear",
+      "dest": "\\appl\\services\\questionnaire-evaluation\\deploy"
+    },
+    {
+      "source": "config\\jboss-configs\\*.xml",
+      "dest": "\\appl\\services\\questionnaire-evaluation\\deploy-configs"
+    },
+    {
+      "source": "config\\settings\\*.xsd",
+      "dest": "\\appl\\services\\questionnaire-evaluation\\settings"
+    },
+    {
+      "source": "config\\settings\\*.SET",
+      "dest": "\\appl\\services\\questionnaire-evaluation\\settings"
+    }
+  ],
+
+  "dependencies": { },
+
+  "pre-install": { },
+
+  "post-install": [
+    "/bin/bash /appl/scripts/jboss_move_files.sh questionnaire-evaluation"
+  ],
+
+  "pre-uninstall": [
+    "/bin/bash /appl/scripts/jboss_clean_files.sh questionnaire-evaluation"
+  ],
+
+  "post-uninstall": { }
+}

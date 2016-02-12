@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EventGenerator Disabled="false" Id="IF_Contingency_EVL_InputConfig" Signature="af9caa8b6b4f4a104c5a21f377695313" Version="1.00" xmlns="http://www.mitchell.com/eventgenerator/beans">
+  <Description>Contigency evaluation xmls published to mitchell evaluation processor queue </Description> 
+	<Trigger>
+	  <CronPattern>*/30 * * * * ?</CronPattern> 
+	 <!--  every 30 seconds   --> 
+	</Trigger>
+	 <EventScanner Type="DirectoryEventScanner" Id="DirectoryEventScanner">
+		<Declarations>
+		  <Parameter Name="MaxEventsPerScan">2</Parameter> 
+		  <Parameter Name="MinAgeSecs">0</Parameter> 
+		  <Parameter Name="FifoOrderingFlag">true</Parameter> 
+		  <Parameter Name="UseCacheFlag">false</Parameter> 
+		  <Parameter Name="Directory">/mdev/data/remote/dev/mitchell/hostprocessing/QuestionnaireEvaluation/contingency/input</Parameter> 
+		  <Parameter Name="Pattern">*.xml</Parameter> 
+		  <Parameter Name="GlobPatternFlag">true</Parameter>
+		 </Declarations>
+	</EventScanner>
+    <EventProcessor Type="FileEventProcessor" Id="FileEventProcessor">
+ 		<Declarations>
+  			<Parameter Name="TargetDirectoryPattern">/mdev/data/remote/dev/mitchell/hostprocessing/QuestionnaireEvaluation/contingency/inbound_queue</Parameter> 
+  		</Declarations>
+  	</EventProcessor>  	
+      <!--  publish to Linux Cluster PDIF--> 
+ 	<EventPublisher Type="JMSEventPublisher" Id="JMSEventPublisher">
+	 <Declarations>
+	  <Variable Name="JBOSS_JBC7_JNDI_SERVER_URL" Type="SYSTEMCONFIGURATIONTOKEN">JBOSS_JBC7_JNDI_SERVER_URL</Variable>
+	  <Parameter Name="InitialContextFactory">org.jnp.interfaces.NamingContextFactory</Parameter>
+      <Parameter Name="ConnectionFactory">ConnectionFactory</Parameter>
+      <Parameter Name="ProviderURI">${JBOSS_JBC7_JNDI_SERVER_URL}</Parameter>
+	  <Parameter Name="SecurityPrincipal"/> 
+	  <Parameter Name="SecurityCredentials"/> 
+	  <Parameter Name="DestinationName">WORKCENTER.SAVE_CONTINGENCY_EVAL_MSG_HANDLER_INPUT</Parameter> 
+	  </Declarations>
+  	</EventPublisher>
+</EventGenerator>
