@@ -3,10 +3,10 @@
 	<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
 	<xsl:template match="/">
 		<xsl:element name="root">
-			<xsl:apply-templates select="/sch:MitchellEnvelope/sch:EnvelopeBodyList/sch:EnvelopeBody/sch:Content/bms:CIECA/bms:AssignmentAddRq"/>
-	<xsl:apply-templates select="/sch:MitchellEnvelope/sch:EnvelopeBodyList/sch:EnvelopeBody/sch:Content/app:AdditionalAppraisalAssignmentInfo"/>
+			<xsl:apply-templates select="/sch:MitchellEnvelope1/sch:EnvelopeBodyList/sch:EnvelopeBody/sch:Content/bms:CIECA/bms:AssignmentAddRq"/>
+	<xsl:apply-templates select="/sch:MitchellEnvelope1/sch:EnvelopeBodyList/sch:EnvelopeBody/sch:Content/app:AdditionalAppraisalAssignmentInfo"/>
 
-<xsl:apply-templates select="/sch:MitchellEnvelope/sch:EnvelopeBodyList/sch:EnvelopeBody/sch:Content/wor:AdditionalTaskConstraints"/>
+<xsl:apply-templates select="/sch:MitchellEnvelope1/sch:EnvelopeBodyList/sch:EnvelopeBody/sch:Content/wor:AdditionalTaskConstraints"/>
 
 	</xsl:element>
 	</xsl:template>
