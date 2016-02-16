@@ -1,0 +1,191 @@
+<APDDeliveryContext Version="1.0" xmlns:typ="http://www.mitchell.com/common/types" xmlns="http://www.mitchell.com/schemas/apddelivery">
+  <MessageType>APPR_ASGMT_NOTIFY</MessageType>
+  <APDAppraisalAssignmentNotificationInfo>
+    <APDCommonInfo>
+      <InsCoCode>X2</InsCoCode>
+      <SourceUserInfo>
+        <UserInfo>
+          <typ:OrgID>345718</typ:OrgID>
+          <typ:OrgCode>X2</typ:OrgCode>
+          <typ:UserID>USER8</typ:UserID>
+          <typ:FirstName>DISPATCHER</typ:FirstName>
+          <typ:LastName>ONE</typ:LastName>
+          <typ:Email>test.estimator@mitchell.com</typ:Email>
+          <typ:UserHier>
+            <typ:HierNode ID="72201" Code="X2" Name="MITCHELL TEST" Level="COMPANY">
+              <typ:HierNode ID="262322" Code="99" Name="DEFAULT" Level="REGION">
+                <typ:HierNode ID="262323" Code="99" Name="DEFAULT" Level="DIVISION">
+                  <typ:HierNode ID="262324" Code="9999" Name="DEFAULT" Level="OFFICE">
+                    <typ:HierNode ID="345718" Code="USER8" Name="DISPATCHER ONE" Level="USER"/>
+                  </typ:HierNode>
+                </typ:HierNode>
+              </typ:HierNode>
+            </typ:HierNode>
+          </typ:UserHier>
+          <typ:AppCode>CMATF</typ:AppCode>
+          <typ:AppCode>CMCRC</typ:AppCode>
+          <typ:AppCode>CMCRD</typ:AppCode>
+          <typ:AppCode>CMCRE</typ:AppCode>
+          <typ:AppCode>CMDLF</typ:AppCode>
+          <typ:AppCode>CMECON</typ:AppCode>
+          <typ:AppCode>CMEDC</typ:AppCode>
+          <typ:AppCode>CMEDE</typ:AppCode>
+          <typ:AppCode>CMMMOI</typ:AppCode>
+          <typ:AppCode>CMMSS</typ:AppCode>
+          <typ:AppCode>CMSCA</typ:AppCode>
+          <typ:AppCode>CMSRCH</typ:AppCode>
+          <typ:AppCode>CMVWC</typ:AppCode>
+          <typ:AppCode>CMVWD</typ:AppCode>
+          <typ:AppCode>CMVWE</typ:AppCode>
+          <typ:AppCode>NETACT</typ:AppCode>
+          <typ:AppCode>RMDCM</typ:AppCode>
+          <typ:AppCode>RMISM</typ:AppCode>
+          <typ:AppCode>RMMGR</typ:AppCode>
+          <typ:AppCode>RMNSRM</typ:AppCode>
+          <typ:AppCode>RMSRM</typ:AppCode>
+          <typ:AppCode>RMTM</typ:AppCode>
+          <typ:AppCode>RMVR</typ:AppCode>
+          <typ:AppCode>RMVW</typ:AppCode>
+          <typ:AppCode>WCAAFA</typ:AppCode>
+          <typ:AppCode>WCACAA</typ:AppCode>
+          <typ:AppCode>WCADAA</typ:AppCode>
+          <typ:AppCode>WCADIS</typ:AppCode>
+          <typ:AppCode>WCADP</typ:AppCode>
+          <typ:AppCode>WCADR</typ:AppCode>
+          <typ:AppCode>WCAMS</typ:AppCode>
+          <typ:AppCode>WCAOAA</typ:AppCode>
+          <typ:AppCode>WCASAA</typ:AppCode>
+          <typ:AppCode>WCAUOA</typ:AppCode>
+          <typ:AppCode>WCAUSA</typ:AppCode>
+          <typ:AppCode>WCAVAA</typ:AppCode>
+          <typ:AppCode>WCAVS</typ:AppCode>
+          <typ:AppCode>WCAVWQ</typ:AppCode>
+          <typ:AppCode>WCPHLP</typ:AppCode>
+          <typ:AppCode>WCPHLP</typ:AppCode>
+          <typ:AppCode>WCPIWV</typ:AppCode>
+          <typ:AppCode>WCPIWV</typ:AppCode>
+          <typ:AppCode>WCPMAL</typ:AppCode>
+          <typ:AppCode>WCPMAL</typ:AppCode>
+          <typ:StaffType>ADMINISTRATOR</typ:StaffType>
+        </UserInfo>
+      </SourceUserInfo>
+      <TargetUserInfo>
+        <UserInfo xmlns:typ="http://www.mitchell.com/common/types">
+          <typ:OrgID>349121</typ:OrgID>
+          <typ:OrgCode>X2</typ:OrgCode>
+          <typ:UserID>X2AJBS01</typ:UserID>
+          <typ:FirstName>AJ's</typ:FirstName>
+          <typ:LastName>Body Shop01</typ:LastName>
+          <typ:Email>andrew.jablonski@mitchell.com</typ:Email>
+          <typ:UserHier>
+            <typ:HierNode ID="72201" Code="X2" Name="MITCHELL TEST" Level="COMPANY">
+              <typ:HierNode ID="262322" Code="99" Name="DEFAULT" Level="REGION">
+                <typ:HierNode ID="262323" Code="99" Name="DEFAULT" Level="DIVISION">
+                  <typ:HierNode ID="262324" Code="9999" Name="DEFAULT" Level="OFFICE">
+                    <typ:HierNode ID="349121" Code="X2AJBS01" Name="AJ's Body Shop01" Level="USER"/>
+                  </typ:HierNode>
+                </typ:HierNode>
+              </typ:HierNode>
+            </typ:HierNode>
+          </typ:UserHier>
+          <typ:AppCode>CMAPES</typ:AppCode>
+          <typ:AppCode>NETACT</typ:AppCode>
+		  <typ:AppCode>WCAPPL</typ:AppCode>
+          <typ:StaffType>ADMINISTRATOR</typ:StaffType>
+        </UserInfo>
+      </TargetUserInfo>
+      <TargetDRPUserInfo>
+        <UserInfo xmlns:typ="http://www.mitchell.com/common/types">
+          <typ:OrgID>300328</typ:OrgID>
+          <typ:OrgCode>BS</typ:OrgCode>
+          <typ:UserID>557115</typ:UserID>
+          <typ:LastName>Drew's Repair Shop</typ:LastName>
+          <typ:UserHier>
+            <typ:HierNode ID="307" Code="BS" Name="" Level="COMPANY">
+              <typ:HierNode ID="15819" Code="ABCD" Name="Test2 shop" Level="OFFICE">
+                <typ:HierNode ID="300328" Code="557115" Name="Drew's Repair Shop" Level="USER"/>
+              </typ:HierNode>
+            </typ:HierNode>
+          </typ:UserHier>
+          <typ:AppCode>CPUPDN</typ:AppCode>
+          <typ:AppCode>ECMGR</typ:AppCode>
+          <typ:AppCode>ITSVSY</typ:AppCode>
+          <typ:AppCode>NETACT</typ:AppCode>
+          <typ:AppCode>SVXFR</typ:AppCode>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>Z6</typ:CompanyID>
+            <typ:CompanyName>CARR - TEST</typ:CompanyName>
+            <typ:UserID>Z6AJBS01</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>AC</typ:CompanyID>
+            <typ:CompanyName>THE CLUB</typ:CompanyName>
+            <typ:UserID>ACAJBS02</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>X2</typ:CompanyID>
+            <typ:CompanyName>MITCHELL TEST</typ:CompanyName>
+            <typ:UserID>X2AJBS01</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>X1</typ:CompanyID>
+            <typ:CompanyName>BIGGER INSURANCE CO</typ:CompanyName>
+            <typ:UserID>X1AJBS01</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>OA</typ:CompanyID>
+            <typ:CompanyName>CALIFORNIA STATE AUTO ASSN.</typ:CompanyName>
+            <typ:UserID>OAAJBS01</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>GC</typ:CompanyID>
+            <typ:CompanyName>GMAC INSURANCE</typ:CompanyName>
+            <typ:UserID>GCAJBS01</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>AC</typ:CompanyID>
+            <typ:CompanyName>THE CLUB</typ:CompanyName>
+            <typ:UserID>ACAJBS01</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>Z6</typ:CompanyID>
+            <typ:CompanyName>CARR - TEST</typ:CompanyName>
+            <typ:UserID>Z6AJBS02</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>AN</typ:CompanyID>
+            <typ:CompanyName>AMICA INSURANCE</typ:CompanyName>
+            <typ:UserID>ANAJBS01</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>X2</typ:CompanyID>
+            <typ:CompanyName>MITCHELL TEST</typ:CompanyName>
+            <typ:UserID>X2AJBS02</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>X2</typ:CompanyID>
+            <typ:CompanyName>MITCHELL TEST</typ:CompanyName>
+            <typ:UserID>X2AJBS03</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>ME</typ:CompanyID>
+            <typ:CompanyName>MET LIFE AUTO AND HOME</typ:CompanyName>
+            <typ:UserID>MEAJBS01</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:StaffType>ESTIMATOR</typ:StaffType>
+        </UserInfo>
+      </TargetDRPUserInfo>
+      <ClaimNumber>ZX12343</ClaimNumber>
+      <ClientClaimNumber>ZX12343</ClientClaimNumber>
+      <ClaimId>554793</ClaimId>
+      <SuffixId>363473</SuffixId>
+      <WorkItemId>6265d9d1-ac18-3705-2b68-92ac73c8c811</WorkItemId>
+      <DateTime>2011-04-26T16:34:43.302+05:30</DateTime>
+    </APDCommonInfo>
+    <NotificationID>5262</NotificationID>
+    <MessageStatus>CREATE</MessageStatus>
+    <ScheduleDateTime>2011-01-19T08:15:00</ScheduleDateTime>
+    <EstimatorUserID>76182</EstimatorUserID>
+    <EstimatorName>Staff Estimator one</EstimatorName>
+  </APDAppraisalAssignmentNotificationInfo>
+</APDDeliveryContext>

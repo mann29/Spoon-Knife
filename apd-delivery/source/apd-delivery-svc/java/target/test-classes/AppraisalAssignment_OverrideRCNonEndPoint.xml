@@ -1,0 +1,692 @@
+<apd:APDDeliveryContext Version="1.0" xmlns:typ="http://www.mitchell.com/common/types" xmlns:sch="http://www.mitchell.com/schemas" xmlns:apd="http://www.mitchell.com/schemas/apddelivery">
+  <apd:MessageType>ORIGINAL_ESTIMATE</apd:MessageType>
+  <apd:APDAppraisalAssignmentInfo>
+    <apd:APDCommonInfo>
+      <apd:InsCoCode>IF</apd:InsCoCode>
+      <apd:SourceUserInfo>
+        <apd:UserInfo xmlns:typ="http://www.mitchell.com/common/types">
+          <typ:OrgID>345976</typ:OrgID>
+          <typ:OrgCode>IF</typ:OrgCode>
+          <typ:UserID>PCS01</typ:UserID>
+          <typ:FirstName>PCS</typ:FirstName>
+          <typ:LastName>User</typ:LastName>
+          <typ:Email>russell.peters@mitchell.com</typ:Email>
+          <typ:UserHier>
+            <typ:HierNode ID="72586" Code="IF" Name="PROGRESSIVE INSURANCE" Level="COMPANY">
+              <typ:HierNode ID="75875" Code="99" Name="DEFAULT" Level="REGION">
+                <typ:HierNode ID="75876" Code="99" Name="DEFAULT" Level="DIVISION">
+                  <typ:HierNode ID="79939" Code="9999" Name="DEFAULT" Level="OFFICE">
+                    <typ:HierNode ID="345976" Code="PCS01" Name="PCS User" Level="USER"/>
+                  </typ:HierNode>
+                </typ:HierNode>
+              </typ:HierNode>
+            </typ:HierNode>
+          </typ:UserHier>
+          <typ:AppCode>ASGNWS</typ:AppCode>
+          <typ:AppCode>BRMMRL</typ:AppCode>
+          <typ:AppCode>BRMMUE</typ:AppCode>
+          <typ:AppCode>BRMVRL</typ:AppCode>
+          <typ:AppCode>BRMVUE</typ:AppCode>
+          <typ:AppCode>CMADJ</typ:AppCode>
+          <typ:AppCode>CMAPES</typ:AppCode>
+          <typ:AppCode>CMATF</typ:AppCode>
+          <typ:AppCode>CMATF</typ:AppCode>
+          <typ:AppCode>CMATF</typ:AppCode>
+          <typ:AppCode>CMBEA</typ:AppCode>
+          <typ:AppCode>CMBEA</typ:AppCode>
+          <typ:AppCode>CMCBR</typ:AppCode>
+          <typ:AppCode>CMCDC</typ:AppCode>
+          <typ:AppCode>CMCERA</typ:AppCode>
+          <typ:AppCode>CMCKL</typ:AppCode>
+          <typ:AppCode>CMCKL</typ:AppCode>
+          <typ:AppCode>CMCRC</typ:AppCode>
+          <typ:AppCode>CMCRC</typ:AppCode>
+          <typ:AppCode>CMCRC</typ:AppCode>
+          <typ:AppCode>CMCRD</typ:AppCode>
+          <typ:AppCode>CMCRD</typ:AppCode>
+          <typ:AppCode>CMCRD</typ:AppCode>
+          <typ:AppCode>CMCRE</typ:AppCode>
+          <typ:AppCode>CMCRE</typ:AppCode>
+          <typ:AppCode>CMDLF</typ:AppCode>
+          <typ:AppCode>CMDLF</typ:AppCode>
+          <typ:AppCode>CMDLF</typ:AppCode>
+          <typ:AppCode>CMECON</typ:AppCode>
+          <typ:AppCode>CMEDBR</typ:AppCode>
+          <typ:AppCode>CMEDC</typ:AppCode>
+          <typ:AppCode>CMEDC</typ:AppCode>
+          <typ:AppCode>CMEDC</typ:AppCode>
+          <typ:AppCode>CMEDE</typ:AppCode>
+          <typ:AppCode>CMEDE</typ:AppCode>
+          <typ:AppCode>CMEDE</typ:AppCode>
+          <typ:AppCode>CMEDOG</typ:AppCode>
+          <typ:AppCode>CMMMOI</typ:AppCode>
+          <typ:AppCode>CMMSS</typ:AppCode>
+          <typ:AppCode>CMSCA</typ:AppCode>
+          <typ:AppCode>CMSCA</typ:AppCode>
+          <typ:AppCode>CMSCA</typ:AppCode>
+          <typ:AppCode>CMSCDC</typ:AppCode>
+          <typ:AppCode>CMSEDC</typ:AppCode>
+          <typ:AppCode>CMSRCH</typ:AppCode>
+          <typ:AppCode>CMSRCH</typ:AppCode>
+          <typ:AppCode>CMSRCH</typ:AppCode>
+          <typ:AppCode>CMSVWC</typ:AppCode>
+          <typ:AppCode>CMTLDS</typ:AppCode>
+          <typ:AppCode>CMTLDS</typ:AppCode>
+          <typ:AppCode>CMVWC</typ:AppCode>
+          <typ:AppCode>CMVWC</typ:AppCode>
+          <typ:AppCode>CMVWC</typ:AppCode>
+          <typ:AppCode>CMVWD</typ:AppCode>
+          <typ:AppCode>CMVWD</typ:AppCode>
+          <typ:AppCode>CMVWD</typ:AppCode>
+          <typ:AppCode>CMVWE</typ:AppCode>
+          <typ:AppCode>CMVWE</typ:AppCode>
+          <typ:AppCode>CMVWE</typ:AppCode>
+          <typ:AppCode>CPRPRO</typ:AppCode>
+          <typ:AppCode>ECMGR</typ:AppCode>
+          <typ:AppCode>ECMSC</typ:AppCode>
+          <typ:AppCode>NETACT</typ:AppCode>
+          <typ:AppCode>RMDCM</typ:AppCode>
+          <typ:AppCode>RMISM</typ:AppCode>
+          <typ:AppCode>RMMGR</typ:AppCode>
+          <typ:AppCode>RMNSRM</typ:AppCode>
+          <typ:AppCode>RMSRM</typ:AppCode>
+          <typ:AppCode>RMTM</typ:AppCode>
+          <typ:AppCode>RMVR</typ:AppCode>
+          <typ:AppCode>RMVW</typ:AppCode>
+          <typ:AppCode>RRACCS</typ:AppCode>
+          <typ:AppCode>RRAPRV</typ:AppCode>
+          <typ:AppCode>RRDKRV</typ:AppCode>
+          <typ:AppCode>RRDMIE</typ:AppCode>
+          <typ:AppCode>RRDRAS</typ:AppCode>
+          <typ:AppCode>RRESRH</typ:AppCode>
+          <typ:AppCode>RRMNGA</typ:AppCode>
+          <typ:AppCode>RRPLVW</typ:AppCode>
+          <typ:AppCode>RRPSPR</typ:AppCode>
+          <typ:AppCode>RRREJT</typ:AppCode>
+          <typ:AppCode>RRREVN</typ:AppCode>
+          <typ:AppCode>RRREVW</typ:AppCode>
+          <typ:AppCode>RRRSUP</typ:AppCode>
+          <typ:AppCode>RRUNES</typ:AppCode>
+          <typ:AppCode>RRVCES</typ:AppCode>
+          <typ:AppCode>RRVIRR</typ:AppCode>
+          <typ:AppCode>SIPAD</typ:AppCode>
+          <typ:AppCode>TLAPP</typ:AppCode>
+          <typ:AppCode>TLARS</typ:AppCode>
+          <typ:AppCode>TLASN</typ:AppCode>
+          <typ:AppCode>TLCOMP</typ:AppCode>
+          <typ:AppCode>TLDIS</typ:AppCode>
+          <typ:AppCode>TLGET</typ:AppCode>
+          <typ:AppCode>TLMIS</typ:AppCode>
+          <typ:AppCode>TLSBMR</typ:AppCode>
+          <typ:AppCode>TLSBMT</typ:AppCode>
+          <typ:AppCode>TLSTL</typ:AppCode>
+          <typ:AppCode>TLSUB</typ:AppCode>
+          <typ:AppCode>TLSUP</typ:AppCode>
+          <typ:AppCode>TLSVV</typ:AppCode>
+          <typ:AppCode>WCAAFA</typ:AppCode>
+          <typ:AppCode>WCAAR</typ:AppCode>
+          <typ:AppCode>WCACAA</typ:AppCode>
+          <typ:AppCode>WCACAA</typ:AppCode>
+          <typ:AppCode>WCADAA</typ:AppCode>
+          <typ:AppCode>WCADAA</typ:AppCode>
+          <typ:AppCode>WCADIS</typ:AppCode>
+          <typ:AppCode>WCADP</typ:AppCode>
+          <typ:AppCode>WCADR</typ:AppCode>
+          <typ:AppCode>WCAHAC</typ:AppCode>
+          <typ:AppCode>WCAHMG</typ:AppCode>
+          <typ:AppCode>WCAMS</typ:AppCode>
+          <typ:AppCode>WCAOAA</typ:AppCode>
+          <typ:AppCode>WCARL</typ:AppCode>
+          <typ:AppCode>WCARR</typ:AppCode>
+          <typ:AppCode>WCASAA</typ:AppCode>
+          <typ:AppCode>WCASAA</typ:AppCode>
+          <typ:AppCode>WCATAC</typ:AppCode>
+          <typ:AppCode>WCATMG</typ:AppCode>
+          <typ:AppCode>WCAUOA</typ:AppCode>
+          <typ:AppCode>WCAUSA</typ:AppCode>
+          <typ:AppCode>WCAUSA</typ:AppCode>
+          <typ:AppCode>WCAVAA</typ:AppCode>
+          <typ:AppCode>WCAVAA</typ:AppCode>
+          <typ:AppCode>WCAVS</typ:AppCode>
+          <typ:AppCode>WCAVWQ</typ:AppCode>
+          <typ:AppCode>WCCDAC</typ:AppCode>
+          <typ:AppCode>WCCSMY</typ:AppCode>
+          <typ:AppCode>WCODSC</typ:AppCode>
+          <typ:AppCode>WCPHLP</typ:AppCode>
+          <typ:AppCode>WCPHLP</typ:AppCode>
+          <typ:AppCode>WCPHLP</typ:AppCode>
+          <typ:AppCode>WCPHLP</typ:AppCode>
+          <typ:AppCode>WCPIWV</typ:AppCode>
+          <typ:AppCode>WCPIWV</typ:AppCode>
+          <typ:AppCode>WCPIWV</typ:AppCode>
+          <typ:AppCode>WCPMAL</typ:AppCode>
+          <typ:AppCode>WCPMAL</typ:AppCode>
+          <typ:AppCode>WCPMAL</typ:AppCode>
+          <typ:AppCode>WCPMAL</typ:AppCode>
+          <typ:AppCode>WCRCAC</typ:AppCode>
+          <typ:AppCode>WCRVCR</typ:AppCode>
+          <typ:AppCode>WCRVRP</typ:AppCode>
+          <typ:AppCode>WCSCED</typ:AppCode>
+          <typ:StaffType>ESTIMATOR</typ:StaffType>
+        </apd:UserInfo>
+      </apd:SourceUserInfo>
+      <apd:TargetUserInfo>
+        <apd:UserInfo>
+          <typ:OrgID>361114</typ:OrgID>
+          <typ:OrgCode>IF</typ:OrgCode>
+          <typ:UserID>APPLOG05</typ:UserID>
+          <typ:FirstName>App</typ:FirstName>
+          <typ:LastName>Shop 5</typ:LastName>
+          <typ:Email>mail2@mail.com</typ:Email>
+          <typ:UserHier>
+            <typ:HierNode ID="72586" Code="IF" Name="PROGRESSIVE INSURANCE" Level="COMPANY">
+              <typ:HierNode ID="75875" Code="99" Name="DEFAULT" Level="REGION">
+                <typ:HierNode ID="75876" Code="99" Name="DEFAULT" Level="DIVISION">
+                  <typ:HierNode ID="79939" Code="9999" Name="DEFAULT" Level="OFFICE">
+                    <typ:HierNode ID="361114" Code="APPLOG05" Name="App Shop 5" Level="USER"/>
+                  </typ:HierNode>
+                </typ:HierNode>
+              </typ:HierNode>
+            </typ:HierNode>
+          </typ:UserHier>
+          <typ:AppCode>CMAPES</typ:AppCode>
+          <typ:AppCode>CMATF</typ:AppCode>
+          <typ:AppCode>CMBEA</typ:AppCode>
+          <typ:AppCode>CMCKL</typ:AppCode>
+          <typ:AppCode>CMCRC</typ:AppCode>
+          <typ:AppCode>CMCRD</typ:AppCode>
+          <typ:AppCode>CMCRE</typ:AppCode>
+          <typ:AppCode>CMDLF</typ:AppCode>
+          <typ:AppCode>CMEDC</typ:AppCode>
+          <typ:AppCode>CMEDE</typ:AppCode>
+          <typ:AppCode>CMSCA</typ:AppCode>
+          <typ:AppCode>CMSRCH</typ:AppCode>
+          <typ:AppCode>CMVWC</typ:AppCode>
+          <typ:AppCode>CMVWD</typ:AppCode>
+          <typ:AppCode>CMVWE</typ:AppCode>
+          <typ:AppCode>CPUPDN</typ:AppCode>
+          <typ:AppCode>NETACT</typ:AppCode>
+          <typ:AppCode>TLAPP</typ:AppCode>
+          <typ:AppCode>TLCOMP</typ:AppCode>
+          <typ:AppCode>TLGET</typ:AppCode>
+          <typ:AppCode>TLSTL</typ:AppCode>
+          <typ:AppCode>TLSUB</typ:AppCode>
+          <typ:AppCode>TLSUP</typ:AppCode>
+          <typ:AppCode>WCPHLP</typ:AppCode>
+          <typ:AppCode>WCPIWV</typ:AppCode>
+          <typ:AppCode>WCPMAL</typ:AppCode>
+          <typ:StaffType>ADMINISTRATOR</typ:StaffType>
+        </apd:UserInfo>
+      </apd:TargetUserInfo>
+      <apd:TargetDRPUserInfo>
+        <apd:UserInfo xmlns:typ="http://www.mitchell.com/common/types">
+          <typ:OrgID>81091</typ:OrgID>
+          <typ:OrgCode>BS</typ:OrgCode>
+          <typ:UserID>631631</typ:UserID>
+          <typ:FirstName>ADIRRONDAK</typ:FirstName>
+          <typ:LastName>CLAIMS SERVICE</typ:LastName>
+          <typ:UserHier>
+            <typ:HierNode ID="307" Code="BS" Name="" Level="COMPANY">
+              <typ:HierNode ID="81090" Code="K868" Name="ADIRONDAK CLAIMS SERVICE" Level="OFFICE">
+                <typ:HierNode ID="81091" Code="631631" Name="ADIRRONDAK CLAIMS SERVICE" Level="USER"/>
+              </typ:HierNode>
+            </typ:HierNode>
+          </typ:UserHier>
+          <typ:AppCode>CPUPDN</typ:AppCode>
+          <typ:AppCode>MCMAD</typ:AppCode>
+          <typ:AppCode>MCMUPL</typ:AppCode>
+          <typ:AppCode>NETACT</typ:AppCode>
+          <typ:AppCode>RCCOMM</typ:AppCode>
+          <typ:AppCode>UMMAPP</typ:AppCode>
+          <typ:AppCode>UMTYPB</typ:AppCode>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>Z4</typ:CompanyID>
+            <typ:CompanyName>MITCHELL TEST</typ:CompanyName>
+            <typ:UserID>Z4SMK23</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>Z4</typ:CompanyID>
+            <typ:CompanyName>MITCHELL TEST</typ:CompanyName>
+            <typ:UserID>Z4SMK25</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>IF</typ:CompanyID>
+            <typ:CompanyName>PROGRESSIVE INSURANCE</typ:CompanyName>
+            <typ:UserID>APPLOG3</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>IF</typ:CompanyID>
+            <typ:CompanyName>PROGRESSIVE INSURANCE</typ:CompanyName>
+            <typ:UserID>APPLOG5</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>IF</typ:CompanyID>
+            <typ:CompanyName>PROGRESSIVE INSURANCE</typ:CompanyName>
+            <typ:UserID>APPLOG6</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>IF</typ:CompanyID>
+            <typ:CompanyName>PROGRESSIVE INSURANCE</typ:CompanyName>
+            <typ:UserID>APPLOG7</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>IF</typ:CompanyID>
+            <typ:CompanyName>PROGRESSIVE INSURANCE</typ:CompanyName>
+            <typ:UserID>APPLOG9</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>IF</typ:CompanyID>
+            <typ:CompanyName>PROGRESSIVE INSURANCE</typ:CompanyName>
+            <typ:UserID>APPLOG10</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>IF</typ:CompanyID>
+            <typ:CompanyName>PROGRESSIVE INSURANCE</typ:CompanyName>
+            <typ:UserID>APPLOG12</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>IF</typ:CompanyID>
+            <typ:CompanyName>PROGRESSIVE INSURANCE</typ:CompanyName>
+            <typ:UserID>APPLOG42</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>Z4</typ:CompanyID>
+            <typ:CompanyName>MITCHELL TEST</typ:CompanyName>
+            <typ:UserID>Z4TT009</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>Z4</typ:CompanyID>
+            <typ:CompanyName>MITCHELL TEST</typ:CompanyName>
+            <typ:UserID>Z4SMK05</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>IF</typ:CompanyID>
+            <typ:CompanyName>PROGRESSIVE INSURANCE</typ:CompanyName>
+            <typ:UserID>IFTT059</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>IF</typ:CompanyID>
+            <typ:CompanyName>PROGRESSIVE INSURANCE</typ:CompanyName>
+            <typ:UserID>IFALOG04</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>IF</typ:CompanyID>
+            <typ:CompanyName>PROGRESSIVE INSURANCE</typ:CompanyName>
+            <typ:UserID>IFALOG06</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>Z4</typ:CompanyID>
+            <typ:CompanyName>MITCHELL TEST</typ:CompanyName>
+            <typ:UserID>Z4TT052</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>OA</typ:CompanyID>
+            <typ:CompanyName>CALIFORNIA STATE AUTO ASSN.</typ:CompanyName>
+            <typ:UserID>631631</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>G5</typ:CompanyID>
+            <typ:CompanyName>GDC COMPANY</typ:CompanyName>
+            <typ:UserID>AM111201</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>G5</typ:CompanyID>
+            <typ:CompanyName>GDC COMPANY</typ:CompanyName>
+            <typ:UserID>AM111203</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>Z4</typ:CompanyID>
+            <typ:CompanyName>MITCHELL TEST</typ:CompanyName>
+            <typ:UserID>631631</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>Z4</typ:CompanyID>
+            <typ:CompanyName>MITCHELL TEST</typ:CompanyName>
+            <typ:UserID>03012012</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>Z4</typ:CompanyID>
+            <typ:CompanyName>MITCHELL TEST</typ:CompanyName>
+            <typ:UserID>09012012</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>IF</typ:CompanyID>
+            <typ:CompanyName>PROGRESSIVE INSURANCE</typ:CompanyName>
+            <typ:UserID>16011201</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>IF</typ:CompanyID>
+            <typ:CompanyName>PROGRESSIVE INSURANCE</typ:CompanyName>
+            <typ:UserID>6316312</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>OA</typ:CompanyID>
+            <typ:CompanyName>CALIFORNIA STATE AUTO ASSN.</typ:CompanyName>
+            <typ:UserID>16011201</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>IF</typ:CompanyID>
+            <typ:CompanyName>PROGRESSIVE INSURANCE</typ:CompanyName>
+            <typ:UserID>APPLOG8</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>Z4</typ:CompanyID>
+            <typ:CompanyName>MITCHELL TEST</typ:CompanyName>
+            <typ:UserID>Z4SMK13</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>IF</typ:CompanyID>
+            <typ:CompanyName>PROGRESSIVE INSURANCE</typ:CompanyName>
+            <typ:UserID>APPLOG05</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>Z4</typ:CompanyID>
+            <typ:CompanyName>MITCHELL TEST</typ:CompanyName>
+            <typ:UserID>Z4TT013</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>Z4</typ:CompanyID>
+            <typ:CompanyName>MITCHELL TEST</typ:CompanyName>
+            <typ:UserID>Z4TT015</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>Z4</typ:CompanyID>
+            <typ:CompanyName>MITCHELL TEST</typ:CompanyName>
+            <typ:UserID>Z4SMK31</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>IF</typ:CompanyID>
+            <typ:CompanyName>PROGRESSIVE INSURANCE</typ:CompanyName>
+            <typ:UserID>IFTT008</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>X2</typ:CompanyID>
+            <typ:CompanyName>MITCHELL TEST</typ:CompanyName>
+            <typ:UserID>TSTDG001</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>GC</typ:CompanyID>
+            <typ:CompanyName>GMAC INSURANCE</typ:CompanyName>
+            <typ:UserID>TSTGC1</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:CrossOverInsuranceCompany>
+            <typ:CompanyID>OA</typ:CompanyID>
+            <typ:CompanyName>CALIFORNIA STATE AUTO ASSN.</typ:CompanyName>
+            <typ:UserID>2100704</typ:UserID>
+          </typ:CrossOverInsuranceCompany>
+          <typ:StaffType>ESTIMATOR</typ:StaffType>
+        </apd:UserInfo>
+      </apd:TargetDRPUserInfo>
+      <apd:ClaimNumber>99-2771202-01</apd:ClaimNumber>
+      <apd:ClientClaimNumber>99-2771202-01</apd:ClientClaimNumber>
+      <apd:ClaimId>1000062845</apd:ClaimId>
+      <apd:WorkItemId>2d3def21-ffff-ffa5-0c14-4e2f2c1584b1</apd:WorkItemId>
+      <apd:DateTime>2012-06-27T03:18:45.806-07:00</apd:DateTime>
+    </apd:APDCommonInfo>
+    <apd:TaskId>1000045148</apd:TaskId>
+    <apd:MessageStatus>DISPATCHED</apd:MessageStatus>
+    <apd:AssignmentMitchellEnvelope>
+      <apd:MitchellEnvelope Version="1.0">
+        <sch:EnvelopeContext>
+          <sch:NameValuePair>
+            <sch:Name>MitchellCompanyCode</sch:Name>
+            <sch:Value>IF</sch:Value>
+          </sch:NameValuePair>
+          <sch:NameValuePair>
+            <sch:Name>ReceivedDateTime</sch:Name>
+            <sch:Value>2012-06-27T02:20:29.988-07:00</sch:Value>
+          </sch:NameValuePair>
+          <sch:NameValuePair>
+            <sch:Name>MitchellWorkItemId</sch:Name>
+            <sch:Value>2d3def21-ffff-ffa5-0c14-4e2f2c1584b1</sch:Value>
+          </sch:NameValuePair>
+          <sch:NameValuePair>
+            <sch:Name>ClaimId</sch:Name>
+            <sch:Value>1000062845</sch:Value>
+          </sch:NameValuePair>
+          <sch:NameValuePair>
+            <sch:Name>ExposureId</sch:Name>
+            <sch:Value>1000073236</sch:Value>
+          </sch:NameValuePair>
+          <sch:NameValuePair>
+            <sch:Name>SystemUserId</sch:Name>
+            <sch:Value>PCS01</sch:Value>
+          </sch:NameValuePair>
+        </sch:EnvelopeContext>
+        <sch:EnvelopeBodyList>
+          <sch:EnvelopeBody>
+            <sch:Metadata>
+              <sch:Identifier>CIECABMSAssignmentAddRq</sch:Identifier>
+              <sch:MitchellDocumentType>CIECA_BMS_ASG_XML</sch:MitchellDocumentType>
+              <sch:XmlBeanClassname>com.cieca.bms.CIECADocument</sch:XmlBeanClassname>
+            </sch:Metadata>
+            <sch:Content>
+              <bms:CIECA xmlns:bms="http://www.cieca.com/BMS" xmlns:sch="http://www.mitchell.com/schemas">
+                <bms:AssignmentAddRq>
+                  <bms:RqUID>2d3def21-ffff-ffa5-0c14-4e2f2c1584b1</bms:RqUID>
+                  <bms:DocumentInfo>
+                    <bms:BMSVer>2.10.0</bms:BMSVer>
+                    <bms:DocumentType>A</bms:DocumentType>
+                    <bms:DocumentID>0</bms:DocumentID>
+                    <bms:DocumentVer>
+                      <bms:DocumentVerCode>EM</bms:DocumentVerCode>
+                      <bms:DocumentVerNum>0</bms:DocumentVerNum>
+                    </bms:DocumentVer>
+                    <bms:CreateDateTime>2012-06-27T02:20:29.989-07:00</bms:CreateDateTime>
+                  </bms:DocumentInfo>
+                  <bms:EventInfo>
+                    <bms:AssignmentEvent>
+                      <bms:CreateDateTime>2012-06-27T02:20:29.990-07:00</bms:CreateDateTime>
+                    </bms:AssignmentEvent>
+                  </bms:EventInfo>
+                  <bms:AdminInfo>
+                    <bms:InsuranceCompany>
+                      <bms:Party>
+                        <bms:OrgInfo>
+                          <bms:CompanyName>PROGRESSIVE INSURANCE</bms:CompanyName>
+                        </bms:OrgInfo>
+                      </bms:Party>
+                    </bms:InsuranceCompany>
+                    <bms:PolicyHolder>
+                      <bms:Party>
+                        <bms:PersonInfo>
+                          <bms:PersonName>
+                            <bms:LastName>jack</bms:LastName>
+                          </bms:PersonName>
+                        </bms:PersonInfo>
+                      </bms:Party>
+                    </bms:PolicyHolder>
+                    <bms:Estimator>
+                      <bms:Party>
+                        <bms:PersonInfo>
+                          <bms:PersonName>
+                            <bms:FirstName>App</bms:FirstName>
+                            <bms:LastName>Shop 5</bms:LastName>
+                          </bms:PersonName>
+                          <bms:Communications>
+                            <bms:CommQualifier>AL</bms:CommQualifier>
+                            <bms:Address>
+                              <bms:Address1>5155 luigi terrace</bms:Address1>
+                              <bms:Address2>High Street</bms:Address2>
+                              <bms:City>san diego</bms:City>
+                              <bms:StateProvince>CA</bms:StateProvince>
+                              <bms:PostalCode>92122</bms:PostalCode>
+                            </bms:Address>
+                          </bms:Communications>
+                        </bms:PersonInfo>
+                        <bms:ContactInfo>
+                          <bms:Communications>
+                            <bms:CommQualifier>WP</bms:CommQualifier>
+                            <bms:CommPhone>012-3654789</bms:CommPhone>
+                          </bms:Communications>
+                          <bms:Communications>
+                            <bms:CommQualifier>EM</bms:CommQualifier>
+                            <bms:CommEmail>mail2@mail.com</bms:CommEmail>
+                          </bms:Communications>
+                        </bms:ContactInfo>
+                      </bms:Party>
+                      <bms:Affiliation>69</bms:Affiliation>
+                    </bms:Estimator>
+                    <bms:InspectionSite>
+                      <bms:Party>
+                        <bms:OrgInfo>
+                          <bms:CompanyName>App Shop 5</bms:CompanyName>
+                          <bms:Communications>
+                            <bms:CommQualifier>AL</bms:CommQualifier>
+                            <bms:Address>
+                              <bms:Address1>5155 Luigi Terrace</bms:Address1>
+                              <bms:Address2>High Street</bms:Address2>
+                              <bms:City>San Diego</bms:City>
+                              <bms:StateProvince>CA</bms:StateProvince>
+                              <bms:PostalCode>92122</bms:PostalCode>
+                            </bms:Address>
+                          </bms:Communications>
+                        </bms:OrgInfo>
+                        <bms:ContactInfo>
+                          <bms:Communications>
+                            <bms:CommQualifier>CP</bms:CommQualifier>
+                            <bms:CommPhone>012-3654789+1234</bms:CommPhone>
+                          </bms:Communications>
+                        </bms:ContactInfo>
+                      </bms:Party>
+                    </bms:InspectionSite>
+                    <bms:Sender>
+                      <bms:Party>
+                        <bms:PersonInfo>
+                          <bms:PersonName/>
+                          <bms:IDInfo>
+                            <bms:IDQualifierCode>UserID</bms:IDQualifierCode>
+                            <bms:IDNum>PCS01</bms:IDNum>
+                          </bms:IDInfo>
+                        </bms:PersonInfo>
+                      </bms:Party>
+                    </bms:Sender>
+                    <bms:Submitter>
+                      <bms:Party>
+                        <bms:PersonInfo>
+                          <bms:PersonName/>
+                          <bms:IDInfo>
+                            <bms:IDQualifierCode>UserID</bms:IDQualifierCode>
+                            <bms:IDNum>PCS01</bms:IDNum>
+                          </bms:IDInfo>
+                        </bms:PersonInfo>
+                      </bms:Party>
+                    </bms:Submitter>
+                  </bms:AdminInfo>
+                  <bms:ClaimInfo>
+                    <bms:ClaimNum>99-2771202-01</bms:ClaimNum>
+                    <bms:PolicyInfo>
+                      <bms:CoverageInfo>
+                        <bms:Coverage>
+                          <bms:CoverageCategory>A</bms:CoverageCategory>
+                          <bms:DeductibleInfo>
+                            <bms:DeductibleStatus>FK</bms:DeductibleStatus>
+                            <bms:DeductibleAmt>0</bms:DeductibleAmt>
+                          </bms:DeductibleInfo>
+                        </bms:Coverage>
+                      </bms:CoverageInfo>
+                    </bms:PolicyInfo>
+                    <bms:LossInfo>
+                      <bms:Facts>
+                        <bms:LossDateTime>2012-06-26T00:00:00</bms:LossDateTime>
+                      </bms:Facts>
+                      <bms:TotalLossInd>N</bms:TotalLossInd>
+                    </bms:LossInfo>
+                  </bms:ClaimInfo>
+                  <bms:VehicleDamageAssignment>
+                    <bms:EstimatorIDs>
+                      <bms:CurrentEstimatorID>APPLOG05</bms:CurrentEstimatorID>
+                      <bms:RoutingIDInfo>
+                        <bms:IDQualifierCode>WAGroupID</bms:IDQualifierCode>
+                        <bms:IDNum>IF003893</bms:IDNum>
+                      </bms:RoutingIDInfo>
+                    </bms:EstimatorIDs>
+                    <bms:VehicleInfo>
+                      <bms:VINInfo>
+                        <bms:VINAvailabilityCode>Unavailable</bms:VINAvailabilityCode>
+                      </bms:VINInfo>
+                      <bms:VehicleDesc>
+                        <bms:OdometerInfo>
+                          <bms:OdometerInd>false</bms:OdometerInd>
+                          <bms:OdometerReadingCode>false</bms:OdometerReadingCode>
+                        </bms:OdometerInfo>
+                      </bms:VehicleDesc>
+                      <bms:Condition>
+                        <bms:DrivableInd>U</bms:DrivableInd>
+                      </bms:Condition>
+                    </bms:VehicleInfo>
+                    <bms:AssignmentMemo>ggggg</bms:AssignmentMemo>
+                  </bms:VehicleDamageAssignment>
+                </bms:AssignmentAddRq>
+              </bms:CIECA>
+            </sch:Content>
+          </sch:EnvelopeBody>
+          <sch:EnvelopeBody>
+            <sch:Metadata>
+              <sch:Identifier>AdditionalAppraisalAssignmentInfo</sch:Identifier>
+              <sch:MitchellDocumentType>AdditionalAppraisalAssignmentInfo</sch:MitchellDocumentType>
+              <sch:XmlBeanClassname>com.mitchell.schemas.appraisalassignment.AdditionalAppraisalAssignmentInfoDocument</sch:XmlBeanClassname>
+            </sch:Metadata>
+            <sch:Content>
+              <app:AdditionalAppraisalAssignmentInfo xmlns:app="http://www.mitchell.com/schemas/appraisalassignment" xmlns:sch="http://www.mitchell.com/schemas">
+                <app:AssignmentDetails>
+                  <app:InspectionSiteType>SHOP</app:InspectionSiteType>
+                  <app:SiteLocationId>361114</app:SiteLocationId>
+                  <app:InspectionSiteGeoCode>
+                    <app:AddressValidStatus>Valid</app:AddressValidStatus>
+                    <app:Latitude>32.8592477738857</app:Latitude>
+                    <app:Longitude>-117.20715276897</app:Longitude>
+                  </app:InspectionSiteGeoCode>
+                  <app:PrimaryContactType>Insured</app:PrimaryContactType>
+                  <app:IsTravelRequiredFlag>true</app:IsTravelRequiredFlag>
+                  <app:VehicleLocationZIPCodeSource>Primary</app:VehicleLocationZIPCodeSource>
+                </app:AssignmentDetails>
+                <app:NotificationDetails>
+                  <app:NotificationEmailTo NotifyRecipients="true">
+                    <app:EmailAddress>amandeep.singh@mitchell.com</app:EmailAddress>
+                  </app:NotificationEmailTo>
+                </app:NotificationDetails>
+                <app:MOIDetails>
+                  <app:TempUserSelectedMOI>
+                    <app:MethodOfInspection>SCTW</app:MethodOfInspection>
+                    <app:ResourceSelectionDeferredFlag>false</app:ResourceSelectionDeferredFlag>
+                    <app:MOIOrgID>349136</app:MOIOrgID>
+                  </app:TempUserSelectedMOI>
+                  <app:UserSelectedMOI>
+                    <app:MethodOfInspection>SCTW</app:MethodOfInspection>
+                    <app:ResourceSelectionDeferredFlag>false</app:ResourceSelectionDeferredFlag>
+                    <app:MOIOrgID>349136</app:MOIOrgID>
+                  </app:UserSelectedMOI>
+                </app:MOIDetails>
+                <app:AdditionalAssignmentDetails>
+                  <app:IsCAT>false</app:IsCAT>
+                </app:AdditionalAssignmentDetails>
+                <app:AssignmentSaveStep>ASSIGNMENT_DETAILS</app:AssignmentSaveStep>
+                <app:PropertyInfo>
+                  <app:PropertyDamageAssignment>
+                    <app:PropertyType>MTR_VEH</app:PropertyType>
+                  </app:PropertyDamageAssignment>
+                </app:PropertyInfo>
+              </app:AdditionalAppraisalAssignmentInfo>
+            </sch:Content>
+          </sch:EnvelopeBody>
+          <sch:EnvelopeBody>
+            <sch:Metadata>
+              <sch:Identifier>AdditionalTaskConstraints</sch:Identifier>
+              <sch:MitchellDocumentType>AdditionalTaskConstraints</sch:MitchellDocumentType>
+              <sch:XmlBeanClassname>com.mitchell.schemas.dispatchservice.AdditionalTaskConstraintsDocument</sch:XmlBeanClassname>
+            </sch:Metadata>
+            <sch:Content>
+              <wor:AdditionalTaskConstraints Version="1.0" xmlns:wor="http://www.mitchell.com/schemas/workassignment" xmlns:sch="http://www.mitchell.com/schemas">
+                <wor:ScheduleConstraints>
+                  <wor:Priority PriorityValue="99">STANDARD_PRIORITY</wor:Priority>
+                  <wor:Duration>PT45M</wor:Duration>
+                </wor:ScheduleConstraints>
+              </wor:AdditionalTaskConstraints>
+            </sch:Content>
+          </sch:EnvelopeBody>
+        </sch:EnvelopeBodyList>
+      </apd:MitchellEnvelope>
+    </apd:AssignmentMitchellEnvelope>
+  </apd:APDAppraisalAssignmentInfo>
+</apd:APDDeliveryContext>

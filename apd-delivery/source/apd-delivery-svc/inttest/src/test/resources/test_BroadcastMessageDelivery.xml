@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<apd:APDDeliveryContext Version="1.0" 
+	xsi:schemaLocation="http://www.mitchell.com/schemas/apddelivery APDDeliverySchema.xsd" 
+	xmlns:mxs="http://www.mitchell.com/common/types" 
+	xmlns:mitch="http://www.mitchell.com/schemas" 
+	xmlns:apd="http://www.mitchell.com/schemas/apddelivery" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<apd:MessageType>BROADCAST_MESSAGE</apd:MessageType>
+	<apd:APDBroadcastMessage>
+		<apd:APDCommonInfo>
+			<apd:InsCoCode>OA</apd:InsCoCode>
+			<apd:SourceUserInfo>
+				<apd:UserInfo xmlns:typ="http://www.mitchell.com/common/types">
+					<typ:OrgID>325155</typ:OrgID>
+					<typ:OrgCode>OA</typ:OrgCode>
+					<typ:UserID>OAAJBS01</typ:UserID>
+					<typ:FirstName>AJ's</typ:FirstName>
+					<typ:LastName>Body Shop</typ:LastName>
+					<typ:Email>jagdish.kumar@mitchell.com</typ:Email>
+					<typ:UserHier>
+					<typ:HierNode ID="576" Code="OA" Name="CALIFORNIA STATE AUTO ASSN." Level="COMPANY">
+					  <typ:HierNode ID="68603" Code="99" Name="DEFAULT" Level="REGION">
+						<typ:HierNode ID="251211" Code="99" Name="DEFAULT" Level="DIVISION">
+						  <typ:HierNode ID="105829" Code="9999" Name="DEFAULT" Level="OFFICE">
+							<typ:HierNode ID="325155" Code="OAAJBS01" Name="AJ's Body Shop" Level="USER"/>
+						  </typ:HierNode>
+						</typ:HierNode>
+					  </typ:HierNode>
+					</typ:HierNode>
+					</typ:UserHier>
+					<typ:AppCode>CMAPES</typ:AppCode>
+					<typ:AppCode>CPUPDN</typ:AppCode>
+					<typ:AppCode>ECMGR</typ:AppCode>
+					<typ:AppCode>NETACT</typ:AppCode>
+					<typ:StaffType>ADMINISTRATOR</typ:StaffType>
+				</apd:UserInfo>
+			</apd:SourceUserInfo>
+			<apd:TargetUserInfo>
+				<apd:UserInfo xmlns:typ="http://www.mitchell.com/common/types" xmlns="http://www.mitchell.com/schemas">
+					<typ:OrgID>361402</typ:OrgID>
+					  <typ:OrgCode>X2</typ:OrgCode>
+					  <typ:UserID>VB100291</typ:UserID>
+					  <typ:FirstName>Vinay</typ:FirstName>
+					  <typ:LastName>Bindal</typ:LastName>
+					  <typ:Email>jagdish.kumar@mitchell.com</typ:Email>
+					  <typ:UserHier>
+						<typ:HierNode ID="72201" Code="X2" Name="MITCHELL TEST" Level="COMPANY">
+						  <typ:HierNode ID="262322" Code="99" Name="DEFAULT" Level="REGION">
+							<typ:HierNode ID="262323" Code="99" Name="DEFAULT" Level="DIVISION">
+							  <typ:HierNode ID="262324" Code="9999" Name="DEFAULT" Level="OFFICE">
+								<typ:HierNode ID="361402" Code="VB100291" Name="Vinay Bindal" Level="USER"/>
+							  </typ:HierNode>
+							</typ:HierNode>
+						  </typ:HierNode>
+						</typ:HierNode>
+					  </typ:UserHier>
+					  <typ:AppCode>NETACT</typ:AppCode>
+					  <typ:AppCode>WCAPPL</typ:AppCode>
+					  <typ:AppCode>WCAPTL</typ:AppCode>
+					  <typ:StaffType>ADMINISTRATOR</typ:StaffType>
+				</apd:UserInfo>
+			</apd:TargetUserInfo>
+			<apd:WorkItemId>est_BS_558806_20110927074033_50-6271101-01_~0~592732</apd:WorkItemId>
+			<apd:DateTime>2011-09-28T11:51:06.067+05:30</apd:DateTime>
+		</apd:APDCommonInfo>
+		<apd:RecipientsList>
+			<apd:RecipientOrgId>368272</apd:RecipientOrgId>			
+		</apd:RecipientsList>
+		<apd:MessageSubject>Test Broadcast Message</apd:MessageSubject>
+		<apd:MessageContent>This is a test mail for Broadcast Messaging.
+		Following conditions have been tested.
+		Email to Sender- true -- 363587 / 363588 - Estimator user
+		WCAP Recipient- true
+		Email to Recipient- true
+		</apd:MessageContent>
+		<apd:EmailSender>false</apd:EmailSender>
+	</apd:APDBroadcastMessage>
+</apd:APDDeliveryContext>

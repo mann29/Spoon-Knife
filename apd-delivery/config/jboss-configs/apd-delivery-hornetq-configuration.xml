@@ -1,0 +1,22 @@
+<configuration xmlns="urn:hornetq"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="urn:hornetq /schema/hornetq-configuration.xsd">
+			   
+    <clustered>true</clustered>
+	<address-settings>
+		
+		<address-setting match="jms.queue.APD.BroadcastMessage">
+			<dead-letter-address>jms.queue.APD.BroadcastMessage_ERROR</dead-letter-address>
+			<expiry-address>jms.queue.APD.BroadcastMessage_ERROR</expiry-address>
+			<redelivery-delay>300000</redelivery-delay>
+			<max-delivery-attempts>3</max-delivery-attempts>
+		</address-setting>
+				
+		<address-setting match="jms.queue.APD.BroadcastMessage_ERROR">
+			<redelivery-delay>0</redelivery-delay>
+			<max-delivery-attempts>0</max-delivery-attempts>
+			<redistribution-delay>-1</redistribution-delay>
+		</address-setting>		
+				
+   </address-settings>
+</configuration>

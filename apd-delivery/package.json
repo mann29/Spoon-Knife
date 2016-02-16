@@ -1,0 +1,44 @@
+{
+  "name": "apd-delivery-svc",
+  "description": "APD-ClaimsSolutions apd-delivery-svc",
+  "author": "ninjaneers@mitchell.com",
+  "release": "1.0",
+  "build": "@@BUILD_NUMBER@@",
+  "arch": "windows",
+  "category": "/APD/platform",
+
+  "source-base": "",
+  "dest-base": "//",
+  "contents": [
+    {
+      "source": "source\\apd-delivery-svc\\ear\\target\\apd-delivery.ear",
+      "dest": "\\appl\\services\\apd-delivery-svc\\deploy"
+    },
+    {
+      "source": "config\\jboss-configs\\*.xml",
+      "dest": "\\appl\\services\\apd-delivery-svc\\deploy-configs"
+    },
+    {
+      "source": "config\\settings\\*.xsd",
+      "dest": "\\appl\\services\\apd-delivery-svc\\settings"
+    },
+    {
+      "source": "config\\settings\\*.SET",
+      "dest": "\\appl\\services\\apd-delivery-svc\\settings"
+    }
+  ],
+
+  "dependencies": { },
+
+  "pre-install": { },
+
+  "post-install": [
+    "/bin/bash /appl/scripts/jboss_move_files.sh apd-delivery-svc"
+  ],
+
+  "pre-uninstall": [
+    "/bin/bash /appl/scripts/jboss_clean_files.sh apd-delivery-svc"
+  ],
+
+  "post-uninstall": { }
+}

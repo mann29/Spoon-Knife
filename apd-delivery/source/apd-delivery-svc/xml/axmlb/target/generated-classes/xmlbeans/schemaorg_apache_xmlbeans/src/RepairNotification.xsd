@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.mitchell.com/schemas/apddelivery" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.mitchell.com/schemas/apddelivery" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="RepairNotification" type="RepairNotificationType">
+		<xs:annotation>
+			<xs:documentation>This xsd contains elements used to populate email content</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="RepairNotificationType">
+		<xs:sequence>
+            <xs:element name="ClaimNumber" type="xs:string"/>
+            <xs:element name="Vehicle" minOccurs="0">
+			<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Year" type="xs:string" minOccurs="0"/>
+						<xs:element name="Make" type="xs:string" minOccurs="0"/>
+						<xs:element name="Model" type="xs:string" minOccurs="0"/>
+						<xs:element name="Submodel" type="xs:string" minOccurs="0"/>
+						<xs:element name="Mileage" type="xs:string" minOccurs="0"/>
+					</xs:sequence>
+			</xs:complexType>
+		   </xs:element>
+			<xs:element name="Owner" type="PersonDetailType" minOccurs="0"/>
+			<xs:element name="Insured" type="PersonDetailType" minOccurs="0"/>
+			<xs:element name="Claimant" type="PersonDetailType" minOccurs="0"/>
+			<xs:element name="Estimate" type="xs:string" minOccurs="0"/>
+			<xs:element name="AssignmentType" type="xs:string"/>
+			<xs:element name="RequestType" type="xs:string"/>
+			<xs:element name="AssignedBy" type="xs:string" minOccurs="0"/>
+			<xs:element name="AssignedTo" type="xs:string" minOccurs="0"/>
+			<xs:element name="Notes" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PersonDetailType">
+		<xs:sequence>
+			<xs:element name="FirstName" type="xs:string" minOccurs="0"/>
+			<xs:element name="LastName" type="xs:string" minOccurs="0"/>
+			<xs:element name="PhoneNumber" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

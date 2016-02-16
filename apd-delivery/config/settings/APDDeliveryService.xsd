@@ -1,0 +1,109 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="APDDeliveryService" nillable="false">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="EventId">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="AlertDelivery" type="xs:string" />
+							<xs:element name="RADelivery" type="xs:string" />
+							<xs:element name="EstimateDelivery" type="xs:string" />
+							<xs:element name="ReqForStaffSupplementDelivery" type="xs:string" />
+							<xs:element name="AppraisalAssignmentNotificationDelivery" type="xs:string" />
+							<xs:element name="BroadCastMessageWCAPUser" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ActivityOperation">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="EstimateUploadAlertDelivery" type="xs:string" />
+							<xs:element name="ArtifactAlertDeliveryToShop" type="xs:string" />
+							<xs:element name="ArtifactAlertDeliveryToStaff" type="xs:string" />
+							<xs:element name="EstimateDelivery" type="xs:string" />
+							<xs:element name="ReqForStaffSupplementAccepted" type="xs:string" />
+							<xs:element name="ReqForStaffSupplementRejected" type="xs:string" />
+							<xs:element name="AppraisalAssignmentNotificationDeliveryUpdate" type="xs:string" />
+							<xs:element name="AppraisalAssignmentNotificationDeliveryCancel" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AppCode" type="xs:string" />
+				<xs:element name="AppCodeForStaff" type="xs:string" />
+				<xs:element name="PublishToMessageQueue" type="xs:string" minOccurs="0"/>
+				<xs:element name="EmailNotification">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SenderName" type="xs:string" />
+							<xs:element name="SenderEmailId" type="xs:string" />
+							<xs:element name="SubjectForCreateRepair" type="xs:string" />
+							<xs:element name="SubjectForUpdateRepair" type="xs:string" />
+							<xs:element name="SubjectForCompleteRepair" type="xs:string" />
+							<xs:element name="SubjectForCancelRepair" type="xs:string" />
+							<xs:element name="SubjectForCreateRework" type="xs:string" />
+							<xs:element name="SubjectForUpdateRework" type="xs:string" />
+							<xs:element name="SubjectForCompleteRework" type="xs:string" />
+							<xs:element name="SubjectForCancelRework" type="xs:string" />
+							<xs:element name="XsltPath" type="xs:string" />
+							<xs:element name="AssignmentEmailEnabled" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="DefinitionType">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="RepairAssignmentDefType" type="xs:string" />
+							<xs:element name="ReworkAssignmentDefType" type="xs:string" />
+							<xs:element name="AppraisalAssignmentNotification" type="xs:string" />
+							<xs:element name="RepairAssignmentDefTypeIF" type="xs:string" />
+							<xs:element name="ReworkAssignmentDefTypeIF" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="EstimateUploadTypes" type="xs:string" minOccurs="0"/>
+				<xs:element name="NICBReportDelivery">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CompanyOrgType" type="xs:string" />
+							<xs:element name="CompanySettingGroupName" type="xs:string" />
+							<xs:element name="NICBReportDeliveryHandler" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="BroadcastMessageDelivery">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="BroadcastMessageXsltPath" type="xs:string" />
+							<xs:element name="PartiallossSIPDelGroup" type="xs:string" />
+							<xs:element name="PartiallossSIPDelDestinationSettingName" type="xs:string" />
+							<xs:element name="PartiallossSIPDelDestinationEclaim" type="xs:string" />
+							<xs:element name="BroadcastMessageGroup" type="xs:string" />
+							<xs:element name="EmailToRcpntReqSettingName" type="xs:string" />
+							<xs:element name="Queue" type="xs:string" />
+							<xs:element name="ECAlertMessage" type="xs:string" />
+							<xs:element name="WCAPUserApplCode" type="xs:string" />
+							<xs:element name="EstimatorApplCode" type="xs:string" />
+							<xs:element name="SenderName" type="xs:string" />
+							<xs:element name="SenderEmailId" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="QueueConnectionFactory" type="xs:string" />
+				<xs:element name="PDFAttachmentTypesForRepair" type="xs:string" minOccurs="0"/>
+				<xs:element name="TextAttachmentTypesForRepair" type="xs:string" minOccurs="0"/>
+				<xs:element name="MIEEstimateAttachmentTypes" type="xs:string" minOccurs="0"/>
+				<xs:element name="CS_REPAIR_STATUS_NOTIFICATION_GROUP" type="xs:string" minOccurs="0"/>
+				<xs:element name="CS_REPAIR_STATUS_NOTIFICATION_PROPERTY" type="xs:string" minOccurs="0"/>
+				<xs:element name="OverrideRCEndPointEnabled" type="xs:string" />
+				<xs:element name="AppCodeRCOverride" type="xs:string" />
+				<xs:element name="HideNonDRP" type="xs:string" minOccurs="0"/>
+				<xs:element name="ShopPremiumAppCode" type="xs:string" />
+				<xs:element name="ShopBasicAppCode" type="xs:string" />
+				<xs:element name="OverrideCanUploadEstimateFlagCoCodes" type="xs:string" />
+				<xs:element name="AppCodeIgnoreEClaimRoute" type="xs:string" />
+				<xs:element name="AppCodeIgnoreRC" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+

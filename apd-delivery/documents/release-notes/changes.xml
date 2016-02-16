@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>APDDelivery Service</title>
+    <author email="darren.kessler@mitchell.com">Darren Kessler</author>
+  </properties>
+  <body>
+    <release version="1.0.0.0" date="1/31/2013" description="Initial JBoss Version.">
+      <action dev="Darren Kessler" type="add">
+        First JBoss version.
+      </action>
+      <action dev="Darren Kessler" type="fix">
+        1/31/2013 - Added assignment-delivery-client depends to the client jar pom because the service is propagating AssignmentDeliveryException.
+      </action>
+      <action dev="Darren Kessler" type="fix">
+        2/12/2013 - AppLogHelperImpl was converting to Integer instead of Long for claimId and exposureId which broke when the sequence values were increased.
+      </action>
+   </release>
+
+  </body>
+</document>
+

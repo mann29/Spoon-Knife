@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<typ:UserInfo xmlns:typ="http://www.mitchell.com/common/types">
+	<typ:OrgID>381198</typ:OrgID>
+	<typ:OrgCode>OA</typ:OrgCode>
+	<typ:UserID>OAAKST03</typ:UserID>
+	<typ:FirstName>Amit</typ:FirstName>
+	<typ:LastName>Staff Appraiser</typ:LastName>
+	<typ:Email>amit.kumar@mitchell.com</typ:Email>
+	<typ:UserHier>
+		<typ:HierNode ID="576" Code="OA" Name="CALIFORNIA STATE AUTO ASSN."
+			Level="COMPANY">
+			<typ:HierNode ID="358754" Code="AC" Name="Test Region AC"
+				Level="REGION">
+				<typ:HierNode ID="358755" Code="X3" Name="Test Division X3"
+					Level="DIVISION">
+					<typ:HierNode ID="358756" Code="XZ" Name="Test Office XZ"
+						Level="OFFICE">
+						<typ:HierNode ID="381198" Code="OAAKST03" Name="Amit Staff Appraiser"
+							Level="USER" />
+					</typ:HierNode>
+				</typ:HierNode>
+			</typ:HierNode>
+		</typ:HierNode>
+	</typ:UserHier>
+	<typ:AppCode>AASAD</typ:AppCode>
+	<typ:AppCode>CMAPES</typ:AppCode>
+	<typ:AppCode>CMATF</typ:AppCode>
+	<typ:AppCode>CMCRD</typ:AppCode>
+	<typ:AppCode>CMDLF</typ:AppCode>
+	<typ:AppCode>CMSRCH</typ:AppCode>
+	<typ:AppCode>CMVWC</typ:AppCode>
+	<typ:AppCode>CMVWD</typ:AppCode>
+	<typ:AppCode>CMVWE</typ:AppCode>
+	<typ:AppCode>MCMAD</typ:AppCode>
+	<typ:AppCode>MCMDIR</typ:AppCode>
+	<typ:AppCode>MCMDLD</typ:AppCode>
+	<typ:AppCode>MCMUPL</typ:AppCode>
+	<typ:AppCode>NETACT</typ:AppCode>
+	<typ:AppCode>UMTYPA</typ:AppCode>
+	<typ:AppCode>UMTYPB</typ:AppCode>
+	<typ:AppCode>UMTYPC</typ:AppCode>
+	<typ:AppCode>WCACAA</typ:AppCode>
+	<typ:AppCode>WCAEUP</typ:AppCode>
+	<typ:AppCode>WCAEVW</typ:AppCode>
+	<typ:AppCode>WCAUOA</typ:AppCode>
+	<typ:AppCode>WCAUSA</typ:AppCode>
+	<typ:AppCode>WCAVAA</typ:AppCode>
+	<typ:AppCode>WCDEUP</typ:AppCode>
+	<typ:AppCode>WCPHLP</typ:AppCode>
+	<typ:AppCode>WCPIWV</typ:AppCode>
+	<typ:AppCode>WCPMAL</typ:AppCode>
+	<typ:AppCode>RCCOM</typ:AppCode>
+	<typ:StaffType>ADMINISTRATOR</typ:StaffType>
+</typ:UserInfo>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+<!-- Proxy Section -->
+<bean id="apdCommonUtilProxy" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.proxy.APDCommonUtilProxyImpl"/>
+<bean id="appLogProxy" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.proxy.AppLogProxyImpl"/>
+<bean id="broadcastMessageProcessorProxy" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.proxy.BroadcastMessageProcessorProxyImpl"/>
+<bean id="customSettingProxy" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.proxy.CustomSettingProxyImpl" autowire="byType"/>
+<bean id="ecAlertProxy" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.proxy.ECAlertProxyImpl"/>
+<bean id="errorLogProxy" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.proxy.ErrorLogProxyImpl"/>
+<bean id="notificationProxy" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.proxy.NotificationProxyImpl"/>
+<bean id="systemConfigurationProxy" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.proxy.SystemConfigurationProxyImpl"/>
+<bean id="userInfoProxy" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.proxy.UserInfoProxyImpl"/>
+<bean id="apdJdbcDao" class="com.mitchell.services.core.partialloss.apddelivery.pojo.proxy.ApdJdbcDaoImpl"/>
+<bean id="adsProxy" class="com.mitchell.services.core.partialloss.apddelivery.pojo.proxy.ADSProxyImpl"/>
+<bean id="estimatePackageProxy" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.proxy.EstimatePackageProxyImpl"/>
+<bean id="documentStoreProxy" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.proxy.DocumentStoreProxyImpl"/>
+<bean id="claimServiceProxy" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.proxy.ClaimServiceProxyImpl"/>
+<bean id="workProcessServiceProxy" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.proxy.WorkProcessServiceProxyImpl"/>
+<bean id = "eventPublisher" singleton="true"
+class ="com.mitchell.services.core.partialloss.apddelivery.events.EventPublisherImpl" />
+<bean id = "carrErrorDao" singleton="true"
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.proxy.CarrErrorDaoImpl" />
+<bean id="messageDispatcher" singleton="true"
+class="com.mitchell.services.core.messagebus.MessageDispatcher" />
+
+
+<!-- Helper/Util Section -->
+<bean id="AppLogHelper" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.util.AppLogHelperImpl" autowire="byType">
+</bean>
+<bean id="CustomSettingHelper" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.util.CustomSettingHelperImpl" autowire="byType">
+</bean>
+<bean id="JMSSender" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.util.JMSSenderImpl" autowire="byType">
+</bean>
+<bean id="NotificationHelper" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.util.NotificationHelperImpl" autowire="byType">
+</bean>
+<bean id="XsltTransformer" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.util.XsltTransformerImpl" autowire="byType">
+</bean>
+<bean id="UserHelper" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.util.UserHelperImpl" autowire="byType">
+</bean>
+
+<!-- Delegator Section -->
+<bean id="apdBroadcastMessageHandler" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.delegator.APDBroadcastMessageHandler" autowire="byType">
+</bean>
+<bean id="apdBroadcastMessageDelegator" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.delegator.APDBroadcastMessageDelegatorImpl" autowire="byType">
+</bean>
+<!--  Fix 117663 : Adding all the classes as bean -->
+<bean id="alertDeliveryHandler" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.AlertDeliveryHandler" autowire="byType">
+</bean>
+<bean id="apdDeliveryService" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.APDDeliveryServiceImpl" autowire="byName">
+</bean>
+<bean id="appraisalAssignmentDeliveryHandler" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.AppraisalAssignmentDeliveryHandler" autowire="byType">
+</bean>
+<bean id="appraisalAssignmentNotificationHandler" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.AppraisalAssignmentNotificationHandler" autowire="byType">
+</bean>
+<bean id="emailDeliveryHandler" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.EmailDeliveryHandlerImpl" autowire="byType">
+</bean>
+<bean id="estimateStatusDeliveryHandler" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.EstimateStatusDeliveryHandler" autowire="byType">
+</bean>
+<bean id="nicbReportHandler" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.NICBReportHandler" autowire="byType">
+</bean>
+<bean id="platformDeliveryHandler" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.PlatformDeliveryHandlerImpl" autowire="byType">
+</bean>
+<bean id="repairAssignmentDeliveryHandler" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.RepairAssignmentDeliveryHandler" autowire="byType">
+</bean>
+<bean id="staffSupplementDeliveryHandler" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.StaffSupplementDeliveryHandler" autowire="byType">
+</bean>
+<bean id="apdDeliveryUtil" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.utils.APDDeliveryUtilImpl" autowire="byType">
+</bean>
+<bean id="commonUtil" singleton="true" 
+class="com.mitchell.services.core.partialloss.apddelivery.utils.CommonUtilImpl" autowire="byType">
+</bean>
+
+<!-- Handler Section -->
+<bean id="daytonaDeliveryHandler" singleton="true"
+class="com.mitchell.services.core.partialloss.apddelivery.pojo.DaytonaDeliveryHandlerImpl" autowire="byType" />
+</beans>

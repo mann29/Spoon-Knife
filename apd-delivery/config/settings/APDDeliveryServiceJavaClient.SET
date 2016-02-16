@@ -1,0 +1,13 @@
+<APDDeliveryServiceJavaClient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="APDDeliveryServiceJavaClient.xsd">
+
+<!--
+    This is the URL to the JNDI provider from the Java client point of view.
+    Set TODO below to the appropriate cluster URL.
+-->
+
+	<ProviderUrl>${J2EE_PROVIDER_URL}</ProviderUrl>
+	<JNDIFactory>org.jnp.interfaces.NamingContextFactory</JNDIFactory>
+	<EJBJndi>com.mitchell.services.core.partialloss.apddelivery.ejb.APDDeliveryServiceEJBRemote</EJBJndi>
+    <!-- This is a comment -->
+	
+	</APDDeliveryServiceJavaClient>

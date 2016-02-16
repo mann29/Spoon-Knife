@@ -1,0 +1,13 @@
+<configuration xmlns="urn:hornetq"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="urn:hornetq /schema/hornetq-jms.xsd">
+
+   <queue name="APD.BroadcastMessage">
+      <entry name="APD.BroadcastMessage"/> 
+   </queue>
+   
+   <queue name="APD.BroadcastMessage_ERROR">
+      <entry name="APD.BroadcastMessage_ERROR"/> 
+   </queue>
+      
+</configuration>

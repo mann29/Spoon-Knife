@@ -1,0 +1,96 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.mitchell.maven.apd</groupId>
+    <artifactId>super-pom</artifactId>
+    <version>1.0.0.1</version>
+    <relativePath>../../../../</relativePath>
+  </parent>
+  <groupId>apd-delivery</groupId>
+  <artifactId>apd-delivery-client</artifactId>
+  <version>1.0.1.0</version>
+  <packaging>jar</packaging>
+  <properties>
+    <server.class.source.version>1.0.0.1</server.class.source.version>
+  </properties>	  
+  <dependencies>  
+    <dependency>
+      <groupId>common-xml-schema</groupId>
+      <artifactId>apd-delivery-axmlb</artifactId>
+      <version>1.0.0.0</version>
+    </dependency>
+	<dependency>
+	  <groupId>mitchell-common</groupId>
+	  <artifactId>mitchell-common</artifactId>
+	  <version>1.0.3.0</version>
+	</dependency>
+    <!-- This is needed because APD propagates ECAlertSvcException -->    
+    <dependency>
+      <groupId>ecalert-service</groupId>
+      <artifactId>ecalert-client</artifactId>
+      <version>1.0.1.0</version>
+    </dependency>    
+    <!-- This is needed because APD propagates AssignmentDeliveryException -->    
+    <dependency>
+      <groupId>assignment-delivery</groupId>
+      <artifactId>assignment-delivery-client</artifactId>
+      <version>1.0.0.4</version>
+    </dependency>  
+  </dependencies>  
+  <build>
+    <plugins>
+	<!-- Extract needed classes from various jars into the "classes" directory -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>unpack</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>unpack</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+              <!-- From the EJB Jar -->
+                <artifactItem>
+                  <groupId>apd-delivery</groupId>
+                  <artifactId>apd-delivery-ejb</artifactId>
+                  <version>${server.class.source.version}</version>
+                  <outputDirectory>target/classes</outputDirectory>
+                  <includes>
+                  com/mitchell/services/core/partialloss/apddelivery/client/APDDeliveryClient.class,
+                  com/mitchell/services/core/partialloss/apddelivery/ejb/APDDeliveryServiceEJBRemote.class
+                  </includes>
+                </artifactItem>
+                <!-- From the Java Jar -->
+                <artifactItem>
+                  <groupId>apd-delivery</groupId>
+                  <artifactId>apd-delivery-java</artifactId>
+                  <version>${server.class.source.version}</version>
+                  <outputDirectory>target/classes</outputDirectory>
+                  <includes>
+                  com/mitchell/services/core/partialloss/apddelivery/utils/APDDeliveryConstants.class,
+                  com/mitchell/services/core/partialloss/apddelivery/pojo/proxy/SystemConfigurationProxy.class,
+                  com/mitchell/services/core/partialloss/apddelivery/pojo/proxy/SystemConfigurationProxyImpl.class
+                  </includes>
+                </artifactItem>                
+              </artifactItems>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>${maven-site-plugin.version}</version>
+        <configuration>
+          <skip>true</skip>
+          <skipDeploy>true</skipDeploy>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

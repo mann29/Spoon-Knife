@@ -1,0 +1,82 @@
+<APDDeliveryService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="APDDeliveryService.xsd">
+	<EventId>
+		<AlertDelivery>155101</AlertDelivery>
+		<RADelivery>155101</RADelivery>
+		<EstimateDelivery>155101</EstimateDelivery>
+		<ReqForStaffSupplementDelivery>155101</ReqForStaffSupplementDelivery>
+		<AppraisalAssignmentNotificationDelivery>155101</AppraisalAssignmentNotificationDelivery>
+		<BroadCastMessageWCAPUser>155101</BroadCastMessageWCAPUser>
+	</EventId>
+	<ActivityOperation>
+		<EstimateUploadAlertDelivery>RECEIVE_ESTIMATE_PROCESSING_RESULTS</EstimateUploadAlertDelivery>
+		<ArtifactAlertDeliveryToShop>RECEIVE_ARTIFACT_PROCESSING_RESULTS</ArtifactAlertDeliveryToShop>
+		<ArtifactAlertDeliveryToStaff>RECEIVE_ARTIFACT_PROCESSING_RESULTS</ArtifactAlertDeliveryToStaff>
+		<EstimateDelivery>RECEIVE_ESTIMATE_REVIEW_RESULTS</EstimateDelivery>
+		<ReqForStaffSupplementAccepted>RECEIVE_STAFF_SUPPLEMENT_CREATED_RESPONSE</ReqForStaffSupplementAccepted>
+		<ReqForStaffSupplementRejected>RECEIVE_STAFF_SUPPLEMENT_REJECTED_RESPONSE</ReqForStaffSupplementRejected>
+		<AppraisalAssignmentNotificationDeliveryUpdate>UPDATE_APPRAISAL_ASSIGNMENT_NOTIFICATION</AppraisalAssignmentNotificationDeliveryUpdate>
+		<AppraisalAssignmentNotificationDeliveryCancel>CANCEL_APPRAISAL_ASSIGNMENT_NOTIFICATION</AppraisalAssignmentNotificationDeliveryCancel>
+	</ActivityOperation>
+	<AppCode>RCCOMM</AppCode>
+	<AppCodeForStaff>WCAPPL</AppCodeForStaff>
+	<PublishToMessageQueue>TRUE</PublishToMessageQueue>
+	<EmailNotification>
+		<SenderName>Mitchell Support</SenderName>
+		<SenderEmailId>donotreply@mitchell.com</SenderEmailId>
+		<SubjectForCreateRepair>Repair Referral for Claim</SubjectForCreateRepair>
+		<SubjectForUpdateRepair>Repair Referral updated for Claim</SubjectForUpdateRepair>
+		<SubjectForCompleteRepair>Repair Referral completed for Claim</SubjectForCompleteRepair>
+		<SubjectForCancelRepair>Repair Referral cancelled for Claim</SubjectForCancelRepair>
+		<SubjectForCreateRework>Repair Rework for Claim</SubjectForCreateRework>
+		<SubjectForUpdateRework>Repair Rework updated for Claim</SubjectForUpdateRework>
+		<SubjectForCompleteRework>Repair Rework completed for Claim</SubjectForCompleteRework>
+		<SubjectForCancelRework>Repair Rework  cancelled for Claim</SubjectForCancelRework>
+
+		<!-- XSLT path for Devintonline -->
+		<XsltPath>${NAS_APPLICATION_DIRECTORY_PATH}/organizations/default/templates/emails/RepairNotification.xslt</XsltPath>
+		<AssignmentEmailEnabled>false</AssignmentEmailEnabled>
+
+	</EmailNotification>
+	<DefinitionType>
+		<RepairAssignmentDefType>RepairAssignment_IF</RepairAssignmentDefType>
+		<ReworkAssignmentDefType>ReworkAssignment_IF</ReworkAssignmentDefType>
+		<AppraisalAssignmentNotification>AppraisalAssignmentNotification</AppraisalAssignmentNotification>
+		<RepairAssignmentDefTypeIF>RepairAssignment_IF</RepairAssignmentDefTypeIF>
+		<ReworkAssignmentDefTypeIF>ReworkAssignment_IF</ReworkAssignmentDefTypeIF>
+	</DefinitionType>
+	<EstimateUploadTypes>MCF_XML_MIE_ESTIMATE|MCF_XML_BOAT_ESTIMATE|MCF_XML_TRUCK_ESTIMATE|MCF_XML_EMS_ESTIMATE|MCF_XML_EMS_ADP_ESTIMATE|MCF_XML_EMS_CCC_ESTIMATE|MCF_XML_MIE_ESTIMATE_UNCOMMITTED</EstimateUploadTypes>
+
+	<NICBReportDelivery>
+		<CompanyOrgType>COMPANY</CompanyOrgType>
+		<CompanySettingGroupName>CORESERVICES_NICB_SERVICE_SETTINGS</CompanySettingGroupName>
+		<NICBReportDeliveryHandler>PARTIALLOSS_NICB_REPORT_DELIVER_HANDLERS</NICBReportDeliveryHandler>
+	</NICBReportDelivery>
+	<BroadcastMessageDelivery>
+		<BroadcastMessageXsltPath>${NAS_APPLICATION_DIRECTORY_PATH}/organizations/default/templates/emails/BroadcastMessageEmail.xslt</BroadcastMessageXsltPath>
+		<PartiallossSIPDelGroup>PARTIALLOSS_SIP_ASSIGNMENT_DELIVERY_SETTINGS</PartiallossSIPDelGroup>
+		<PartiallossSIPDelDestinationSettingName>PARTIALLOSS_SIP_ASSIGNMENT_DELIVERY_DESTINATION</PartiallossSIPDelDestinationSettingName>
+		<PartiallossSIPDelDestinationEclaim>ECLAIM_MCFXML|ARC5</PartiallossSIPDelDestinationEclaim>
+		<BroadcastMessageGroup>BROADCAST_MSG_SETTINGS</BroadcastMessageGroup>
+		<EmailToRcpntReqSettingName>BROADCASTS_CAN_BE_SENT_AS_EMAILS</EmailToRcpntReqSettingName>
+		<Queue>APD.BroadcastMessage</Queue>
+		<ECAlertMessage>1 2 has sent you the following broadcast alert message from WorkCenter. -- 3 -- 4</ECAlertMessage>
+		<WCAPUserApplCode>WCAPPL|WCAPTL</WCAPUserApplCode>
+		<EstimatorApplCode>CMAPES</EstimatorApplCode>
+		<SenderName>Mitchell WorkCenter</SenderName>
+		<SenderEmailId>donotreply@mitchell.com</SenderEmailId>
+	</BroadcastMessageDelivery>
+	<QueueConnectionFactory>java:/JmsXA</QueueConnectionFactory>
+	<PDFAttachmentTypesForRepair>EST_UMPDF_NOPD|EST_CCC_OBJECT|EST_ADP_OBJECT|EST_UMPDF</PDFAttachmentTypesForRepair>
+	<TextAttachmentTypesForRepair>EST_UMM_ESTIMATE|EST</TextAttachmentTypesForRepair>
+	<MIEEstimateAttachmentTypes>MIE_ESTIMATE</MIEEstimateAttachmentTypes>
+	<CS_REPAIR_STATUS_NOTIFICATION_GROUP>REPAIR_WORKFLOW_SETTINGS</CS_REPAIR_STATUS_NOTIFICATION_GROUP>
+	<CS_REPAIR_STATUS_NOTIFICATION_PROPERTY>REPAIR_STATUS_EMAIL_NOTIFICATION_TO_SHOP_CUSTOMERS</CS_REPAIR_STATUS_NOTIFICATION_PROPERTY>
+	<OverrideRCEndPointEnabled>true</OverrideRCEndPointEnabled>
+	<AppCodeRCOverride>RCRECM</AppCodeRCOverride>
+	<HideNonDRP>${HIDE_NON_DRP_INDICATOR}</HideNonDRP>
+	<ShopPremiumAppCode>WCVSP</ShopPremiumAppCode>
+	<ShopBasicAppCode>WCVSB</ShopBasicAppCode>
+	<OverrideCanUploadEstimateFlagCoCodes>${UPLOAD_ESTIMATE_OVERRIDE_COMPANY_CODES}</OverrideCanUploadEstimateFlagCoCodes>
+	<AppCodeIgnoreEClaimRoute>WCAIER</AppCodeIgnoreEClaimRoute>
+	<AppCodeIgnoreRC>WCABRA</AppCodeIgnoreRC>
+</APDDeliveryService>
