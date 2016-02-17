@@ -8,7 +8,7 @@
 
 					.MainHeader
 					{
-					  font-size:16px;
+					  font-size:38px;
 					  font-color:#000000;
 					  font-weight:bold;
 					  font-family: Verdana;
