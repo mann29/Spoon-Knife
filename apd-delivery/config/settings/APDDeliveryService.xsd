@@ -2,7 +2,7 @@
 	<xs:element name="APDDeliveryService" nillable="false">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="EventId">
+				<xs:element name="EventId1">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="AlertDelivery" type="xs:string" />
