@@ -13,6 +13,7 @@
     {
       "source": "source\\apd-delivery-svc\\ear\\target\\apd-delivery.ear",
       "dest": "\\appl\\services\\apd-delivery-svc\\deploy"
+	  "destination": "\\appl\\services\\apd-delivery-svc\\deploy"
     },
     {
       "source": "config\\jboss-configs\\*.xml",
