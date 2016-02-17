@@ -10,7 +10,7 @@
 					{
 					  font-size:16px;
 					  font-color:#000000;
-					  font-weight:bold;
+					  font-weight:boldastic;
 					  font-family: arial;
 					}
 					
