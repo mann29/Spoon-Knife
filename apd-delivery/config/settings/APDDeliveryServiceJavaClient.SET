@@ -5,7 +5,7 @@
     Set TODO below to the appropriate cluster URL.
 -->
 
-	<ProviderUrl>${J2EE_PROVIDER_URL}</ProviderUrl>
+	<ProviderUrl>${J2EE_PROVIDER_URL}/${J2EE_PROVIDER_URL}</ProviderUrl>
 	<JNDIFactory>org.jnp.interfaces.NamingContextFactory</JNDIFactory>
 	<EJBJndi>com.mitchell.services.core.partialloss.apddelivery.ejb.APDDeliveryServiceEJBRemote</EJBJndi>
     <!-- This is a comment -->
