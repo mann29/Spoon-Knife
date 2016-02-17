@@ -1,7 +1,7 @@
 <APDDeliveryService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="APDDeliveryService.xsd">
 	<EventId>
 		<AlertDelivery>155101</AlertDelivery>
-		<RADelivery>155101</RADelivery>
+		<RADelivery>15510101523</RADelivery>
 		<EstimateDelivery>155101</EstimateDelivery>
 		<ReqForStaffSupplementDelivery>155101</ReqForStaffSupplementDelivery>
 		<AppraisalAssignmentNotificationDelivery>155101</AppraisalAssignmentNotificationDelivery>
